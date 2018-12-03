@@ -43,7 +43,8 @@ class OperationExcel:
         ws[write_name + str(row)] = write_value
         wb.save(filename=excelPath)
 
+
 if __name__ == "__main__":
     s = OperationExcel()
-    a = s.write_data(3, 3, "test")
+    a = s.write_data("A", 3, "oooooooooooooo")
     print(a)

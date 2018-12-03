@@ -5,14 +5,15 @@ class SetExcel:
         self.is_run = "B"
         self.case_title = "C"
         self.precondition = "D"
-        self.header = "E"
-        self.method = "F"
-        self.data = "G"
-        self.expect_result = "H"
-        self.actual_result = "I"
-        self.return_data = "J"
+        self.url = "E"
+        self.header = "F"
+        self.method = "G"
+        self.request_data = "H"
+        self.expect_result = "I"
+        self.actual_result = "J"
+        self.return_data = "K"
 
-    def set_case(self):
+    def set_case_id(self):
         return self.case_id
 
     def set_is_run(self):
@@ -24,14 +25,17 @@ class SetExcel:
     def set_precondition(self):
         return self.precondition
 
+    def set_url(self):
+        return self.url
+
     def set_header(self):
         return self.header
 
     def set_method(self):
         return self.method
 
-    def set_data(self):
-        return self.data
+    def set_request_data(self):
+        return self.request_data
 
     def set_expect_result(self):
         return self.expect_result
