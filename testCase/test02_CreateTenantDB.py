@@ -6,13 +6,13 @@ from common.httpSet import HttpMethod
 from config.readConfig import ReadConfig
 
 
-class LoginTest(unittest.TestCase):
+class CreateTenantDbTest(unittest.TestCase):
     def setUp(self):
         self.data = ReadData()
         self.http = HttpMethod()
         self.config = ReadConfig()
 
-    def test_login_success(self):
+    def test_create_success(self):
         method = self.data.get_method(4)
         url = self.config.get_base_url() + self.data.get_url(4)
         data = self.data.get_request_data(4)
