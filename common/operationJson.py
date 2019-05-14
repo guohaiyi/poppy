@@ -2,9 +2,9 @@
 import json
 import os
 
-proDir = os.path.split(os.path.realpath(__file__))[0]
-jsonPath = os.path.join(proDir, "../testDataFile/data.json")
-
+# proDir = os.path.split(os.path.realpath(__file__))[0]
+# jsonPath = os.path.join(proDir, "../testDataFile/data.json")
+jsonPath = "../testDataFile/data.json"
 
 class OperationJson:
     def __init__(self, file_name=None):
@@ -28,7 +28,7 @@ class OperationJson:
 
 
 if __name__ == "__main__":
-    file_name = os.path.join(proDir, "../testDataFile/tenantDB.json")
+    file_name = "../testDataFile/tenant_db.json"
     a = OperationJson(file_name)
     b = a.key_get_headers("tenant_db")
     print(b)
