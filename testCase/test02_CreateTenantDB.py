@@ -4,6 +4,7 @@ import json
 from common.readData import ReadData
 from common.httpSet import HttpMethod
 from config.readConfig import ReadConfig
+from common.myLog import MyLog
 
 
 class CreateTenantDbTest(unittest.TestCase):
@@ -11,6 +12,9 @@ class CreateTenantDbTest(unittest.TestCase):
         self.data = ReadData()
         self.http = HttpMethod()
         self.config = ReadConfig()
+        self.log = MyLog()
+        self.info = "test"
+        self.case_name = self.data.get_case_title(4)
 
     def test_create_success(self):
         method = self.data.get_method(4)

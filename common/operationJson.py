@@ -28,6 +28,7 @@ class OperationJson:
 
 
 if __name__ == "__main__":
-    a = OperationJson()
-    b = a.key_get_headers("headers")
+    file_name = os.path.join(proDir, "../testDataFile/tenantDB.json")
+    a = OperationJson(file_name)
+    b = a.key_get_headers("tenant_db")
     print(b)

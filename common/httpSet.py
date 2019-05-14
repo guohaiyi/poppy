@@ -2,7 +2,6 @@
 import requests
 import json
 
-
 class HttpMethod:
     def get_method(self, url, data=None, headers=None):
         if isinstance(data, dict):
@@ -67,10 +66,10 @@ class HttpMethod:
 
 if __name__ == "__main__":
     h = HttpMethod()
-    url = "http://172.16.1.97:3002/profile"
+    url = "http://172.16.1.201:3002/profile"
     headers = {
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YmZmNWQxNjE4ZjJmNjUxNGE0OGUzODQiLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwidGVuYW50IjoiaGFpeWl0ZW5hbnQiLCJpYXQiOjE1NDM1NjY2NTYsImV4cCI6MTU3NTEyNDI1Nn0.JSoi66llSbuFQPjeliOWsW4oImTSjnjPGKSovBv3P6A"}
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1Y2QyYWFiMzY4ZDJhMDA2ODFlZGFmZjMiLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwidGVuYW50IjoiaGFpeWl0ZW5hbnQiLCJpYXQiOjE1NTc3MzkxODgsImV4cCI6MTU4OTI5Njc4OH0.UpRSUPLqpFdwBAjd12jtQTU810E5X8iDccO3EF_7ybY"}
     # data = "5bfe667618f2f6514a48ccde"
     data = {"limit": 1}
     s = h.http_method('get', url, data, headers)

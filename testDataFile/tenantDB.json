@@ -1,0 +1,8 @@
+{
+  "tenant_db": {
+    "tenant_name": "autotest",
+    "db": "autotest",
+    "info": "autotest",
+    "is_auto": true
+  }
+}
