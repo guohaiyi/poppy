@@ -38,5 +38,5 @@ class ReadConfig:
 
 if __name__ == "__main__":
     r = ReadConfig()
-    s = r.write_orc_token("aaaadasdcdcdcdcdcdcdcdcdcaaaaa")
+    s = r.get_base_url()
     print(s)
