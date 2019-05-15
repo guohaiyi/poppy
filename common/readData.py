@@ -5,10 +5,13 @@ from common.operationJson import OperationJson
 
 
 class ReadData:
-    def __init__(self):
+    def __init__(self, file_name=None):
         self.open_excel = OperationExcel()
-        self.open_json = OperationJson()
         self.set_excel = SetExcel()
+        if file_name:
+            self.open_json = OperationJson(file_name)
+        else:
+            self.open_json = OperationJson()
 
     def get_case_id(self, row):
         cell = self.set_excel.set_case_id()

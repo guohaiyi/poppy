@@ -1,10 +1,7 @@
 {
-  "headers": {
-    "Content-Type": "application/json"
-  },
   "orc_admin": {
     "username": "orc_admin",
-    "password": "orc_admin"
+    "password": "orc_admin1"
   },
   "new_orc_admin": {
  		"username": "orc_admin",
