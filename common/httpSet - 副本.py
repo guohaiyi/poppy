@@ -53,10 +53,10 @@ class HttpMethod:
 
 if __name__ == "__main__":
     h = HttpMethod()
-    url = "http://172.16.1.2031:3002/profile/5cd2aaad68d2a00681edaff2"
+    url = "http://172.16.1.201:3002/profile1/5cd2aaad68d2a00681edaff2"
     headers = {
         "Content-Type": "application/json",
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1Y2QyYWFiMzY4ZDJhMDA2ODFlZGFmZjMiLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwidGVuYW50IjoiaGFpeWl0ZW5hbnQiLCJpYXQiOjE1NTc5MDE4MDAsImV4cCI6MTU4OTQ1OTQwMH0.LUr80U8MBfgz_UYAGq-NiydTBSQwt5AqMP4M_zBuf28"}
-    a, b = h.http_method('get', url=url, headers=headers)
+    a, b = h.get_method(url=url, headers=headers)
     print(a)
     print(b)
