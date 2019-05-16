@@ -2,24 +2,16 @@
 import requests
 import json
 
+
 class HttpMethod:
     def get_method(self, url, data=None, headers=None):
-        if isinstance(data, dict):
-            try:
-                res = requests.get(url=url, params=data, headers=headers)
-                status_code = res.status_code
-                res_json = res.json()
-                return status_code, res_json  # 返回响应码，响应内容
-            except Exception as e:
-                print("Error:%s" % e)
-        else:
-            try:
-                res = requests.get(url=url + "/" + data, headers=headers)
-                status_code = res.status_code
-                res_json = res.json()
-                return status_code, res_json  # 返回响应码，响应内容
-            except Exception as e:
-                print("Error:%s" % e)
+        try:
+            res = requests.get(url=url, params=data, headers=headers)
+            status_code = res.status_code
+            res_json = res.json()
+            return status_code, res_json  # 返回响应码，响应内容
+        except Exception as e:
+            print("Error:%s" % e)
 
     def post_method(self, url, data=None, headers=None):
         try:
@@ -31,42 +23,24 @@ class HttpMethod:
             print("Error:%s" % e)
 
     def put_method(self, url, data=None, headers=None):
-        if isinstance(data, dict):
-            try:
-                res = requests.put(url=url, data=json.dumps(data), headers=headers)
-                status_code = res.status_code
-                res_json = res.json()
-                return status_code, res_json  # 返回响应码，响应内容
-            except Exception as e:
-                print("Error:%s" % e)
-        else:
-            try:
-                res = requests.put(url=url + "/" + data, headers=headers)
-                status_code = res.status_code
-                res_json = res.json()
-                return status_code, res_json  # 返回响应码，响应内容
-            except Exception as e:
-                print("Error:%s" % e)
+        try:
+            res = requests.put(url=url, data=json.dumps(data), headers=headers)
+            status_code = res.status_code
+            res_json = res.json()
+            return status_code, res_json  # 返回响应码，响应内容
+        except Exception as e:
+            print("Error:%s" % e)
 
     def delete_method(self, url, data=None, headers=None):
-        if isinstance(data, dict):
-            try:
-                res = requests.delete(url=url, data=json.dumps(data), headers=headers)
-                status_code = res.status_code
-                res_json = res.json()
-                return status_code, res_json  # 返回响应码，响应内容
-            except Exception as e:
-                print("Error:%s" % e)
-        else:
-            try:
-                res = requests.delete(url=url + "/" + data, headers=headers)
-                status_code = res.status_code
-                res_json = res.json()
-                return status_code, res_json  # 返回响应码，响应内容
-            except Exception as e:
-                print("Error:%s" % e)
+        try:
+            res = requests.delete(url=url, data=json.dumps(data), headers=headers)
+            status_code = res.status_code
+            res_json = res.json()
+            return status_code, res_json  # 返回响应码，响应内容
+        except Exception as e:
+            print("Error:%s" % e)
 
-    def http_method(self, method, url, data, headers):
+    def http_method(self, method, url, data=None, headers=None):
         if method == 'get':
             status_code, res_json = self.get_method(url, data, headers)
         elif method == 'post':
@@ -75,20 +49,14 @@ class HttpMethod:
             status_code, res_json = self.put_method(url, data, headers)
         else:
             status_code, res_json = self.delete_method(url, data, headers)
-        return status_code, json.dumps(res_json, ensure_ascii=False, sort_keys=False, indent=2)   # 对json数据进行格式化输出
-
+        return status_code, json.dumps(res_json, ensure_ascii=False, sort_keys=False, indent=2)  # 对json数据进行格式化输出
 
 if __name__ == "__main__":
     h = HttpMethod()
-    url = "http://172.16.1.201:3002/profile"
+    url = "http://172.16.1.201:3002/profile/5cd2aaad68d2a00681edaff2"
     headers = {
         "Content-Type": "application/json",
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1Y2QyYWFiMzY4ZDJhMDA2ODFlZGFmZjMiLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwidGVuYW50IjoiaGFpeWl0ZW5hbnQiLCJpYXQiOjE1NTc5MDE4MDAsImV4cCI6MTU4OTQ1OTQwMH0.LUr80U8MBfgz_UYAGq-NiydTBSQwt5AqMP4M_zBuf28"}
-    # data = "5bfe667618f2f6514a48ccde"
-    #data = {"limit": 1}
-    # data = "5cd2aaad68d2a00681edaff2"
-    a, s = h.get_method(url=url, headers=headers)
-    # a, s = h.http_method('get', url, data, headers)
+    a, b = h.get_method(url=url, headers=headers)
     print(a)
-    print(s)
-
+    print(b)
