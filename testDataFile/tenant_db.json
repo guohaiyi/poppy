@@ -3,6 +3,34 @@
     "tenant_name": "autotest",
     "db": "autotest",
     "info": "autotest",
+    "is_auto": false
+  },
+  "tenant_db_autolive": {
+    "tenant_name": "test_autolive",
+    "db": "test_autolive",
+    "info": "test_autolive",
     "is_auto": true
+  },
+  "lack_teant_name": {
+    "db": "lack_teant_name",
+    "info": "lack_teant_name",
+    "is_auto": false
+  },
+  "lack_db_name": {
+    "tenant_name": "lack_db_name",
+    "info": "lack_db_name",
+    "is_auto": false
+  },
+  "tenant_name_exists": {
+    "tenant_name": "autotest",
+    "db": "test",
+    "info": "test",
+    "is_auto": false
+  },
+  "db_name_exists": {
+    "tenant_name": "test",
+    "db": "autotest",
+    "info": "test",
+    "is_auto": false
   }
 }

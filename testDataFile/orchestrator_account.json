@@ -1,24 +1,24 @@
 {
   "orc_admin": {
     "username": "orc_admin",
-    "password": "orc_admin1"
+    "password": "orc_admin"
   },
   "new_orc_admin": {
- 		"username": "orc_admin",
-		"password": "123456"
-    },
-    "orc_admin_error_pw": {
- 		"username": "orc_admin",
-		"password": "654321"
-    },
-    "orc_admin_not": {
- 		"username": "orc_admin1",
-		"password": "123456"
-    },
-    "orc_admin_not_name": {
-		"password": "123456"
-    },
-    "orc_admin_not_pw": {
- 		"username": "orc_admin"
-    }
+    "username": "orc_admin",
+    "password": "123456"
+  },
+  "orc_admin_error_pw": {
+    "username": "orc_admin",
+    "password": "654321"
+  },
+  "orc_admin_not": {
+    "username": "orc_admin1",
+    "password": "123456"
+  },
+  "orc_admin_lack_name": {
+    "password": "123456"
+  },
+  "orc_admin_lack_pw": {
+    "username": "orc_admin"
+  }
 }

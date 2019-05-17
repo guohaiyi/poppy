@@ -1,5 +1,0 @@
-[INFO 2018-12-10 16:13:30 ] 测试通过
-[INFO 2018-12-10 16:14:20 ] 测试通过
-[ERROR 2018-12-10 16:14:20] 测试不通过：'NoneType' object is not subscriptable
-[INFO 2018-12-10 16:16:38 ] 测试通过
-[ERROR 2018-12-10 16:16:38] 测试不通过：'orchestrator_admin_token'

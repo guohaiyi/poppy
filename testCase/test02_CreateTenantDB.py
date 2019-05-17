@@ -1,30 +1,45 @@
 # -*- coding: UTF-8 -*-
 import unittest
 import json
+import os
 from common.readData import ReadData
 from common.httpSet import HttpMethod
 from config.readConfig import ReadConfig
 from common.myLog import MyLog
+from common.operationExcel import OperationExcel
+
+proDir = os.path.split(os.path.realpath(__file__))[0]
+file_name = os.path.join(proDir, "../testDataFile/tenant_db.json")
 
 
 class CreateTenantDbTest(unittest.TestCase):
     def setUp(self):
-        self.data = ReadData()
+        self.data = ReadData(file_name)
         self.http = HttpMethod()
         self.config = ReadConfig()
         self.log = MyLog()
-        self.info = "test"
-        self.case_name = self.data.get_case_title(4)
+        self.oper_excel = OperationExcel()
 
     def test_create_success(self):
-        method = self.data.get_method(4)
-        url = self.config.get_base_url() + self.data.get_url(4)
-        data = self.data.get_request_data(4)
-        # headers = self.data.get_headers(4)
+        """创建Tenant DB，不创建autolive"""
+        line = 7
+        case_id = self.data.get_case_id(line)
+        case_title = self.data.get_case_title(line)
+        method = self.data.get_method(line)
+        url = self.config.get_base_url() + self.data.get_url(line)
+        data = self.data.get_request_data(line)
         headers = {"Content-Type": "application/json", "Authorization": "Bearer " + self.config.get_orc_token()}
-        res = self.http.http_method(method=method, url=url, data=data, headers=headers)
-        dict_json = json.loads(res)  # 把json数据转换成字典对象
-        self.assertTrue(dict_json["status"])
+        try:
+            status_code, res_json = self.http.http_method(method=method, url=url, data=data, headers=headers)
+            self.oper_excel.write_data('K', line, res_json)  # 把实际返回结果写入Excel
+            dict_json = json.loads(res_json)  # 把json数据转换成字典对象
+            self.assertEqual(status_code, 200)
+            self.assertTrue(dict_json["status"])
+            self.log.info("[创建Tenant DB，不创建autolive]-测试通过: %s" % case_id)
+            self.oper_excel.write_data('J', line, 'PASS')
+        except Exception as e:
+            self.log.error("[创建Tenant DB，不创建autolive]-测试失败：%s" % e)
+            self.oper_excel.write_data('J', line, 'FAIL')
 
     def tearDown(self):
         pass
