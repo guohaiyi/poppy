@@ -2,42 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f683d30-5237-49fd-ad5f-cd8b8aa5dbe3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Log/20181210/err.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/20181210/log.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/20190313/err.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/20190313/log.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/20190513/err.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/20190513/log.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/20190514/err.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/20190514/log.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/20190515/err.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/20190515/log.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/operationJson.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/operationJson.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2018-12-04 10-40-17report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2018-12-04 10-54-50report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2018-12-04 10-56-13report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2018-12-04 11-45-37report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2018-12-04 16-05-39report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2018-12-04 16-06-10report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2018-12-04 16-07-47report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2018-12-04 16-20-39report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2018-12-04 16-34-54report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2018-12-04 16-36-02report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2018-12-04 16-41-17report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2018-12-04 16-45-34report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2018-12-10 15-32-48report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-03-13 10-30-28report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-05-13 16-44-38report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-05-14 18-02-35report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-05-14 18-10-09report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runcase.py" beforeDir="false" afterPath="$PROJECT_DIR$/runcase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testCase/test01_OrcLogin.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/test01_OrcLogin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCase/test02_CreateTenantDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/test02_CreateTenantDB.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testDataFile/TestCase.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testDataFile/TestCase.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testDataFile/orchestrator_account.json" beforeDir="false" afterPath="$PROJECT_DIR$/testDataFile/orchestrator_account.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testDataFile/tenant_db.json" beforeDir="false" afterPath="$PROJECT_DIR$/testDataFile/tenant_db.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/runcase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="332">
+              <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
               </folding>
@@ -85,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testCase/test01_OrcLogin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2049">
-              <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+            <state relative-caret-position="319">
+              <caret line="124" column="59" lean-forward="true" selection-start-line="124" selection-start-column="59" selection-end-line="124" selection-end-column="59" />
               <folding>
                 <element signature="e#24#39#0" expanded="true" />
               </folding>
@@ -95,10 +64,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testDataFile/orchestrator_account.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testCase/test02_CreateTenantDB.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="33" column="77" selection-start-line="33" selection-start-column="77" selection-end-line="33" selection-end-column="77" />
+            <state relative-caret-position="1050">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="e#24#39#0" expanded="true" />
               </folding>
@@ -139,6 +117,7 @@
     <setting file="file://$PROJECT_DIR$/test.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/config/readConfig.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/testDataFile/data.json" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/runcase.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/operationExcel.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/operationJson.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/httpSet.py" root0="SKIP_INSPECTION" />
@@ -154,7 +133,6 @@
         <option value="$PROJECT_DIR$/common/getOrcToken.py" />
         <option value="$PROJECT_DIR$/testCase/test_CreateTenantDB.py" />
         <option value="$PROJECT_DIR$/testCase/test_OrcLogin.py" />
-        <option value="$PROJECT_DIR$/runcase.py" />
         <option value="$PROJECT_DIR$/common/sendEmail.py" />
         <option value="$PROJECT_DIR$/demo.py" />
         <option value="$PROJECT_DIR$/aaaaaa.py" />
@@ -168,12 +146,13 @@
         <option value="$PROJECT_DIR$/common/httpSet - 副本.py" />
         <option value="$PROJECT_DIR$/common/httpSet.py" />
         <option value="$PROJECT_DIR$/testDataFile/tenant_db.json" />
-        <option value="$PROJECT_DIR$/testDataFile/orchestrator_account.json" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/config/config.ini" />
         <option value="$PROJECT_DIR$/common/operationJson.py" />
         <option value="$PROJECT_DIR$/testCase/test02_CreateTenantDB.py" />
+        <option value="$PROJECT_DIR$/runcase.py" />
         <option value="$PROJECT_DIR$/testCase/test01_OrcLogin.py" />
+        <option value="$PROJECT_DIR$/testDataFile/orchestrator_account.json" />
       </list>
     </option>
   </component>
@@ -183,7 +162,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="73" />
     <option name="y" value="264" />
     <option name="width" value="736" />
@@ -212,23 +191,7 @@
             <path>
               <item name="poppy" type="b2602c69:ProjectViewProjectNode" />
               <item name="poppy" type="462c0819:PsiDirectoryNode" />
-              <item name="Log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poppy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poppy" type="462c0819:PsiDirectoryNode" />
-              <item name="Log" type="462c0819:PsiDirectoryNode" />
-              <item name="20190517" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poppy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poppy" type="462c0819:PsiDirectoryNode" />
               <item name="testCase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poppy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poppy" type="462c0819:PsiDirectoryNode" />
-              <item name="testDataFile" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -243,6 +206,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vcs.patch.to.clipboard" value="true" />
   </component>
@@ -280,7 +244,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test01_OrcLogin.LoginTest.test_login_success" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test01_OrcLogin.LoginTest.test_login_lack_pw" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="poppy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -290,11 +254,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test01_OrcLogin.LoginTest.test_login_success&quot;" />
+      <option name="_new_target" value="&quot;test01_OrcLogin.LoginTest.test_login_lack_pw&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test02_CreateTenantDB.CreateTenantDbTest.test_create_success" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for testCase.qqtest02_CreateTenantDB.CreateTenantDbTest.test_create_success" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="poppy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -304,7 +268,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test02_CreateTenantDB.CreateTenantDbTest.test_create_success&quot;" />
+      <option name="_new_target" value="&quot;testCase.qqtest02_CreateTenantDB.CreateTenantDbTest.test_create_success&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -337,19 +301,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests in test01_OrcLogin.py" />
-      <item itemvalue="Python tests.Unittests for test01_OrcLogin.LoginTest.test_login_success" />
-      <item itemvalue="Python tests.Unittests in test02_CreateTenantDB.py" />
-      <item itemvalue="Python tests.Unittests for test02_CreateTenantDB.CreateTenantDbTest.test_create_success" />
       <item itemvalue="Python.runcase" />
+      <item itemvalue="Python tests.Unittests in test01_OrcLogin.py" />
+      <item itemvalue="Python tests.Unittests in test02_CreateTenantDB.py" />
+      <item itemvalue="Python tests.Unittests for testCase.qqtest02_CreateTenantDB.CreateTenantDbTest.test_create_success" />
+      <item itemvalue="Python tests.Unittests for test01_OrcLogin.LoginTest.test_login_lack_pw" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.runcase" />
         <item itemvalue="Python tests.Unittests in test01_OrcLogin.py" />
         <item itemvalue="Python tests.Unittests in test02_CreateTenantDB.py" />
-        <item itemvalue="Python tests.Unittests for test02_CreateTenantDB.CreateTenantDbTest.test_create_success" />
-        <item itemvalue="Python tests.Unittests for test01_OrcLogin.LoginTest.test_login_success" />
+        <item itemvalue="Python tests.Unittests for test01_OrcLogin.LoginTest.test_login_lack_pw" />
+        <item itemvalue="Python tests.Unittests for testCase.qqtest02_CreateTenantDB.CreateTenantDbTest.test_create_success" />
       </list>
     </recent_temporary>
   </component>
@@ -417,24 +381,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test01_OrcLogin_py - 2019.05.17 at 16h 26m 12s.xml">
-      <configuration name="Unittests in test01_OrcLogin.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test02_CreateTenantDB_py - 2019.05.17 at 16h 26m 21s.xml">
-      <configuration name="Unittests in test02_CreateTenantDB.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test02_CreateTenantDB_py - 2019.05.17 at 16h 29m 41s.xml">
-      <configuration name="Unittests in test02_CreateTenantDB.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test02_CreateTenantDB_py - 2019.05.17 at 16h 30m 20s.xml">
-      <configuration name="Unittests in test02_CreateTenantDB.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test02_CreateTenantDB_py - 2019.05.17 at 16h 31m 37s.xml">
-      <configuration name="Unittests in test02_CreateTenantDB.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test02_CreateTenantDB_py - 2019.05.17 at 16h 33m 24s.xml">
-      <configuration name="Unittests in test02_CreateTenantDB.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test02_CreateTenantDB_py - 2019.05.17 at 16h 43m 33s.xml">
       <configuration name="Unittests in test02_CreateTenantDB.py" configurationId="tests" />
     </history-entry>
@@ -447,16 +393,34 @@
     <history-entry file="Unittests_in_test01_OrcLogin_py - 2019.05.17 at 17h 54m 17s.xml">
       <configuration name="Unittests in test01_OrcLogin.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test01_OrcLogin_py - 2019.05.20 at 10h 43m 37s.xml">
+      <configuration name="Unittests in test01_OrcLogin.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test02_CreateTenantDB_py - 2019.05.20 at 10h 43m 52s.xml">
+      <configuration name="Unittests in test02_CreateTenantDB.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test01_OrcLogin_LoginTest_test_login_lack_pw - 2019.05.20 at 10h 47m 02s.xml">
+      <configuration name="Unittests for test01_OrcLogin.LoginTest.test_login_lack_pw" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test02_CreateTenantDB_py - 2019.05.20 at 16h 30m 19s.xml">
+      <configuration name="Unittests in test02_CreateTenantDB.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test01_OrcLogin_py - 2019.05.20 at 17h 18m 32s.xml">
+      <configuration name="Unittests in test01_OrcLogin.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test01_OrcLogin_py - 2019.05.20 at 17h 18m 47s.xml">
+      <configuration name="Unittests in test01_OrcLogin.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13382508" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13382508" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3488624" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.42361864" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39908952" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -508,56 +472,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/log/20181205120545/output.log" />
     <entry file="file://$PROJECT_DIR$/log/20181210153248/output.log" />
-    <entry file="file://$PROJECT_DIR$/Log/20181210/log.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/2019-03-13 10-30-28report.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1159">
-          <caret line="98" column="21" lean-forward="true" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Log/20181210/log.log" />
+    <entry file="file://$PROJECT_DIR$/report/2019-03-13 10-30-28report.html" />
     <entry file="file://$PROJECT_DIR$/demo.py" />
-    <entry file="file://$PROJECT_DIR$/Log/20181210/err.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aaaaaa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Log/20190313/err.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="59" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Log/20190513/err.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Log/20190513/log.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Log/20181210/err.log" />
+    <entry file="file://$PROJECT_DIR$/aaaaaa.py" />
+    <entry file="file://$PROJECT_DIR$/Log/20190313/err.log" />
+    <entry file="file://$PROJECT_DIR$/Log/20190513/err.log" />
+    <entry file="file://$PROJECT_DIR$/Log/20190513/log.log" />
     <entry file="file://$PROJECT_DIR$/common/myLog.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
@@ -565,13 +487,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Log/20190313/log.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Log/20190313/log.log" />
     <entry file="file://$PROJECT_DIR$/common/sendEmail.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -583,16 +499,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/testData.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" lean-forward="true" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testData/data.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/config/testData.ini" />
+    <entry file="file://$PROJECT_DIR$/testData/data.json" />
     <entry file="file://$PROJECT_DIR$/config/excelConfig.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1100">
@@ -627,13 +535,7 @@
     <entry file="file://$PROJECT_DIR$/testDataFile/tenant_account.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/httpSet - 副本.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="47" column="29" lean-forward="true" selection-end-line="61" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/common/httpSet - 副本.py" />
     <entry file="file://$PROJECT_DIR$/common/operationExcel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -654,20 +556,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Log/20190517/err.log">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Log/20190517/log.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testDataFile/orchestrator_account.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testDataFile/tenant_db.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -713,10 +601,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Log/20190517/log.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Log/20190520/log.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testCase/test02_CreateTenantDB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="33" column="77" selection-start-line="33" selection-start-column="77" selection-end-line="33" selection-end-column="77" />
+        <state relative-caret-position="1050">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="e#24#39#0" expanded="true" />
           </folding>
@@ -725,18 +627,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testCase/test01_OrcLogin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2049">
-          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+        <state relative-caret-position="319">
+          <caret line="124" column="59" lean-forward="true" selection-start-line="124" selection-start-column="59" selection-end-line="124" selection-end-column="59" />
           <folding>
             <element signature="e#24#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testDataFile/orchestrator_account.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/runcase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="332">
+          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
           </folding>

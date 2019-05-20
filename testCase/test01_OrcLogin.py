@@ -34,12 +34,12 @@ class LoginTest(unittest.TestCase):
             self.assertEqual(status_code, 200)
             self.assertTrue(dict_json["status"])
             self.assertEqual(dict_json["username"], "orc_admin")
-            self.log.info("测试通过: %s" % case_id)
+            self.log.info("[orc admin正常登录]-测试通过,Case_id： %s" % case_id)
             self.oper_excel.write_data('J', 2, 'PASS')
             orc_token = dict_json["orchestrator_admin_token"]
             self.config.write_orc_token(orc_token)  # 把orc_token写入配置文件
         except Exception as e:
-            self.log.error("orc admin正常登录-测试失败：%s" % e)
+            self.log.error("[orc admin正常登录]-测试失败：%s" % e)
             self.oper_excel.write_data('J', 2, 'FAIL')
 
     def test_login_fail(self):
@@ -58,10 +58,10 @@ class LoginTest(unittest.TestCase):
             self.assertFalse(dict_json["status"])
             self.assertEqual(dict_json["err"]["code"], 400)
             self.assertEqual(dict_json["err"]["message"], "Username or password error")
-            self.log.info("测试通过: %s" % case_id)
+            self.log.info("[登录失败，密码错误]-测试通过,Case_id： %s" % case_id)
             self.oper_excel.write_data('J', 3, 'PASS')
         except Exception as e:
-            self.log.error("登录失败，密码错误-测试失败：%s" % e)
+            self.log.error("[登录失败，密码错误]-测试失败：%s" % e)
             self.oper_excel.write_data('J', 3, 'FAIL')
 
     def test_login_fail_not(self):
@@ -80,10 +80,10 @@ class LoginTest(unittest.TestCase):
             self.assertFalse(dict_json["status"])
             self.assertEqual(dict_json["err"]["code"], 404)
             self.assertEqual(dict_json["err"]["message"], "Username does not exists")
-            self.log.info("测试通过: %s" % case_id)
+            self.log.info("[登录失败，账户不存在]-测试通过,Case_id：%s" % case_id)
             self.oper_excel.write_data('J', 4, 'PASS')
         except Exception as e:
-            self.log.error("登录失败，密码错误-测试失败：%s" % e)
+            self.log.error("[登录失败，账户不存在]-测试失败：%s" % e)
             self.oper_excel.write_data('J', 4, 'FAIL')
 
     def test_login_fail_lack_name(self):
@@ -102,10 +102,10 @@ class LoginTest(unittest.TestCase):
             self.assertFalse(dict_json["status"])
             self.assertEqual(dict_json["err"]["code"], 400)
             self.assertEqual(dict_json["err"]["message"], "Username is needed")
-            self.log.info("测试通过: %s" % case_id)
+            self.log.info("[登录失败，缺少username字段]-测试通过,Case_id： %s" % case_id)
             self.oper_excel.write_data('J', 5, 'PASS')
         except Exception as e:
-            self.log.error("登录失败，密码错误-测试失败：%s" % e)
+            self.log.error("[登录失败，缺少username字段]-测试失败：%s" % e)
             self.oper_excel.write_data('J', 5, 'FAIL')
 
     def test_login_lack_pw(self):
@@ -124,10 +124,10 @@ class LoginTest(unittest.TestCase):
             self.assertFalse(dict_json["status"])
             self.assertEqual(dict_json["err"]["code"], 400)
             self.assertEqual(dict_json["err"]["message"], "Password is needed")
-            self.log.info("测试通过: %s" % case_id)
+            self.log.info("[登录失败，缺少password字段]-测试通过,Case_id： %s" % case_id)
             self.oper_excel.write_data('J', 6, 'PASS')
         except Exception as e:
-            self.log.error("登录失败，密码错误-测试失败：%s" % e)
+            self.log.error("[登录失败，缺少password字段]-测试失败：%s" % e)
             self.oper_excel.write_data('J', 6, 'FAIL')
 
     def tearDown(self):

@@ -1,0 +1,18 @@
+[   INFO] [2019-05-20 10:43:37] 测试通过: orc_admin_login_02
+[   INFO] [2019-05-20 10:43:37] 测试通过: orc_admin_login_04
+[   INFO] [2019-05-20 10:43:37] 测试通过: orc_admin_login_03
+[   INFO] [2019-05-20 10:43:37] 测试通过: orc_admin_login_05
+[   INFO] [2019-05-20 10:43:37] 测试通过: orc_admin_login_01
+[  ERROR] [2019-05-20 10:43:52] [创建Tenant DB，不创建autolive]-测试失败：False is not true
+[   INFO] [2019-05-20 10:47:02] 登录失败，缺少password字段-测试通过: orc_admin_login_05
+[  ERROR] [2019-05-20 16:30:19] [创建Tenant DB，不创建autolive]-测试失败：cannot unpack non-iterable NoneType object
+[   INFO] [2019-05-20 17:18:31] 登录失败，密码错误-测试通过: orc_admin_login_02
+[   INFO] [2019-05-20 17:18:32] 登录失败，缺少username字段-测试通过: orc_admin_login_04
+[   INFO] [2019-05-20 17:18:32] 登录失败，账户不存在-测试通过: orc_admin_login_03
+[   INFO] [2019-05-20 17:18:32] 登录失败，缺少password字段-测试通过: orc_admin_login_05
+[   INFO] [2019-05-20 17:18:32] orc admin正常登录-测试通过: orc_admin_login_01
+[   INFO] [2019-05-20 17:18:47] 登录失败，密码错误-测试通过: orc_admin_login_02
+[   INFO] [2019-05-20 17:18:47] 登录失败，缺少username字段-测试通过: orc_admin_login_04
+[   INFO] [2019-05-20 17:18:47] 登录失败，账户不存在-测试通过: orc_admin_login_03
+[  ERROR] [2019-05-20 17:18:47] 登录失败，缺少password字段-测试失败： :: 200 != 300
+[   INFO] [2019-05-20 17:18:47] orc admin正常登录-测试通过: orc_admin_login_01

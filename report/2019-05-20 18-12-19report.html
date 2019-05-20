@@ -10,7 +10,7 @@
     <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     
 <style type="text/css" media="screen">
-body        { font-family: Microsoft YaHei,Tahoma,arial,helvetica,sans-serif;padding: 20px; font-size: 80%; }
+body        { font-family: Microsoft YaHei,Tahoma,arial,helvetica,sans-serif;padding: 20px; font-size: 120%; }
 table       { font-size: 100%; }
 /* -- heading ---------------------------------------------------------------------- */
 .heading {
@@ -107,17 +107,17 @@ function showClassDetail(cid, count) {
     }
 }
 function html_escape(s) {
-    s = s.replace(/&/g,'&');
-    s = s.replace(/</g,'<');
-    s = s.replace(/>/g,'>');
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
     return s;
 }
 </script>
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">测试报告</h1>
-<p class='attribute'><strong>测试人员 : </strong> TEST HAI</p>
-<p class='attribute'><strong>开始时间 : </strong> 2019-05-17 18:16:19</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.326000</p>
+<p class='attribute'><strong>测试人员 : </strong> HaiYi</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-05-20 18:12:19</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.321000</p>
 <p class='attribute'><strong>测试结果 : </strong> 共 6，通过 6，通过率= 100.00%</p>
 
 <p class='description'>运行结果: </p>
@@ -139,7 +139,7 @@ function html_escape(s) {
 <col align='right' />
 <col align='right' />
 </colgroup>
-<tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 14px;">
+<tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 16px;">
     <td>用例集/测试用例</td>
     <td>总计</td>
     <td>通过</td>
@@ -206,7 +206,7 @@ function html_escape(s) {
 </tr>
 </table>
 
-<div id='ending'> </div>
+<div id='ending'>&nbsp;</div>
     <div style=" position:fixed;right:50px; bottom:30px; width:20px; height:20px;cursor:pointer">
     <a href="#"><span class="glyphicon glyphicon-eject" style = "font-size:30px;" aria-hidden="true">
     </span></a></div>
