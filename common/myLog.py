@@ -60,13 +60,13 @@ class MyLog:
     @staticmethod
     def debug(message):
         set_handler('debug')
-        logger.debug("[  DEBUG] " + "[" + set_now_time() + "] " + message)
+        logger.debug("[DEBUG] " + "[" + set_now_time() + "] " + message)
         remove_handler('debug')
 
     @staticmethod
     def info(message):
         set_handler('info')
-        logger.info("[   INFO] " + "[" + set_now_time() + "] " + message)
+        logger.info("[INFO] " + "[" + set_now_time() + "] " + message)
         remove_handler('info')
 
     @staticmethod
@@ -78,7 +78,7 @@ class MyLog:
     @staticmethod
     def error(message):
         set_handler('error')
-        logger.error("[  ERROR] " + "[" + set_now_time() + "] " + message)
+        logger.error("[ERROR] " + "[" + set_now_time() + "] " + message)
         remove_handler('error')
 
 

@@ -116,9 +116,9 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">测试报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> HaiYi</p>
-<p class='attribute'><strong>开始时间 : </strong> 2019-05-27 11:36:53</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.328000</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 6，通过 6，通过率= 100.00%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-06-28 14:31:18</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.342000</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 8，通过 8，通过率= 100.00%</p>
 
 <p class='description'>运行结果: </p>
 </div>
@@ -127,8 +127,8 @@ function html_escape(s) {
 <p id='show_detail_line'>
 <a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 100.00% }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 6 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 6 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 8 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 8 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -196,10 +196,29 @@ function html_escape(s) {
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
+<tr class='passClass warning'>
+    <td>test_cal.TestCal</td>
+    <td class="text-center">2</td>
+    <td class="text-center">2</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c3',2)" class="detail" id='c3'>详细</a></td>
+</tr>
+
+<tr id='pt3_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt3_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_sub</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>6</td>
-    <td>6</td>
+    <td>8</td>
+    <td>8</td>
     <td>0</td>
     <td>0</td>
     <td>通过率：100.00%</td>

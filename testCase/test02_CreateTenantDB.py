@@ -29,17 +29,17 @@ class CreateTenantDbTest(unittest.TestCase):
         url = self.config.get_base_url() + self.data.get_url(line)
         data = self.data.get_request_data(line)
         headers = {"Content-Type": "application/json", "Authorization": "Bearer " + self.config.get_orc_token()}
-        try:
-            status_code, res_json = self.http.http_method(method=method, url=url, data=data, headers=headers)
-            self.oper_excel.write_data('K', line, res_json)  # 把实际返回结果写入Excel
-            dict_json = json.loads(res_json)  # 把json数据转换成字典对象
-            self.assertEqual(status_code, 200)
-            self.assertTrue(dict_json["status"])
-            self.log.info("[创建Tenant DB，不创建autolive]-测试通过: %s" % case_id)
-            self.oper_excel.write_data('J', line, 'PASS')
-        except Exception as e:
-            self.log.error("[创建Tenant DB，不创建autolive]-测试失败：%s" % e)
-            self.oper_excel.write_data('J', line, 'FAIL')
+        status_code, res_json = self.http.http_method(method=method, url=url, data=data, headers=headers)
+        self.oper_excel.write_data('K', line, res_json)  # 把实际返回结果写入Excel
+        dict_json = json.loads(res_json)  # 把json数据转换成字典对象
+        # 断言
+        self.assertEqual(status_code, 200, msg="两个值不相等")
+        self.assertTrue(dict_json["status"], msg='>>>创建DB失败，实际返回结果：%s' % dict_json)
+        #     self.log.info("[创建Tenant DB，不创建autolive]-测试通过: %s" % case_id)
+        #     self.oper_excel.write_data('J', line, 'PASS')
+        # except Exception as e:
+        #     self.log.error("[创建Tenant DB，不创建autolive]-测试失败：%s" % e)
+        #     self.oper_excel.write_data('J', line, 'FAIL')
 
     def tearDown(self):
         pass

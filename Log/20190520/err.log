@@ -1,3 +1,0 @@
-[  ERROR] [2019-05-20 10:43:52] [创建Tenant DB，不创建autolive]-测试失败：False is not true
-[  ERROR] [2019-05-20 16:30:19] [创建Tenant DB，不创建autolive]-测试失败：cannot unpack non-iterable NoneType object
-[  ERROR] [2019-05-20 17:18:47] 登录失败，缺少password字段-测试失败： :: 200 != 300

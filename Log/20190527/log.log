@@ -1,5 +1,0 @@
-[   INFO] [2019-05-27 11:36:10] [登录失败，密码错误]-测试通过,Case_id： orc_admin_login_02
-[   INFO] [2019-05-27 11:36:10] [登录失败，缺少username字段]-测试通过,Case_id： orc_admin_login_04
-[   INFO] [2019-05-27 11:36:10] [登录失败，账户不存在]-测试通过,Case_id：orc_admin_login_03
-[   INFO] [2019-05-27 11:36:10] [登录失败，缺少password字段]-测试通过,Case_id： orc_admin_login_05
-[   INFO] [2019-05-27 11:36:10] [orc admin正常登录]-测试通过,Case_id： orc_admin_login_01
