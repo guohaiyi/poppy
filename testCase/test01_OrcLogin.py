@@ -6,7 +6,8 @@ from common.readData import ReadData
 from common.httpSet import HttpMethod
 from config.readConfig import ReadConfig
 from common.myLog import MyLog
-from common.operationExcel import OperationExcel
+
+# from common.operationExcel import OperationExcel
 
 proDir = os.path.split(os.path.realpath(__file__))[0]
 file_name = os.path.join(proDir, "../testDataFile/orchestrator_account.json")
@@ -18,7 +19,7 @@ class LoginTest(unittest.TestCase):
         self.http = HttpMethod()
         self.config = ReadConfig()
         self.log = MyLog()
-        self.oper_excel = OperationExcel()
+        # self.oper_excel = OperationExcel()
 
     def test_login_success(self):
         """orc admin正常登录"""
@@ -32,15 +33,15 @@ class LoginTest(unittest.TestCase):
         # 发送请求
         status_code, res_json = self.http.http_method(method=method, url=url, data=data, headers=headers)
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
-        orc_token = dict_json["orchestrator_admin_token"]  # 提取orc_token
-        self.config.write_orc_token(orc_token)  # 把orc_token写入配置文件
-        # self.oper_excel.write_data('K', 2, res_json)  # 把实际返回结果写入Excel
+        if dict_json["status"] == True:
+            orc_token = dict_json["orchestrator_admin_token"]  # 提取orc_token
+            self.config.write_token("orc_token", orc_token)  # 把orc_token写入配置文件
         # 断言
         self.assertEqual(status_code, 200, msg="接口请求失败")
         self.assertTrue(dict_json["status"], msg="断言失败，实际返回结果：%s" % dict_json)
         self.assertEqual(dict_json["username"], "orc_admin", msg="断言失败，实际返回值是：%s" % dict_json["username"])
         # 打印Log
-        self.log.info("用例编号：%s，用例标题：%s-测试通过" % (case_id, case_title))
+        # self.log.info("用例编号：%s，用例标题：%s-测试通过" % (case_id, case_title))
 
     def test_login_fail(self):
         """登录失败，密码错误"""
@@ -80,6 +81,7 @@ class LoginTest(unittest.TestCase):
         self.assertEqual(dict_json["err"]["message"], "Username does not exists",
                          msg="断言失败，实际返回结果：%s" % dict_json["err"]["message"])
 
+    @unittest.skip("跳过测试")
     def test_login_fail_lack_name(self):
         """登录失败，缺少username字段"""
         case_id = self.data.get_case_id(5)
@@ -118,9 +120,8 @@ class LoginTest(unittest.TestCase):
         self.assertEqual(dict_json["err"]["message"], "Password is needed",
                          msg="断言失败，实际返回结果：%s" % dict_json["err"]["message"])
 
-
-def tearDown(self):
-    pass
+    def tearDown(self):
+        pass
 
 
 if __name__ == "__main__":
