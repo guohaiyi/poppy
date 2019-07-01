@@ -6,7 +6,9 @@ from email.mime.text import MIMEText
 from email.header import Header
 from config.readConfig import ReadConfig
 
-reportpath = "..\\report"
+
+reportpath = "../report"
+
 local_readConfig = ReadConfig()
 
 

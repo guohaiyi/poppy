@@ -3,25 +3,88 @@ import time
 import os
 import sys
 import unittest
+from common.myLog import MyLog
+from config.readConfig import ReadConfig
 from common.HTMLTestRunnerNew import HTMLTestRunner
 from common.sendEmail import SendEmail
 
-test_path = './testCase'
-discover = unittest.defaultTestLoader.discover(test_path, pattern='test*.py')
+proDir = os.path.split(os.path.realpath(__file__))[0]
+case_list_path = os.path.join(proDir, "case_list.txt")
+test_case_path = os.path.join(proDir, "testCase")
+
+
+class RunTest:
+    def __init__(self):
+        # 导入TestCase目录下的全部测试用例
+        # self.discover = unittest.defaultTestLoader.discover(test_case_path, pattern='test*.py')
+        self.logger = MyLog()
+        self.readconfig = ReadConfig()
+        # 导入指定测试用例列表文件
+        self.case_list_file = case_list_path
+        self.case_list_list = []
+
+    def get_case_list(self):
+        """
+        获取需要进行运行的测试用例列表
+        :return:
+        """
+        fb = open(self.case_list_file)
+        for i in fb.readlines():
+            data = str(i)
+            if data != '' and not data.startswith('#'):
+                self.case_list_list.append(data.replace('\n', ''))
+        fb.close()
+        # print(self.case_list_list)
+
+    def set_test_suite(self):
+        """
+        设置添加测试套件
+        :return:
+        """
+        self.get_case_list()
+        test_suite = unittest.TestSuite()
+        suite_module = []
+        for case in self.case_list_list:
+            case_name = case.split('/')[-1]
+            print(case_name + '.py')
+            discover = unittest.defaultTestLoader.discover(test_case_path, pattern=case_name + '.py')
+            suite_module.append(discover)
+
+        if len(suite_module) > 0:
+            for suite in suite_module:
+                for test_name in suite:
+                    test_suite.addTest(test_name)
+        else:
+            return None
+        return test_suite
+
+    def run_test(self):
+        """
+        执行测试
+        :return:
+        """
+        test_suite = self.set_test_suite()  # 获取测试套件
+        now = time.strftime("%Y-%m-%d %H-%M-%S", time.localtime(time.time()))  # 获取当前日期时间
+        public_path = os.path.dirname(os.path.abspath(sys.argv[0]))
+        filename = public_path + "\\report\\" + now + "report.html"  # 保存的报告路径和名称
+        fp = open(filename, 'wb')
+        runner = HTMLTestRunner(stream=fp,
+                                tester="HaiYi",
+                                title="测试报告",
+                                description="运行结果: "
+                                )
+        # 执行指定添加的测试用例套件
+        if test_suite is not None:
+            runner.run(test_suite)
+        else:
+            self.logger.info("Have no case to test.")
+        # 执行TestCase目录下的全部测试用例
+        # runner.run(self.discover)
+        send = SendEmail()
+        send.send_email()
+        fp.close()
+
 
 if __name__ == "__main__":
-    now = time.strftime("%Y-%m-%d %H-%M-%S", time.localtime(time.time()))
-    print(now)
-    public_path = os.path.dirname(os.path.abspath(sys.argv[0]))
-    print(public_path)
-    filename = public_path + "\\report\\" + now + "report.html"  # 保存的报告路径和名称
-    fp = open(filename, 'wb')
-    runner = HTMLTestRunner(stream=fp,
-                             tester="HaiYi",
-                             title="测试报告",
-                             description="运行结果: "
-                             )
-    runner.run(discover)
-    fp.close()
-    # send = SendEmail()
-    #     # send.send_email()
+    run = RunTest()
+    run.run_test()
