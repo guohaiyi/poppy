@@ -23,15 +23,15 @@ class CreateTenantDbTest(unittest.TestCase):
     def test_create_success(self):
         """创建Tenant DB，不创建autolive"""
         line = 7
-        case_id = self.data.get_case_id(line)
-        case_title = self.data.get_case_title(line)
+        # 设置请求数据
         method = self.data.get_method(line)
         url = self.config.get_base_url() + self.data.get_url(line)
         data = self.data.get_request_data(line)
         headers = {"Content-Type": "application/json", "Authorization": "Bearer " + self.config.get_token('orc_token')}
+        # 发送请求
         status_code, res_json = self.http.http_method(method=method, url=url, data=data, headers=headers)
-        self.oper_excel.write_data('K', line, res_json)  # 把实际返回结果写入Excel
-        dict_json = json.loads(res_json)  # 把json数据转换成字典对象
+        # 把json数据转换成字典对象
+        dict_json = json.loads(res_json)
         # 断言
         self.assertEqual(status_code, 200, msg="两个值不相等")
         self.assertTrue(dict_json["status"], msg='>>>创建DB失败，实际返回结果：%s' % dict_json)

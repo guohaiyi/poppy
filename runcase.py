@@ -19,6 +19,8 @@ class RunTest:
         # self.discover = unittest.defaultTestLoader.discover(test_case_path, pattern='test*.py')
         self.logger = MyLog()
         self.readconfig = ReadConfig()
+        self.send_mail = SendEmail()
+        self.is_send = self.readconfig.get_email("is_send")
         # 导入指定测试用例列表文件
         self.case_list_file = case_list_path
         self.case_list_list = []
@@ -63,26 +65,34 @@ class RunTest:
         执行测试
         :return:
         """
-        test_suite = self.set_test_suite()  # 获取测试套件
-        now = time.strftime("%Y-%m-%d %H-%M-%S", time.localtime(time.time()))  # 获取当前日期时间
-        public_path = os.path.dirname(os.path.abspath(sys.argv[0]))
-        filename = public_path + "\\report\\" + now + "report.html"  # 保存的报告路径和名称
-        fp = open(filename, 'wb')
-        runner = HTMLTestRunner(stream=fp,
-                                tester="HaiYi",
-                                title="测试报告",
-                                description="运行结果: "
-                                )
-        # 执行指定添加的测试用例套件
-        if test_suite is not None:
-            runner.run(test_suite)
-        else:
-            self.logger.info("Have no case to test.")
-        # 执行TestCase目录下的全部测试用例
-        # runner.run(self.discover)
-        send = SendEmail()
-        send.send_email()
-        fp.close()
+        try:
+            test_suite = self.set_test_suite()  # 获取测试套件
+            now = time.strftime("%Y-%m-%d %H-%M-%S", time.localtime(time.time()))  # 获取当前日期时间
+            public_path = os.path.dirname(os.path.abspath(sys.argv[0]))
+            filename = public_path + "\\report\\" + now + "report.html"  # 保存的报告路径和名称
+            fp = open(filename, 'wb')
+            runner = HTMLTestRunner(stream=fp,
+                                    tester="HaiYi",
+                                    title="测试报告",
+                                    description="运行结果: "
+                                    )
+            if test_suite is not None:
+                runner.run(test_suite)  # 执行指定添加的测试用例套件
+                # runner.run(self.discover) # 执行TestCase目录下的全部测试用例
+            else:
+                self.logger.info("Have no case to test.")
+        except Exception as e:
+            self.logger.error(str(e))
+        finally:
+            self.logger.warning("============TEST END============")
+            fp.close()
+            # 发送电子邮件
+            if self.is_send == 'yes':
+                self.send_mail.send_email()
+            elif self.is_send == 'no':
+                self.logger.info("不发送电子邮件！")
+            else:
+                self.logger.error("发送电子邮件为未知状态，请检查配置！")
 
 
 if __name__ == "__main__":

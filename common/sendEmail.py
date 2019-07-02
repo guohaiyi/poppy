@@ -6,8 +6,9 @@ from email.mime.text import MIMEText
 from email.header import Header
 from config.readConfig import ReadConfig
 
-
-reportpath = "../report"
+# 路径
+path_dir = str(os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir)))
+reportpath = path_dir + '/report'
 
 local_readConfig = ReadConfig()
 
@@ -52,7 +53,6 @@ class SendEmail:
         if lists:
             lists.sort(key=lambda fn: os.path.getmtime(reportpath + '\\' + fn))
             file_new = os.path.join(reportpath, lists[-1])
-            print(file_new)
             return file_new
 
 

@@ -4,6 +4,7 @@ import json
 
 
 class HttpMethod:
+
     def get_method(self, url, data=None, headers=None):
         try:
             res = requests.get(url=url, params=data, headers=headers)

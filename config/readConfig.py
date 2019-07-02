@@ -28,8 +28,10 @@ class ReadConfig:
 
     def write_token(self, token_key, token):
         self.cf.set("TOKEN", token_key, token)
-        with open(configPath, 'w') as conf:
+        config = open(configPath, 'w')
+        with config as conf:
             self.cf.write(conf)
+        config.close()
 
 
 if __name__ == "__main__":
