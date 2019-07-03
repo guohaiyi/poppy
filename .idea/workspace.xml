@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f683d30-5237-49fd-ad5f-cd8b8aa5dbe3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/operationExcelSheet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/case_list.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/operationExcel.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/operationExcel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runcase.py" beforeDir="false" afterPath="$PROJECT_DIR$/runcase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCase/test01_OrcLogin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCase/test02_CreateTenantDB.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testDataFile/TestCase.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testDataFile/TestCase.xlsx" afterDir="false" />
-    </list>
+    <list default="true" id="9f683d30-5237-49fd-ad5f-cd8b8aa5dbe3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,38 +32,7 @@
     <SUITE FILE_PATH="coverage/poppy$readData.coverage" NAME="readData Coverage Results" MODIFIED="1543822862500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/operationExcel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1025">
-              <caret line="41" column="55" lean-forward="true" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
-              <folding>
-                <element signature="e#24#33#0" expanded="true" />
-                <marker date="1562148175675" expanded="true" signature="295:428" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common/operationExcelSheet.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
-              <folding>
-                <element signature="e#24#33#0" expanded="true" />
-                <element signature="e#448#518#1" />
-                <element signature="e#650#720#1" />
-                <element signature="e#767#876#1" />
-                <element signature="e#1092#1193#1" />
-                <element signature="e#1448#1568#1" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -445,15 +404,14 @@
     <option name="totallyTimeSpent" value="978000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12697576" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.15926327" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.15926327" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39842874" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -821,21 +779,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/operationExcel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="41" column="55" lean-forward="true" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
-          <folding>
-            <element signature="e#24#33#0" expanded="true" />
-            <marker date="1562148175675" expanded="true" signature="295:428" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/operationExcelSheet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+        <state relative-caret-position="523">
+          <caret line="66" column="27" lean-forward="true" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
             <element signature="e#448#518#1" />
@@ -843,6 +790,17 @@
             <element signature="e#767#876#1" />
             <element signature="e#1092#1193#1" />
             <element signature="e#1448#1568#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/operationExcel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="41" column="55" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
+          <folding>
+            <element signature="e#24#33#0" expanded="true" />
+            <marker date="1562148175675" expanded="true" signature="295:428" ph="..." />
           </folding>
         </state>
       </provider>
