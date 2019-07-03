@@ -1,3 +1,3 @@
 test_cal
-test01_OrcLogin
-test02_CreateTenantDB
+appdev_api/test01_OrcLogin
+appdev_api/test02_CreateTenantDB

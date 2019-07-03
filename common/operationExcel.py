@@ -1,4 +1,6 @@
 # -*- coding: UTF-8 -*-
+# Excel只有一个sheet
+
 import os
 from openpyxl import load_workbook
 from config.excelConfig import SetExcel
@@ -6,10 +8,11 @@ from config.excelConfig import SetExcel
 proDir = os.path.split(os.path.realpath(__file__))[0]
 excelPath = os.path.join(proDir, "../testDataFile/TestCase.xlsx")
 
+
 class OperationExcel:
     def __init__(self):
         self.set_excel = SetExcel()
-        self.open_excel = load_workbook(excelPath).active   # 打开Excel表格
+        self.open_excel = load_workbook(excelPath).active  # 打开Excel表格
 
     # 获取Excel表格的总行数
     def get_lines(self):
@@ -26,9 +29,9 @@ class OperationExcel:
         value = self.open_excel[cell + str(row)].value
         return value
 
-    # 通过单元格坐标获取数据，例如：(1, 2)
     def from_coordinate_get_data(self, x, y):
         """
+        通过单元格坐标获取数据，例如：(1, 2)
         :param row: 横坐标x
         :param column: 纵坐标y
         :return:返回该坐标(x, y)对应的数据
@@ -36,8 +39,14 @@ class OperationExcel:
         value = self.open_excel.cell(x, y).value
         return value
 
-    # 写入数据
     def write_data(self, write_name, row, write_value):
+        """
+        写入数据
+        :param write_name:
+        :param row:
+        :param write_value:
+        :return:
+        """
         wb = load_workbook(filename=excelPath)
         ws = wb.active
         ws[write_name + str(row)] = write_value
@@ -46,5 +55,4 @@ class OperationExcel:
 
 if __name__ == "__main__":
     s = OperationExcel()
-    a = s.write_data("D", 2, "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1Y2QyYWFiMzY4ZDJhMDA2ODFlZGFmZjMiLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwidGVuYW50IjoiaGFpeWl0ZW5hbnQiLCJpYXQiOjE1NTc3MzkxODgsImV4cCI6MTU4OTI5Njc4OH0.UpRSUPLqpFdwBAjd12jtQTU810E5X8iDccO3EF_7ybY")
-    print(a)
+    print(s.get_lines())

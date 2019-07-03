@@ -36,7 +36,7 @@ class RunTest:
             if data != '' and not data.startswith('#'):
                 self.case_list_list.append(data.replace('\n', ''))
         fb.close()
-        # print(self.case_list_list)
+        print(self.case_list_list)
 
     def set_test_suite(self):
         """
@@ -51,6 +51,7 @@ class RunTest:
             print(case_name + '.py')
             discover = unittest.defaultTestLoader.discover(test_case_path, pattern=case_name + '.py')
             suite_module.append(discover)
+        print('suite_module:',suite_module)
 
         if len(suite_module) > 0:
             for suite in suite_module:
