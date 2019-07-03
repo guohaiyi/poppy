@@ -1,32 +1,37 @@
 # -*- coding: UTF-8 -*-
 class SetExcel:
     def __init__(self):
-        self.case_id = "A"
-        self.is_run = "B"
-        self.case_title = "C"
-        self.precondition = "D"
+        self.module = "A"
+        self.api_name = "B"
+        self.case_id = "C"
+        self.case_name = "D"
         self.url = "E"
-        self.header = "F"
-        self.method = "G"
-        self.request_data = "H"
-        self.expect_result = "I"
-        self.actual_result = "J"
-        self.return_data = "K"
+        self.premise = "F"
+        self.header = "G"
+        self.method = "H"
+        self.data = "I"
+        self.code = "J"
+        self.check = "K"
+        self.expected = "L"
+        self.return_data = "M"
+
+    def set_module(self):
+        return self.module
+
+    def set_api_name(self):
+        return self.api_name
 
     def set_case_id(self):
         return self.case_id
 
-    def set_is_run(self):
-        return self.is_run
-
-    def set_case_title(self):
-        return self.case_title
-
-    def set_precondition(self):
-        return self.precondition
+    def set_case_name(self):
+        return self.case_name
 
     def set_url(self):
         return self.url
+
+    def set_premise(self):
+        return self.premise
 
     def set_header(self):
         return self.header
@@ -34,14 +39,17 @@ class SetExcel:
     def set_method(self):
         return self.method
 
-    def set_request_data(self):
-        return self.request_data
+    def set_data(self):
+        return self.data
 
-    def set_expect_result(self):
-        return self.expect_result
+    def set_code(self):
+        return self.code
 
-    def set_actual_result(self):
-        return self.actual_result
+    def set_check(self):
+        return self.check
+
+    def set_expected(self):
+        return self.expected
 
     def set_return_data(self):
         return self.return_data
@@ -49,5 +57,5 @@ class SetExcel:
 
 if __name__ == "__main__":
     s = SetExcel()
-    a = s.set_return_data()
+    a = s.set_expected()
     print(a)

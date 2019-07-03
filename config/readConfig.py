@@ -33,9 +33,13 @@ class ReadConfig:
             self.cf.write(conf)
         config.close()
 
+    def get_excel(self, excel_key):
+        excel_vale = self.cf.get("EXCEL", excel_key)
+        return excel_vale
+
 
 if __name__ == "__main__":
     r = ReadConfig()
     orc_token = 'wwww'
-    s = r.write_token("orc_token", orc_token)
+    s = r.get_excel('case_name')
     print(s)

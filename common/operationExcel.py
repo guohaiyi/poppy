@@ -30,29 +30,27 @@ class OperationExcel:
         return value
 
     def from_coordinate_get_data(self, x, y):
-        """
-        通过单元格坐标获取数据，例如：(1, 2)
-        :param row: 横坐标x
-        :param column: 纵坐标y
+        """通过单元格坐标获取数据，例如：(1, 2)
+        :param x: 横坐标x
+        :param y: 纵坐标y
         :return:返回该坐标(x, y)对应的数据
         """
         value = self.open_excel.cell(x, y).value
         return value
 
-    def write_data(self, write_name, row, write_value):
-        """
-        写入数据
-        :param write_name:
-        :param row:
-        :param write_value:
+    def write_data(self, cell, row, write_value):
+        """写入数据
+        :param cell: 所在列A, B, ...
+        :param row: 所在行1, 2, ...
+        :param write_value: 写入的值
         :return:
         """
         wb = load_workbook(filename=excelPath)
         ws = wb.active
-        ws[write_name + str(row)] = write_value
+        ws[cell + str(row)] = write_value
         wb.save(filename=excelPath)
 
 
 if __name__ == "__main__":
     s = OperationExcel()
-    print(s.get_lines())
+    print(s.from_coordinate_get_data(1, 2))

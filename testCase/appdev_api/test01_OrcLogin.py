@@ -23,8 +23,6 @@ class LoginTest(unittest.TestCase):
 
     def test_login_success(self):
         """orc admin正常登录"""
-        case_id = self.data.get_case_id(2)
-        case_title = self.data.get_case_title(2)
         # 获取测试数据
         method = self.data.get_method(2)
         url = self.config.get_base_url() + self.data.get_url(2)
