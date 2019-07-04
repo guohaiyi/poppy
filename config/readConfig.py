@@ -45,5 +45,5 @@ class ReadConfig:
 if __name__ == "__main__":
     r = ReadConfig()
     orc_token = 'wwww'
-    s = r.get_excel('case_name')
+    s = r.get_report('testers')
     print(s)

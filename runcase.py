@@ -55,7 +55,6 @@ class RunTest:
             print(case_name + '.py')
             discover = unittest.defaultTestLoader.discover(test_case_path, pattern=case_name + '.py')
             suite_module.append(discover)
-        print('suite_module:', suite_module)
 
         if len(suite_module) > 0:
             for suite in suite_module:
