@@ -2,6 +2,7 @@
 from common.operationExcelSheet import OperationExcel
 from config.readConfig import ReadConfig
 from common.operationJson import OperationJson
+import os
 
 
 class ReadTestData:
@@ -60,8 +61,8 @@ class ReadTestData:
         request_data = self.open_json.key_get_data(request_key)
         return request_data
 
-    def get_code(self, sheet_name, row):
-        cell = self.set_excel.get_excel('code')
+    def get_param(self, sheet_name, row):
+        cell = self.set_excel.get_excel('param')
         code = self.open_excel.from_ab_get_data(sheet_name, cell, row)
         return code
 

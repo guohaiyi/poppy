@@ -24,6 +24,10 @@ class RunTest:
         # 导入指定测试用例列表文件
         self.case_list_file = case_list_path
         self.case_list_list = []
+        # 导入测试报告信息
+        self.testers = self.readconfig.get_report("testers")
+        self.title = self.readconfig.get_report("title")
+        self.description = self.readconfig.get_report("description")
 
     def get_case_list(self):
         """
@@ -51,7 +55,7 @@ class RunTest:
             print(case_name + '.py')
             discover = unittest.defaultTestLoader.discover(test_case_path, pattern=case_name + '.py')
             suite_module.append(discover)
-        print('suite_module:',suite_module)
+        print('suite_module:', suite_module)
 
         if len(suite_module) > 0:
             for suite in suite_module:
@@ -73,9 +77,9 @@ class RunTest:
             filename = public_path + "\\report\\" + now + "report.html"  # 保存的报告路径和名称
             fp = open(filename, 'wb')
             runner = HTMLTestRunner(stream=fp,
-                                    tester="HaiYi",
-                                    title="测试报告",
-                                    description="运行结果: "
+                                    tester=self.testers,
+                                    title=self.title,
+                                    description=self.description
                                     )
             if test_suite is not None:
                 runner.run(test_suite)  # 执行指定添加的测试用例套件

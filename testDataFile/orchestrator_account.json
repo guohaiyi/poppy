@@ -20,5 +20,15 @@
   },
   "orc_admin_lack_pw": {
     "username": "orc_admin"
+  },
+  "update_password": {
+    "username": "orc_admin",
+    "new_password": "123456",
+    "current_password": "orc_admin"
+  },
+  "update_password_re": {
+    "username": "orc_admin",
+    "new_password": "orc_admin",
+    "current_password": "123456"
   }
 }

@@ -2,31 +2,30 @@
 import unittest
 import json
 import os
-from common.readData import ReadData
+from common.readTestData import ReadTestData
 from common.httpSet import HttpMethod
 from config.readConfig import ReadConfig
 from common.myLog import MyLog
-from common.operationExcel import OperationExcel
 
 proDir = os.path.split(os.path.realpath(__file__))[0]
-file_name = os.path.join(proDir, "../testDataFile/tenant_db.json")
+file_name = os.path.join(proDir, "../../testDataFile/tenant_db.json")
 
 
 class CreateTenantDbTest(unittest.TestCase):
     def setUp(self):
-        self.data = ReadData(file_name)
+        self.data = ReadTestData(file_name)
         self.http = HttpMethod()
         self.config = ReadConfig()
         self.log = MyLog()
-        self.oper_excel = OperationExcel()
+        self.sheet = 'app_test_case'
 
     def test_create_success(self):
         """创建Tenant DB，不创建autolive"""
-        line = 7
+        line = 12
         # 设置请求数据
-        method = self.data.get_method(line)
-        url = self.config.get_base_url() + self.data.get_url(line)
-        data = self.data.get_request_data(line)
+        method = self.data.get_method(self.sheet, line)
+        url = self.config.get_base_url() + self.data.get_url(self.sheet, line)
+        data = self.data.get_request_data(self.sheet, line)
         headers = {"Content-Type": "application/json", "Authorization": "Bearer " + self.config.get_token('orc_token')}
         # 发送请求
         status_code, res_json = self.http.http_method(method=method, url=url, data=data, headers=headers)

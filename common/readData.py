@@ -60,8 +60,8 @@ class ReadData:
         request_data = self.open_json.key_get_data(request_key)
         return request_data
 
-    def get_code(self, row):
-        cell = self.set_excel.set_code()
+    def get_param(self, row):
+        cell = self.set_excel.set_param()
         code = self.open_excel.from_cell_get_data(cell, row)
         return code
 
@@ -83,5 +83,5 @@ class ReadData:
 
 if __name__ == "__main__":
     a = ReadData()
-    b = a.get_case_name(2)
+    b = a.get_request_data(2)
     print(b)

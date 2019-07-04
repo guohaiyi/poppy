@@ -10,7 +10,7 @@ class SetExcel:
         self.header = "G"
         self.method = "H"
         self.data = "I"
-        self.code = "J"
+        self.param = "J"
         self.check = "K"
         self.expected = "L"
         self.return_data = "M"
@@ -42,8 +42,8 @@ class SetExcel:
     def set_data(self):
         return self.data
 
-    def set_code(self):
-        return self.code
+    def set_param(self):
+        return self.param
 
     def set_check(self):
         return self.check
