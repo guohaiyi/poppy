@@ -1,0 +1,29 @@
+{
+  "tenant_admin": {
+    "username": "haiyi",
+    "password": "123456",
+    "tenant_name": "haiyitenant"
+  },
+  "tenant_admin1": {
+    "username": "haiyi1",
+    "password": "123456",
+    "tenant_name": "haiyitenant1"
+  },
+  "lack_username": {
+    "password": "123456",
+    "tenant_name": "haiyitenant"
+  },
+  "lack_password": {
+    "username": "haiyi",
+    "tenant_name": "haiyitenant"
+  },
+  "lack_tenant_name": {
+    "username": "haiyi",
+    "password": "123456"
+  },
+  "tenant_name_no": {
+    "username": "haiyi_no",
+    "password": "123456",
+    "tenant_name": "haiyitenant_no"
+  }
+}

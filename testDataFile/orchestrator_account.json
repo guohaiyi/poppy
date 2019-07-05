@@ -26,9 +26,22 @@
     "new_password": "123456",
     "current_password": "orc_admin"
   },
-  "update_password_re": {
+  "update_password_er": {
     "username": "orc_admin",
     "new_password": "orc_admin",
     "current_password": "123456"
+  },
+  "update_username_no": {
+    "username": "orc_admin_no",
+    "new_password": "orc_admin",
+    "current_password": "123456"
+  },
+  "update_lack_new_pw": {
+    "username": "orc_admin",
+    "current_password": "123456"
+  },
+  "update_lack_current_pw": {
+    "username": "orc_admin",
+    "new_password": "orc_admin"
   }
 }

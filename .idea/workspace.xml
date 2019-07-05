@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f683d30-5237-49fd-ad5f-cd8b8aa5dbe3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/testCase/appdev_api/test02_UpdateOrcPw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCase/appdev_api/test04_GetTenantDbList.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCase/appdev_api/test05_GetTenantDbData.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/readData.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/readData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/readTestData.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/readTestData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/case_list.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/excelConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/excelConfig.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/readConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/readConfig.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runcase.py" beforeDir="false" afterPath="$PROJECT_DIR$/runcase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCase/appdev_api/test01_OrcLogin.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/appdev_api/test01_OrcLogin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCase/appdev_api/test02_CreateTenantDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/appdev_api/test02_CreateTenantDB.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCase/appdev_api/test02_CreateTenantDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/appdev_api/test03_CreateTenantDB.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testDataFile/TestCase.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testDataFile/TestCase.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testDataFile/orchestrator_account.json" beforeDir="false" afterPath="$PROJECT_DIR$/testDataFile/orchestrator_account.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testDataFile/tenant_account.json" beforeDir="false" afterPath="$PROJECT_DIR$/testDataFile/tenant_account.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,29 +42,7 @@
     <SUITE FILE_PATH="coverage/poppy$readData.coverage" NAME="readData Coverage Results" MODIFIED="1543822862500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/runcase.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <element signature="e#24#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/config.ini">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="18" column="11" selection-start-line="18" selection-end-line="18" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -95,13 +70,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/case_list.txt" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/sendEmail.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/testDataFile/tenant_db.json" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/myLog.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/config/readConfig.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/config/config.ini" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/testDataFile/data.json" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/runcase.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/sendEmail.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/testDataFile/tenant_db.json" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/myLog.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/operationExcel.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/operationJson.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/httpSet.py" root0="SKIP_INSPECTION" />
@@ -138,24 +113,29 @@
         <option value="$PROJECT_DIR$/common/httpSet.py" />
         <option value="$PROJECT_DIR$/common/logger.py" />
         <option value="$PROJECT_DIR$/common/myLog.py" />
-        <option value="$PROJECT_DIR$/case_list.txt" />
         <option value="$PROJECT_DIR$/common/operationExcel.py" />
         <option value="$PROJECT_DIR$/common/operationExcelSheet.py" />
         <option value="$PROJECT_DIR$/../demo/test.py" />
         <option value="$PROJECT_DIR$/testCase/appdev_api/test01_OrcLogin.py" />
         <option value="$PROJECT_DIR$/testCase/appdev_api/test02_CreateTenantDB.py" />
-        <option value="$PROJECT_DIR$/testDataFile/orchestrator_account.json" />
-        <option value="$PROJECT_DIR$/testCase/appdev_api/test02_UpdateOrcPw.py" />
         <option value="$PROJECT_DIR$/common/readTestData.py" />
         <option value="$PROJECT_DIR$/config/excelConfig.py" />
         <option value="$PROJECT_DIR$/common/readData.py" />
         <option value="$PROJECT_DIR$/config/config.ini" />
         <option value="$PROJECT_DIR$/config/readConfig.py" />
         <option value="$PROJECT_DIR$/runcase.py" />
+        <option value="$PROJECT_DIR$/testCase/appdev_api/test02_UpdateOrcPw.py" />
+        <option value="$PROJECT_DIR$/testCase/appdev_api/test03_CreateTenantDB.py" />
+        <option value="$PROJECT_DIR$/testCase/appdev_api/test04_GetTenantDbList.py" />
+        <option value="$PROJECT_DIR$/testCase/appdev_api/test05.py" />
+        <option value="$PROJECT_DIR$/testCase/appdev_api/test06.py" />
+        <option value="$PROJECT_DIR$/testDataFile/orchestrator_account.json" />
+        <option value="$PROJECT_DIR$/case_list.txt" />
+        <option value="$PROJECT_DIR$/testDataFile/tenant_account.json" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1" />
     <option name="y" value="3" />
     <option name="width" value="1372" />
@@ -169,6 +149,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -179,17 +160,23 @@
             <path>
               <item name="poppy" type="b2602c69:ProjectViewProjectNode" />
               <item name="poppy" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poppy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poppy" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poppy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poppy" type="462c0819:PsiDirectoryNode" />
               <item name="report" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poppy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poppy" type="462c0819:PsiDirectoryNode" />
+              <item name="testCase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poppy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poppy" type="462c0819:PsiDirectoryNode" />
+              <item name="testCase" type="462c0819:PsiDirectoryNode" />
+              <item name="appdev_api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poppy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poppy" type="462c0819:PsiDirectoryNode" />
+              <item name="testDataFile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="poppy" type="b2602c69:ProjectViewProjectNode" />
@@ -199,7 +186,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -225,7 +211,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.runcase">
-    <configuration name="readTestData" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="readConfig" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="poppy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -233,11 +219,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/config" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/readTestData.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/config/readConfig.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -295,7 +281,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test02_CreateTenantDB.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test03_CreateTenantDB.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="poppy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -305,24 +291,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/testCase/appdev_api/test02_CreateTenantDB.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/testCase/appdev_api/test03_CreateTenantDB.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.runcase" />
       <item itemvalue="Python tests.Unittests in test01_OrcLogin.py" />
       <item itemvalue="Python tests.Unittests for test01_OrcLogin.LoginTest.test_login_success" />
-      <item itemvalue="Python.readTestData" />
-      <item itemvalue="Python tests.Unittests in test02_CreateTenantDB.py" />
-      <item itemvalue="Python.runcase" />
+      <item itemvalue="Python tests.Unittests in test03_CreateTenantDB.py" />
+      <item itemvalue="Python.readConfig" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.runcase" />
-        <item itemvalue="Python tests.Unittests in test02_CreateTenantDB.py" />
+        <item itemvalue="Python.readConfig" />
+        <item itemvalue="Python tests.Unittests in test03_CreateTenantDB.py" />
         <item itemvalue="Python tests.Unittests in test01_OrcLogin.py" />
         <item itemvalue="Python tests.Unittests for test01_OrcLogin.LoginTest.test_login_success" />
-        <item itemvalue="Python.readTestData" />
       </list>
     </recent_temporary>
   </component>
@@ -428,14 +414,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12697576" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14278187" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.16468039" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.032502707" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39842874" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -472,57 +457,6 @@
     <SUITE FILE_PATH="coverage/poppy$test.coverage" NAME="test Coverage Results" MODIFIED="1560504502250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.pytest_cache/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python_auto参考/interfaceTest/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python_auto参考/interfaceTest/common/configEmail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#16#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/2019-06-28 17-49-58report.html" />
-    <entry file="file://$PROJECT_DIR$/Log/20190628/log.log" />
-    <entry file="file://$PROJECT_DIR$/Log/20190628/err.log" />
-    <entry file="file://$PROJECT_DIR$/Log/20190701/err.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Log/20190701/log.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testDataFile/data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -530,19 +464,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/2019-07-01 17-58-12report.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/2019-07-01 17-59-59report.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/2019-07-01 18-01-16report.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/report/2019-07-01 17-58-12report.html" />
+    <entry file="file://$PROJECT_DIR$/report/2019-07-01 17-59-59report.html" />
+    <entry file="file://$PROJECT_DIR$/report/2019-07-01 18-01-16report.html" />
     <entry file="file://D:/python_auto参考/interfaceTest/caselist.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -570,46 +494,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/2019-07-02 12-08-03report.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/2019-07-02 12-19-28report.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/2019-07-02 14-36-57report.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/2019-07-02 14-38-25report.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Log/20190702/err.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Log/20190702/log.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testCase/test02_CreateTenantDB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="16" />
-          <folding>
-            <element signature="e#24#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/report/2019-07-02 12-08-03report.html" />
+    <entry file="file://$PROJECT_DIR$/report/2019-07-02 12-19-28report.html" />
+    <entry file="file://$PROJECT_DIR$/report/2019-07-02 14-36-57report.html" />
+    <entry file="file://$PROJECT_DIR$/report/2019-07-02 14-38-25report.html" />
+    <entry file="file://$PROJECT_DIR$/Log/20190702/err.log" />
+    <entry file="file://$PROJECT_DIR$/Log/20190702/log.log" />
+    <entry file="file://$PROJECT_DIR$/testCase/test02_CreateTenantDB.py" />
     <entry file="file://D:/python_auto参考/interfaceTest/common/Log.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-950">
@@ -637,30 +528,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testCase/test01_OrcLogin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-250">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="38" />
-          <folding>
-            <element signature="e#24#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/2019_07_02.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/logger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/test01_OrcLogin.py" />
+    <entry file="file://$PROJECT_DIR$/log/2019_07_02.log" />
+    <entry file="file://$PROJECT_DIR$/common/logger.py" />
     <entry file="file://$PROJECT_DIR$/logs/20190702/err.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -668,9 +538,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/20190702/error.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/20190702/error.log" />
     <entry file="file://$PROJECT_DIR$/logs/20190702/log.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
@@ -678,13 +546,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/20190702/all_log.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/20190702/all_log.log" />
     <entry file="file://$PROJECT_DIR$/common/myLog.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -709,13 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case_list.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/operationExcelSheet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="523">
@@ -735,36 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testDataFile/orchestrator_account.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testCase/appdev_api/test02_CreateTenantDB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#24#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testCase/appdev_api/test02_UpdateOrcPw.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testCase/appdev_api/test01_OrcLogin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding>
-            <element signature="e#24#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -791,7 +616,6 @@
           <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
           <folding>
             <element signature="e#24#72#0" expanded="true" />
-            <marker date="1562233421005" expanded="true" signature="177:182" ph="..." />
           </folding>
         </state>
       </provider>
@@ -800,40 +624,100 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
           <caret line="41" column="15" lean-forward="true" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
-          <folding>
-            <marker date="1562205110724" expanded="true" signature="295:428" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/2019-07-04 18-07-38report.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/readConfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="36" column="52" lean-forward="true" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
-          <folding>
-            <element signature="e#24#43#0" expanded="true" />
-            <marker date="1562235177104" expanded="true" signature="176:181" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/report/2019-07-04 18-07-38report.html" />
     <entry file="file://$PROJECT_DIR$/config/config.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="18" column="11" selection-start-line="18" selection-end-line="18" selection-end-column="11" />
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/appdev_api/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/appdev_api/test02_UpdateOrcPw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/appdev_api/test04_GetTenantDbList.py" />
+    <entry file="file://$PROJECT_DIR$/testCase/appdev_api/test03_CreateTenantDB.py" />
+    <entry file="file://$PROJECT_DIR$/testCase/appdev_api/test04_GetTenantDbList.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/appdev_api/test05_GetTenantDbData.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_list.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/readConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="36" column="52" lean-forward="true" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+          <folding>
+            <element signature="e#24#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/2019-07-05 15-12-17report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/runcase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="668">
+          <caret line="103" column="18" lean-forward="true" selection-start-line="103" selection-start-column="18" selection-end-line="103" selection-end-column="18" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testDataFile/profile.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/appdev_api/test01_OrcLogin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="35" column="58" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/appdev_api/test03_CreateTenantDB.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testDataFile/tenant_db.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testDataFile/tenant_account.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testDataFile/orchestrator_account.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
         </state>
       </provider>
     </entry>
