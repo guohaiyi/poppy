@@ -19,7 +19,7 @@ class CreateTenantDbTest(unittest.TestCase):
         self.log = MyLog()
         self.sheet = 'app_test_case'
 
-    def test_create_success(self):
+    def test_create01(self):
         """创建Tenant DB，不创建autolive"""
         line = 12
         # 设置请求数据
