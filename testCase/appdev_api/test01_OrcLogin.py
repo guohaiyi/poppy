@@ -1,7 +1,9 @@
 # -*- coding: UTF-8 -*-
-import unittest, os, json
-from common.readTestData import ReadTestData
+import unittest
+import os
+import json
 from common.httpSet import HttpMethod
+from common.readTestData import ReadTestData
 from config.readConfig import ReadConfig
 from common.myLog import MyLog
 
@@ -16,13 +18,14 @@ class LoginTest(unittest.TestCase):
         self.config = ReadConfig()
         self.log = MyLog()
         self.sheet = 'app_test_case'
+        self.row = [2, 3, 4, 5, 6]
 
     def test_login01(self):
         """orc admin正常登录"""
         # 获取测试数据
-        method = self.data.get_method(self.sheet, 2)
-        url = self.config.get_base_url() + self.data.get_url(self.sheet, 2)
-        data = self.data.get_request_data(self.sheet, 2)
+        method = self.data.get_method(self.sheet, self.row[0])
+        url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[0])
+        data = self.data.get_request_data(self.sheet, self.row[0])
         headers = {"Content-Type": "application/json"}
         # 发送请求
         status_code, res_json = self.http.http_method(method=method, url=url, data=data, headers=headers)
@@ -38,9 +41,9 @@ class LoginTest(unittest.TestCase):
     def test_login02(self):
         """登录失败，密码错误"""
         # 获取测试数据
-        method = self.data.get_method(self.sheet, 3)
-        url = self.config.get_base_url() + self.data.get_url(self.sheet, 3)
-        data = self.data.get_request_data(self.sheet, 3)
+        method = self.data.get_method(self.sheet, self.row[1])
+        url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[1])
+        data = self.data.get_request_data(self.sheet, self.row[1])
         headers = {"Content-Type": "application/json"}
         # 发送请求
         status_code, res_json = self.http.http_method(method=method, url=url, data=data, headers=headers)
@@ -55,9 +58,9 @@ class LoginTest(unittest.TestCase):
     def test_login03(self):
         """登录失败，账户不存在"""
         # 获取测试数据
-        method = self.data.get_method(self.sheet, 4)
-        url = self.config.get_base_url() + self.data.get_url(self.sheet, 4)
-        data = self.data.get_request_data(self.sheet, 4)
+        method = self.data.get_method(self.sheet, self.row[2])
+        url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[2])
+        data = self.data.get_request_data(self.sheet, self.row[2])
         headers = {"Content-Type": "application/json"}
         # 发送请求
         status_code, res_json = self.http.http_method(method=method, url=url, data=data, headers=headers)
@@ -73,9 +76,9 @@ class LoginTest(unittest.TestCase):
     def test_login04(self):
         """登录失败，缺少username字段"""
         # 获取测试数据
-        method = self.data.get_method(self.sheet, 5)
-        url = self.config.get_base_url() + self.data.get_url(self.sheet, 5)
-        data = self.data.get_request_data(self.sheet, 5)
+        method = self.data.get_method(self.sheet, self.row[3])
+        url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[3])
+        data = self.data.get_request_data(self.sheet, self.row[3])
         headers = {"Content-Type": "application/json"}
         # 发送请求
         status_code, res_json = self.http.http_method(method=method, url=url, data=data, headers=headers)
@@ -90,9 +93,9 @@ class LoginTest(unittest.TestCase):
     def test_login05(self):
         """登录失败，缺少password字段"""
         # 获取测试数据
-        method = self.data.get_method(self.sheet, 6)
-        url = self.config.get_base_url() + self.data.get_url(self.sheet, 6)
-        data = self.data.get_request_data(self.sheet, 6)
+        method = self.data.get_method(self.sheet, self.row[4])
+        url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[4])
+        data = self.data.get_request_data(self.sheet, self.row[4])
         headers = {"Content-Type": "application/json"}
         # 发送请求
         status_code, res_json = self.http.http_method(method=method, url=url, data=data, headers=headers)

@@ -81,6 +81,11 @@ class ReadTestData:
         return_data = self.open_excel.from_ab_get_data(sheet_name, cell, row)
         return return_data
 
+    def get_rely_data(self, sheet_name, row):
+        cell = self.set_excel.get_excel('rely')
+        rely_data = self.open_excel.from_ab_get_data(sheet_name, cell, row)
+        return rely_data
+
 
 if __name__ == "__main__":
     a = ReadTestData()
