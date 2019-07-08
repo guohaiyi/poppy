@@ -72,7 +72,7 @@ class LoginTest(unittest.TestCase):
         self.assertEqual(dict_json["err"]["message"], "Username does not exists",
                          msg="断言失败，实际返回结果：%s" % dict_json["err"]["message"])
 
-    @unittest.skip("跳过测试")
+    # @unittest.skip("跳过测试")
     def test_login04(self):
         """登录失败，缺少username字段"""
         # 获取测试数据

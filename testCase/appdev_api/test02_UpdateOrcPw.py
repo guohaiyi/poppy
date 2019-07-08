@@ -25,7 +25,7 @@ class TestUpdateOrcPw(unittest.TestCase):
         # 配置请求数据
         method = self.data.get_method(self.sheet, self.row[0])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[0])
-        headers = {"Content-Type": "application/json"}
+        headers = {"Content-Type": "application/json", "Authorization": "Bearer " + self.config.get_token('orc_token')}
         data = self.data.get_request_data(self.sheet, self.row[0])
 
         # 发送请求
@@ -43,7 +43,7 @@ class TestUpdateOrcPw(unittest.TestCase):
         # 配置请求数据
         method = self.data.get_method(self.sheet, self.row[1])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[1])
-        headers = {"Content-Type": "application/json"}
+        headers = {"Content-Type": "application/json", "Authorization": "Bearer " + self.config.get_token('orc_token')}
         data = self.data.get_request_data(self.sheet, self.row[1])
 
         # 发送请求
@@ -61,7 +61,7 @@ class TestUpdateOrcPw(unittest.TestCase):
         # 配置请求数据
         method = self.data.get_method(self.sheet, self.row[2])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[2])
-        headers = {"Content-Type": "application/json"}
+        headers = {"Content-Type": "application/json", "Authorization": "Bearer " + self.config.get_token('orc_token')}
         data = self.data.get_request_data(self.sheet, self.row[2])
 
         # 发送请求
@@ -79,7 +79,7 @@ class TestUpdateOrcPw(unittest.TestCase):
         # 配置请求数据
         method = self.data.get_method(self.sheet, self.row[3])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[3])
-        headers = {"Content-Type": "application/json"}
+        headers = {"Content-Type": "application/json", "Authorization": "Bearer " + self.config.get_token('orc_token')}
         data = self.data.get_request_data(self.sheet, self.row[3])
 
         # 发送请求
@@ -97,7 +97,7 @@ class TestUpdateOrcPw(unittest.TestCase):
         # 配置请求数据
         method = self.data.get_method(self.sheet, self.row[4])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[4])
-        headers = {"Content-Type": "application/json"}
+        headers = {"Content-Type": "application/json", "Authorization": "Bearer " + self.config.get_token('orc_token')}
         data = self.data.get_request_data(self.sheet, self.row[4])
 
         # 发送请求
