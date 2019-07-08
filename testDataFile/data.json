@@ -1,19 +1,15 @@
 {
-  "headers": {
+  "orc_login_header": {
     "Content-Type": "application/json"
   },
-  "login": {
-    "username": "orc_admin",
-    "password": "orc_admin"
+  "orc_token_header": {
+    "Content-Type": "application/json",
+    "Authorization": "123456789"
   },
-  "login_fail": {
-    "username": "orc_admin",
-    "password": "212321"
+  "tenant_token_header": {
+    "Content-Type": "application/json",
+    "Authorization": "123456789"
   },
-  "tenant_db": {
-    "tenant_name": "haiyitenant",
-    "db": "hydb",
-    "is_auto": false,
-    "info": "test"
-  }
+  "tenant_name": "123456789",
+  "tenant_name_no": "test_tenant_no"
 }

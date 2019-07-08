@@ -1,9 +1,13 @@
 # -*- coding: UTF-8 -*-
 import requests
 import json
+from common.myLog import MyLog
 
 
 class HttpMethod:
+
+    def __init__(self):
+        self.log = MyLog()
 
     def get_method(self, url, data=None, headers=None):
         try:
@@ -12,7 +16,7 @@ class HttpMethod:
             res_json = res.json()
             return status_code, res_json  # 返回响应码，响应内容
         except Exception as e:
-            print("Error:%s" % e)
+            self.log.error("Error:%s" % e)
 
     def post_method(self, url, data=None, headers=None):
         try:
@@ -21,7 +25,7 @@ class HttpMethod:
             res_json = res.json()
             return status_code, res_json  # 返回响应码，响应内容
         except Exception as e:
-            print("Error:%s" % e)
+            self.log.error("Error:%s" % e)
 
     def put_method(self, url, data=None, headers=None):
         try:
@@ -30,7 +34,7 @@ class HttpMethod:
             res_json = res.json()
             return status_code, res_json  # 返回响应码，响应内容
         except Exception as e:
-            print("Error:%s" % e)
+            self.log.error("Error:%s" % e)
 
     def delete_method(self, url, data=None, headers=None):
         try:
@@ -39,9 +43,16 @@ class HttpMethod:
             res_json = res.json()
             return status_code, res_json  # 返回响应码，响应内容
         except Exception as e:
-            print("Error:%s" % e)
+            self.log.error("Error:%s" % e)
 
     def http_method(self, method, url, data=None, headers=None):
+        """判断请求方法
+        :param method: 请求方法
+        :param url: 接口路径
+        :param data: 请求数据
+        :param headers: 请求头
+        :return:
+        """
         if method == 'get':
             status_code, res_json = self.get_method(url, data, headers)
         elif method == 'post':
@@ -51,6 +62,7 @@ class HttpMethod:
         else:
             status_code, res_json = self.delete_method(url, data, headers)
         return status_code, json.dumps(res_json, ensure_ascii=False, sort_keys=False, indent=2)  # 对json数据进行格式化输出
+
 
 if __name__ == "__main__":
     h = HttpMethod()

@@ -6,6 +6,7 @@ from common.httpSet import HttpMethod
 from common.readTestData import ReadTestData
 from config.readConfig import ReadConfig
 from common.myLog import MyLog
+from common.operationJson import OperationJson
 
 proDir = os.path.split(os.path.realpath(__file__))[0]
 file_name = os.path.join(proDir, "../../testDataFile/orchestrator_account.json")
@@ -17,6 +18,7 @@ class LoginTest(unittest.TestCase):
         self.http = HttpMethod()
         self.config = ReadConfig()
         self.log = MyLog()
+        self.json = OperationJson()
         self.sheet = 'app_test_case'
         self.row = [2, 3, 4, 5, 6]
 
@@ -25,14 +27,17 @@ class LoginTest(unittest.TestCase):
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[0])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[0])
+        headers = self.data.get_header(self.row[0])
         data = self.data.get_request_data(self.sheet, self.row[0])
-        headers = {"Content-Type": "application/json"}
+
         # 发送请求
         status_code, res_json = self.http.http_method(method=method, url=url, data=data, headers=headers)
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
         if dict_json["status"] == True:
             orc_token = dict_json["orchestrator_admin_token"]  # 提取orc_token
-            self.config.write_token("orc_token", orc_token)  # 把orc_token写入配置文件
+            authorization = "Bearer " + orc_token
+            self.json.write_data(authorization, "orc_token_header", "Authorization")    # 把orc_token写入json文件
+
         # 断言
         self.assertEqual(status_code, 200, msg="接口请求失败")
         self.assertTrue(dict_json["status"], msg="断言失败，实际返回结果：%s" % dict_json)
@@ -43,11 +48,13 @@ class LoginTest(unittest.TestCase):
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[1])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[1])
+        headers = self.data.get_header(self.row[1])
         data = self.data.get_request_data(self.sheet, self.row[1])
-        headers = {"Content-Type": "application/json"}
+
         # 发送请求
         status_code, res_json = self.http.http_method(method=method, url=url, data=data, headers=headers)
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
+
         # 断言
         self.assertEqual(status_code, 200, msg="接口请求失败")
         self.assertFalse(dict_json["status"], msg="断言失败，实际返回结果：%s" % dict_json)
@@ -60,11 +67,13 @@ class LoginTest(unittest.TestCase):
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[2])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[2])
+        headers = self.data.get_header(self.row[2])
         data = self.data.get_request_data(self.sheet, self.row[2])
-        headers = {"Content-Type": "application/json"}
+
         # 发送请求
         status_code, res_json = self.http.http_method(method=method, url=url, data=data, headers=headers)
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
+
         # 断言
         self.assertEqual(status_code, 200, msg="接口请求失败")
         self.assertFalse(dict_json["status"], msg="断言失败，实际返回结果：%s" % dict_json)
@@ -78,11 +87,13 @@ class LoginTest(unittest.TestCase):
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[3])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[3])
+        headers = self.data.get_header(self.row[3])
         data = self.data.get_request_data(self.sheet, self.row[3])
-        headers = {"Content-Type": "application/json"}
+
         # 发送请求
         status_code, res_json = self.http.http_method(method=method, url=url, data=data, headers=headers)
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
+
         # 断言
         self.assertEqual(status_code, 200, msg="接口请求失败")
         self.assertFalse(dict_json["status"], msg="断言失败，实际返回结果：%s" % dict_json)
@@ -95,11 +106,13 @@ class LoginTest(unittest.TestCase):
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[4])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[4])
+        headers = self.data.get_header(self.row[4])
         data = self.data.get_request_data(self.sheet, self.row[4])
-        headers = {"Content-Type": "application/json"}
+
         # 发送请求
         status_code, res_json = self.http.http_method(method=method, url=url, data=data, headers=headers)
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
+
         # 断言
         self.assertEqual(status_code, 200, msg="接口请求失败")
         self.assertFalse(dict_json["status"], msg="断言失败，实际返回结果：%s" % dict_json)

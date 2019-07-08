@@ -2,7 +2,6 @@
 from common.operationExcelSheet import OperationExcel
 from config.readConfig import ReadConfig
 from common.operationJson import OperationJson
-import os
 
 
 class ReadTestData:
@@ -63,8 +62,9 @@ class ReadTestData:
 
     def get_param(self, sheet_name, row):
         cell = self.set_excel.get_excel('param')
-        code = self.open_excel.from_ab_get_data(sheet_name, cell, row)
-        return code
+        param = self.open_excel.from_ab_get_data(sheet_name, cell, row)
+        request_param = self.open_json.key_get_data(param)
+        return request_param
 
     def get_check(self, sheet_name, row):
         cell = self.set_excel.get_excel('check')
@@ -83,11 +83,13 @@ class ReadTestData:
 
     def get_rely_data(self, sheet_name, row):
         cell = self.set_excel.get_excel('rely')
-        rely_data = self.open_excel.from_ab_get_data(sheet_name, cell, row)
+        data = self.open_excel.from_ab_get_data(sheet_name, cell, row)
+        rely_data = self.open_json.key_get_data(data)
         return rely_data
 
 
 if __name__ == "__main__":
-    a = ReadTestData()
-    b = a.get_request_data('app_test_case', 2)
+    file_name = "../testDataFile/orchestrator_account.json"
+    a = ReadTestData(file_name)
+    b = a.get_rely_data('app_test_case', 11)
     print(b)
