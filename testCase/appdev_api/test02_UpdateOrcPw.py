@@ -37,11 +37,11 @@ class TestUpdateOrcPw(unittest.TestCase):
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
 
         # 断言
-        self.assertEqual(status_code, 200, msg="接口请求失败")
-        self.assertFalse(dict_json["status"], msg="断言失败，实际返回结果：%s" % dict_json)
-        self.assertEqual(dict_json["err"]["code"], 400, msg="断言失败，实际返回值是：%s" % dict_json["err"]["code"])
+        self.assertEqual(status_code, 200, msg=">>>test_update01接口请求失败")
+        self.assertFalse(dict_json["status"], msg=">>>test_update01断言失败，实际返回结果：%s" % dict_json)
+        self.assertEqual(dict_json["err"]["code"], 400, msg=">>>test_update01断言失败，实际返回值是：%s" % dict_json["err"]["code"])
         self.assertEqual(dict_json["err"]["message"], "Username or password error",
-                         msg="断言失败，实际返回值是：%s" % dict_json["err"]["message"])
+                         msg=">>>test_update01断言失败，实际返回值是：%s" % dict_json["err"]["message"])
 
     def test_update02(self):
         """更新密码失败：username不存在"""
@@ -56,11 +56,11 @@ class TestUpdateOrcPw(unittest.TestCase):
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
 
         # 断言
-        self.assertEqual(status_code, 200, msg="接口请求失败")
-        self.assertFalse(dict_json["status"], msg="断言失败，实际返回结果：%s" % dict_json)
-        self.assertEqual(dict_json["err"]["code"], 404, msg="断言失败，实际返回值是：%s" % dict_json["err"]["code"])
+        self.assertEqual(status_code, 200, msg=">>>test_update02接口请求失败")
+        self.assertFalse(dict_json["status"], msg=">>>test_update02断言失败，实际返回结果：%s" % dict_json)
+        self.assertEqual(dict_json["err"]["code"], 404, msg=">>>test_update02断言失败，实际返回值是：%s" % dict_json["err"]["code"])
         self.assertEqual(dict_json["err"]["message"], "Username does not exists",
-                         msg="断言失败，实际返回值是：%s" % dict_json["err"]["message"])
+                         msg=">>>test_update02断言失败，实际返回值是：%s" % dict_json["err"]["message"])
 
     def test_update03(self):
         """更新密码失败：缺少new_password字段"""
@@ -75,11 +75,11 @@ class TestUpdateOrcPw(unittest.TestCase):
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
 
         # 断言
-        self.assertEqual(status_code, 200, msg="接口请求失败")
-        self.assertFalse(dict_json["status"], msg="断言失败，实际返回结果：%s" % dict_json)
-        self.assertEqual(dict_json["err"]["code"], 400, msg="断言失败，实际返回值是：%s" % dict_json["err"]["code"])
+        self.assertEqual(status_code, 200, msg=">>>test_update03接口请求失败")
+        self.assertFalse(dict_json["status"], msg=">>>test_update03断言失败，实际返回结果：%s" % dict_json)
+        self.assertEqual(dict_json["err"]["code"], 400, msg=">>>test_update03断言失败，实际返回值是：%s" % dict_json["err"]["code"])
         self.assertEqual(dict_json["err"]["message"], "New password is needed",
-                         msg="断言失败，实际返回值是：%s" % dict_json["err"]["message"])
+                         msg=">>>test_update03断言失败，实际返回值是：%s" % dict_json["err"]["message"])
 
     def test_update04(self):
         """更新密码失败：缺少current_password字段"""
@@ -94,11 +94,11 @@ class TestUpdateOrcPw(unittest.TestCase):
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
 
         # 断言
-        self.assertEqual(status_code, 200, msg="接口请求失败")
-        self.assertFalse(dict_json["status"], msg="断言失败，实际返回结果：%s" % dict_json)
-        self.assertEqual(dict_json["err"]["code"], 400, msg="断言失败，实际返回值是：%s" % dict_json["err"]["code"])
+        self.assertEqual(status_code, 200, msg=">>>test_update04接口请求失败")
+        self.assertFalse(dict_json["status"], msg=">>>test_update04断言失败，实际返回结果：%s" % dict_json)
+        self.assertEqual(dict_json["err"]["code"], 400, msg=">>>test_update04断言失败，实际返回值是：%s" % dict_json["err"]["code"])
         self.assertEqual(dict_json["err"]["message"], "Current password is needed",
-                         msg="断言失败，实际返回值是：%s" % dict_json["err"]["message"])
+                         msg=">>>test_update04断言失败，实际返回值是：%s" % dict_json["err"]["message"])
 
     def test_update05(self):
         """更新密码成功"""
@@ -113,8 +113,8 @@ class TestUpdateOrcPw(unittest.TestCase):
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
 
         # 断言
-        self.assertEqual(status_code, 200, msg="接口请求失败")
-        self.assertTrue(dict_json["status"], msg="断言失败，实际返回结果：%s" % dict_json)
+        self.assertEqual(status_code, 200, msg=">>>test_update05接口请求失败")
+        self.assertTrue(dict_json["status"], msg=">>>test_update05断言失败，实际返回结果：%s" % dict_json)
 
         # 密码成功重新获取orc_token
         if dict_json["status"] == True:
@@ -136,10 +136,10 @@ class TestUpdateOrcPw(unittest.TestCase):
             orc_token = dict_json["orchestrator_admin_token"]  # 提取orc_token
             authorization = "Bearer " + orc_token
             self.json.write_data(authorization, "orc_token_header", "Authorization")  # 把orc_token写入json文件
-            self.log.info("重新获取orc_admin_token成功")
+            self.log.info("check_new_login重新获取orc_admin_token成功")
             self.restore_orc_pw()   # 调用还原密码
         else:
-            self.log.error("重新获取orc_admin_token失败")
+            self.log.error("check_new_login重新获取orc_admin_token失败")
 
     def restore_orc_pw(self):
         """还原密码"""
@@ -153,9 +153,9 @@ class TestUpdateOrcPw(unittest.TestCase):
         status_code, res_json = self.http.http_method(method=method, url=url, headers=headers, data=data)
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
         if dict_json["status"] == True:
-            self.log.info("orc admin密码还原成功")
+            self.log.info("restore_orc_pw orc admin密码还原成功")
         else:
-            self.log.error("orc admin密码还原失败")
+            self.log.error("restore_orc_pw orc admin密码还原失败")
 
     def tearDown(self) -> None:
         """还原密码之后重新获取orc_token"""

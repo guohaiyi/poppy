@@ -33,11 +33,11 @@ class CreateTenantDbTest(unittest.TestCase):
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
 
         # 断言
-        self.assertEqual(status_code, 200, msg="两个值不相等")
-        self.assertFalse(dict_json["status"], msg='>>>创建DB失败，实际返回结果：%s' % dict_json)
-        self.assertEqual(dict_json["err"]["code"], 404, msg="断言失败，实际返回结果：%s" % dict_json["err"]["code"])
+        self.assertEqual(status_code, 200, msg=">>>test01_get_db_list接口请求失败")
+        self.assertFalse(dict_json["status"], msg='>>>test01_get_db_list创建DB失败，实际返回结果：%s' % dict_json)
+        self.assertEqual(dict_json["err"]["code"], 404, msg=">>>test01_get_db_list断言失败，实际返回结果：%s" % dict_json["err"]["code"])
         self.assertEqual(dict_json["err"]["message"], "No records found",
-                         msg="断言失败，实际返回结果：%s" % dict_json["err"]["message"])
+                         msg=">>>test01_get_db_list断言失败，实际返回结果：%s" % dict_json["err"]["message"])
 
     def test02_create_db(self):
         """创建Tenant DB，不创建autolive"""
@@ -52,8 +52,8 @@ class CreateTenantDbTest(unittest.TestCase):
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
 
         # 断言
-        self.assertEqual(status_code, 200, msg="两个值不相等")
-        self.assertTrue(dict_json["status"], msg='>>>创建DB失败，实际返回结果：%s' % dict_json)
+        self.assertEqual(status_code, 200, msg=">>>test02_create_db接口请求失败")
+        self.assertTrue(dict_json["status"], msg='>>>test02_create_db创建DB失败，实际返回结果：%s' % dict_json)
 
     def test03_create_db(self):
         """创建成功，并创建autolive"""
@@ -68,8 +68,8 @@ class CreateTenantDbTest(unittest.TestCase):
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
 
         # 断言
-        self.assertEqual(status_code, 200, msg="两个值不相等")
-        self.assertTrue(dict_json["status"], msg='>>>创建DB失败，实际返回结果：%s' % dict_json)
+        self.assertEqual(status_code, 200, msg=">>>test03_create_db接口请求失败")
+        self.assertTrue(dict_json["status"], msg='>>>test03_create_db创建DB失败，实际返回结果：%s' % dict_json)
 
     def test04_create_db(self):
         """创建失败：缺少tenant name"""
@@ -84,11 +84,11 @@ class CreateTenantDbTest(unittest.TestCase):
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
 
         # 断言
-        self.assertEqual(status_code, 200, msg="两个值不相等")
-        self.assertFalse(dict_json["status"], msg="断言失败，实际返回结果：%s" % dict_json)
-        self.assertEqual(dict_json["err"]["code"], 400, msg="断言失败，实际返回结果：%s" % dict_json["err"]["code"])
+        self.assertEqual(status_code, 200, msg=">>>test04_create_db接口请求失败")
+        self.assertFalse(dict_json["status"], msg=">>>test04_create_db断言失败，实际返回结果：%s" % dict_json)
+        self.assertEqual(dict_json["err"]["code"], 400, msg=">>>test04_create_db断言失败，实际返回结果：%s" % dict_json["err"]["code"])
         self.assertEqual(dict_json["err"]["message"], "Provide tenant name",
-                         msg="断言失败，实际返回结果：%s" % dict_json["err"]["message"])
+                         msg=">>>test04_create_db断言失败，实际返回结果：%s" % dict_json["err"]["message"])
 
     def test05_create_db(self):
         """创建失败：缺少db name"""
@@ -103,11 +103,11 @@ class CreateTenantDbTest(unittest.TestCase):
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
 
         # 断言
-        self.assertEqual(status_code, 200, msg="两个值不相等")
-        self.assertFalse(dict_json["status"], msg="断言失败，实际返回结果：%s" % dict_json)
-        self.assertEqual(dict_json["err"]["code"], 400, msg="断言失败，实际返回结果：%s" % dict_json["err"]["code"])
+        self.assertEqual(status_code, 200, msg=">>>test05_create_db接口请求失败")
+        self.assertFalse(dict_json["status"], msg=">>>断言失败，实际返回结果：%s" % dict_json)
+        self.assertEqual(dict_json["err"]["code"], 400, msg=">>>断言失败，实际返回结果：%s" % dict_json["err"]["code"])
         self.assertEqual(dict_json["err"]["message"], "Provide db",
-                         msg="断言失败，实际返回结果：%s" % dict_json["err"]["message"])
+                         msg=">>>断言失败，实际返回结果：%s" % dict_json["err"]["message"])
 
     def test06_create_db(self):
         """创建失败：tenant name已被占用"""
@@ -122,11 +122,11 @@ class CreateTenantDbTest(unittest.TestCase):
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
 
         # 断言
-        self.assertEqual(status_code, 200, msg="两个值不相等")
-        self.assertFalse(dict_json["status"], msg="断言失败，实际返回结果：%s" % dict_json)
-        self.assertEqual(dict_json["err"]["code"], 400, msg="断言失败，实际返回结果：%s" % dict_json["err"]["code"])
+        self.assertEqual(status_code, 200, msg=">>>test06_create_db接口请求失败")
+        self.assertFalse(dict_json["status"], msg=">>>test06_create_db断言失败，实际返回结果：%s" % dict_json)
+        self.assertEqual(dict_json["err"]["code"], 400, msg=">>>test06_create_db断言失败，实际返回结果：%s" % dict_json["err"]["code"])
         self.assertEqual(dict_json["err"]["message"], "Tenant name/DB already exists",
-                         msg="断言失败，实际返回结果：%s" % dict_json["err"]["message"])
+                         msg=">>>test06_create_db断言失败，实际返回结果：%s" % dict_json["err"]["message"])
 
     def test07_create_db(self):
         """创建失败：db name已被占用"""
@@ -141,11 +141,11 @@ class CreateTenantDbTest(unittest.TestCase):
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
 
         # 断言
-        self.assertEqual(status_code, 200, msg="两个值不相等")
-        self.assertFalse(dict_json["status"], msg="断言失败，实际返回结果：%s" % dict_json)
-        self.assertEqual(dict_json["err"]["code"], 400, msg="断言失败，实际返回结果：%s" % dict_json["err"]["code"])
+        self.assertEqual(status_code, 200, msg=">>>test07_create_db接口请求失败")
+        self.assertFalse(dict_json["status"], msg=">>>test07_create_db断言失败，实际返回结果：%s" % dict_json)
+        self.assertEqual(dict_json["err"]["code"], 400, msg=">>>test07_create_db断言失败，实际返回结果：%s" % dict_json["err"]["code"])
         self.assertEqual(dict_json["err"]["message"], "Tenant name/DB already exists",
-                         msg="断言失败，实际返回结果：%s" % dict_json["err"]["message"])
+                         msg=">>>test07_create_db断言失败，实际返回结果：%s" % dict_json["err"]["message"])
 
     def test08_get_db_list(self):
         """获取Tenant DB列表"""
@@ -159,13 +159,13 @@ class CreateTenantDbTest(unittest.TestCase):
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
 
         # 断言
-        self.assertEqual(status_code, 200, msg="两个值不相等")
-        self.assertTrue(dict_json["status"], msg='>>>创建DB失败，实际返回结果：%s' % dict_json)
+        self.assertEqual(status_code, 200, msg=">>>test08_get_db_list接口请求失败")
+        self.assertTrue(dict_json["status"], msg='test08_get_db_list创建DB失败，实际返回结果：%s' % dict_json)
         self.assertIs("_id", dict_json["results"][0])
         self.assertEqual(dict_json["results"][0]["tenant_name"], "autotest",
-                         msg="断言失败，实际返回结果：%s" % dict_json["results"][0]["tenant_name"])
+                         msg=">>>test08_get_db_list断言失败，实际返回结果：%s" % dict_json["results"][0]["tenant_name"])
         self.assertEqual(dict_json["results"][1]["tenant_name"], "test_autolive",
-                         msg="断言失败，实际返回结果：%s" % dict_json["results"][1]["tenant_name"])
+                         msg=">>>test08_get_db_list断言失败，实际返回结果：%s" % dict_json["results"][1]["tenant_name"])
 
     def tearDown(self):
         pass

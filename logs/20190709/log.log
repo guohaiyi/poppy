@@ -47,3 +47,9 @@
 [2019-07-09 17:02:37] - INFO: 还原密码之后重新获取orc_token成功
 [2019-07-09 17:02:37] - WARNING: ============TEST END============
 [2019-07-09 17:02:37] - ERROR: 发送电子邮件为未知状态，请检查配置！
+[2019-07-09 23:55:58] - orc admin正常登录, Line 27]  - INFO: test_login01开始测试
+[2019-07-09 23:55:58] - orc admin正常登录, Line 37]  - INFO: test_login01发送请求
+[2019-07-09 23:56:19] - ERROR: Error:HTTPConnectionPool(host='172.16.1.201', port=3002): Max retries exceeded with url: /orchestrator_admin/login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000232A4C690B8>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+[2019-07-09 23:59:39] - INFO: =================test_login01开始测试========================
+[2019-07-09 23:59:39] - orc admin正常登录, Line 37]  - INFO: test_login01发送请求
+[2019-07-10 00:00:00] - ERROR: Error:HTTPConnectionPool(host='172.16.1.201', port=3002): Max retries exceeded with url: /orchestrator_admin/login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001902EB39D68>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
