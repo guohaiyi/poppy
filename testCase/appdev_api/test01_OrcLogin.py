@@ -15,6 +15,7 @@ file_name = os.path.join(proDir, "../../testDataFile/orchestrator_account.json")
 class LoginTest(unittest.TestCase):
     def setUp(self):
         self.data = ReadTestData(file_name)
+        self.hea_data = ReadTestData()
         self.http = HttpMethod()
         self.config = ReadConfig()
         self.log = MyLog()
@@ -27,7 +28,7 @@ class LoginTest(unittest.TestCase):
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[0])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[0])
-        headers = self.data.get_header(self.row[0])
+        headers = self.hea_data.get_header(self.sheet, self.row[0])
         data = self.data.get_request_data(self.sheet, self.row[0])
 
         # 发送请求
@@ -36,7 +37,7 @@ class LoginTest(unittest.TestCase):
         if dict_json["status"] == True:
             orc_token = dict_json["orchestrator_admin_token"]  # 提取orc_token
             authorization = "Bearer " + orc_token
-            self.json.write_data(authorization, "orc_token_header", "Authorization")    # 把orc_token写入json文件
+            self.json.write_data(authorization, "orc_token_header", "Authorization")  # 把orc_token写入json文件
 
         # 断言
         self.assertEqual(status_code, 200, msg="接口请求失败")
@@ -48,7 +49,7 @@ class LoginTest(unittest.TestCase):
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[1])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[1])
-        headers = self.data.get_header(self.row[1])
+        headers = self.hea_data.get_header(self.sheet, self.row[1])
         data = self.data.get_request_data(self.sheet, self.row[1])
 
         # 发送请求
@@ -67,7 +68,7 @@ class LoginTest(unittest.TestCase):
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[2])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[2])
-        headers = self.data.get_header(self.row[2])
+        headers = self.hea_data.get_header(self.sheet, self.row[2])
         data = self.data.get_request_data(self.sheet, self.row[2])
 
         # 发送请求
@@ -87,7 +88,7 @@ class LoginTest(unittest.TestCase):
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[3])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[3])
-        headers = self.data.get_header(self.row[3])
+        headers = self.hea_data.get_header(self.sheet, self.row[3])
         data = self.data.get_request_data(self.sheet, self.row[3])
 
         # 发送请求
@@ -106,7 +107,7 @@ class LoginTest(unittest.TestCase):
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[4])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[4])
-        headers = self.data.get_header(self.row[4])
+        headers = self.hea_data.get_header(self.sheet, self.row[4])
         data = self.data.get_request_data(self.sheet, self.row[4])
 
         # 发送请求

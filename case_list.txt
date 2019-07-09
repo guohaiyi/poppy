@@ -2,4 +2,4 @@ test_cal
 appdev_api/test01_OrcLogin
 appdev_api/test02_UpdateOrcPw
 appdev_api/test03_CreateTenantDB
-appdev_api/test04_GetTenantDbList
+#appdev_api/test04_GetTenantDbList
