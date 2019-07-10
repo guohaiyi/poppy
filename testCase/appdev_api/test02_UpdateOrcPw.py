@@ -137,7 +137,7 @@ class TestUpdateOrcPw(unittest.TestCase):
             authorization = "Bearer " + orc_token
             self.json.write_data(authorization, "orc_token_header", "Authorization")  # 把orc_token写入json文件
             self.log.info("check_new_login重新获取orc_admin_token成功")
-            self.restore_orc_pw()   # 调用还原密码
+            self.restore_orc_pw()  # 调用还原密码
         else:
             self.log.error("check_new_login重新获取orc_admin_token失败")
 
@@ -154,10 +154,11 @@ class TestUpdateOrcPw(unittest.TestCase):
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
         if dict_json["status"] == True:
             self.log.info("restore_orc_pw orc admin密码还原成功")
+            self.restore_get_pw()
         else:
             self.log.error("restore_orc_pw orc admin密码还原失败")
 
-    def tearDown(self) -> None:
+    def restore_get_pw(self):
         """还原密码之后重新获取orc_token"""
         # 获取测试数据
         method = self.data.get_method(self.sheet, 2)
@@ -175,6 +176,9 @@ class TestUpdateOrcPw(unittest.TestCase):
             self.log.info("还原密码之后重新获取orc_token成功")
         else:
             self.log.error("还原密码之后重新获取orc_token失败")
+
+    def tearDown(self) -> None:
+        pass
 
 
 if __name__ == "__main__":

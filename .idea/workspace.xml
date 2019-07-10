@@ -2,11 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f683d30-5237-49fd-ad5f-cd8b8aa5dbe3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/case_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/case_list.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20190702/err.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20190702/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20190703/err.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20190703/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20190704/err.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20190704/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20190705/err.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20190705/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20190706/err.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20190706/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20190708/err.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20190708/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20190709/err.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20190709/log.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/testCase/appdev_api/test01_OrcLogin.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/appdev_api/test01_OrcLogin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testCase/appdev_api/test02_UpdateOrcPw.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/appdev_api/test02_UpdateOrcPw.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testCase/appdev_api/test03_CreateTenantDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/appdev_api/test03_CreateTenantDB.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testDataFile/TestCase.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testDataFile/TestCase.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCase/test_cal.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/test_cal.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testDataFile/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/testDataFile/data.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,26 +54,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/runcase.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
-              <folding>
-                <element signature="e#24#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testCase/appdev_api/test03_CreateTenantDB.py">
+        <entry file="file://$PROJECT_DIR$/testCase/appdev_api/test02_UpdateOrcPw.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="163" column="53" lean-forward="true" selection-start-line="163" selection-start-column="53" selection-end-line="163" selection-end-column="53" />
-              <folding>
-                <element signature="e#24#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="298">
+              <caret line="155" column="59" lean-forward="true" selection-start-line="155" selection-start-column="59" selection-end-line="155" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -102,14 +101,12 @@
     <setting file="file://$PROJECT_DIR$/runcase.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/operationExcel.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/operationJson.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/testCase/appdev_api/test01_OrcLogin.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/httpSet.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/testCase/test_TenantLogin.py" />
-        <option value="$PROJECT_DIR$/common/getOrcToken.py" />
-        <option value="$PROJECT_DIR$/testCase/test_CreateTenantDB.py" />
         <option value="$PROJECT_DIR$/testCase/test_OrcLogin.py" />
         <option value="$PROJECT_DIR$/aaaaaa.py" />
         <option value="$PROJECT_DIR$/config/testData.ini" />
@@ -122,7 +119,6 @@
         <option value="$PROJECT_DIR$/demo.py" />
         <option value="$PROJECT_DIR$/sss.py" />
         <option value="$PROJECT_DIR$/common/cal.py" />
-        <option value="$PROJECT_DIR$/testCase/test_cal.py" />
         <option value="$PROJECT_DIR$/Log/20190628/log.log" />
         <option value="$PROJECT_DIR$/testDataFile/data.json" />
         <option value="$PROJECT_DIR$/testCase/test01_OrcLogin.py" />
@@ -131,10 +127,8 @@
         <option value="D:/python_auto参考/interfaceTest/common/Log.py" />
         <option value="$PROJECT_DIR$/common/httpSet.py" />
         <option value="$PROJECT_DIR$/common/logger.py" />
-        <option value="$PROJECT_DIR$/common/myLog.py" />
         <option value="$PROJECT_DIR$/common/operationExcel.py" />
         <option value="$PROJECT_DIR$/common/operationExcelSheet.py" />
-        <option value="$PROJECT_DIR$/../demo/test.py" />
         <option value="$PROJECT_DIR$/testCase/appdev_api/test02_CreateTenantDB.py" />
         <option value="$PROJECT_DIR$/common/readTestData.py" />
         <option value="$PROJECT_DIR$/config/excelConfig.py" />
@@ -154,10 +148,16 @@
         <option value="$PROJECT_DIR$/testCase/appdev_api/test10_BlockUnblockAdmin.py" />
         <option value="$PROJECT_DIR$/testDataFile/header.json" />
         <option value="$PROJECT_DIR$/common/operationJson.py" />
-        <option value="$PROJECT_DIR$/testCase/appdev_api/test01_OrcLogin.py" />
-        <option value="$PROJECT_DIR$/testCase/appdev_api/test02_UpdateOrcPw.py" />
         <option value="$PROJECT_DIR$/case_list.txt" />
+        <option value="$PROJECT_DIR$/../demo/demo.py" />
+        <option value="$PROJECT_DIR$/../demo/sss.py" />
+        <option value="$PROJECT_DIR$/../demo/test.py" />
+        <option value="$PROJECT_DIR$/common/myLog.py" />
+        <option value="$PROJECT_DIR$/testCase/appdev_api/test01_OrcLogin.py" />
+        <option value="$PROJECT_DIR$/logs/20190710/log.log" />
+        <option value="$PROJECT_DIR$/testCase/test_cal.py" />
         <option value="$PROJECT_DIR$/testCase/appdev_api/test03_CreateTenantDB.py" />
+        <option value="$PROJECT_DIR$/testCase/appdev_api/test02_UpdateOrcPw.py" />
       </list>
     </option>
   </component>
@@ -195,8 +195,7 @@
             </path>
             <path>
               <item name="poppy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poppy" type="462c0819:PsiDirectoryNode" />
-              <item name="testDataFile" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -226,7 +225,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test03_CreateTenantDB.CreateTenantDbTest.test08_get_db_list">
+  <component name="RunManager" selected="Python.runcase">
     <configuration name="runcase" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="poppy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -248,7 +247,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test03_CreateTenantDB.CreateTenantDbTest.test08_get_db_list" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../demo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../demo/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test01_OrcLogin.LoginTest.test_login01" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="poppy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -258,11 +278,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test03_CreateTenantDB.CreateTenantDbTest.test08_get_db_list&quot;" />
+      <option name="_new_target" value="&quot;test01_OrcLogin.LoginTest.test_login01&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test03_CreateTenantDB.CreateTenantDbTest.test_create_db01" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test02_UpdateOrcPw.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="poppy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -272,52 +292,38 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test03_CreateTenantDB.CreateTenantDbTest.test_create_db01&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/testCase/appdev_api/test02_UpdateOrcPw.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test03_CreateTenantDB.CreateTenantDbTest.test_get_db_list01" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_cal.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="poppy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testCase/appdev_api" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testCase" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test03_CreateTenantDB.CreateTenantDbTest.test_get_db_list01&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in test03_CreateTenantDB.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="poppy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testCase/appdev_api" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/testCase/appdev_api/test03_CreateTenantDB.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/testCase/test_cal.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests in test03_CreateTenantDB.py" />
-      <item itemvalue="Python tests.Unittests for test03_CreateTenantDB.CreateTenantDbTest.test_create_db01" />
+      <item itemvalue="Python tests.Unittests for test01_OrcLogin.LoginTest.test_login01" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python tests.Unittests in test_cal.py" />
       <item itemvalue="Python.runcase" />
-      <item itemvalue="Python tests.Unittests for test03_CreateTenantDB.CreateTenantDbTest.test_get_db_list01" />
-      <item itemvalue="Python tests.Unittests for test03_CreateTenantDB.CreateTenantDbTest.test08_get_db_list" />
+      <item itemvalue="Python tests.Unittests in test02_UpdateOrcPw.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for test03_CreateTenantDB.CreateTenantDbTest.test08_get_db_list" />
-        <item itemvalue="Python tests.Unittests in test03_CreateTenantDB.py" />
-        <item itemvalue="Python tests.Unittests for test03_CreateTenantDB.CreateTenantDbTest.test_get_db_list01" />
         <item itemvalue="Python.runcase" />
-        <item itemvalue="Python tests.Unittests for test03_CreateTenantDB.CreateTenantDbTest.test_create_db01" />
+        <item itemvalue="Python tests.Unittests in test02_UpdateOrcPw.py" />
+        <item itemvalue="Python tests.Unittests for test01_OrcLogin.LoginTest.test_login01" />
+        <item itemvalue="Python tests.Unittests in test_cal.py" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -387,35 +393,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test03_CreateTenantDB_py - 2019.07.09 at 15h 22m 11s.xml">
-      <configuration name="Unittests in test03_CreateTenantDB.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_cal_py - 2019.07.10 at 14h 23m 00s.xml">
+      <configuration name="Unittests in test_cal.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test03_CreateTenantDB_CreateTenantDbTest_test_create_db01 - 2019.07.09 at 15h 23m 14s.xml">
-      <configuration name="Unittests for test03_CreateTenantDB.CreateTenantDbTest.test_create_db01" configurationId="tests" />
+    <history-entry file="Unittests_in_test_cal_py - 2019.07.10 at 14h 29m 29s.xml">
+      <configuration name="Unittests in test_cal.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test03_CreateTenantDB_py - 2019.07.09 at 15h 23m 55s.xml">
-      <configuration name="Unittests in test03_CreateTenantDB.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_cal_py - 2019.07.10 at 14h 30m 18s.xml">
+      <configuration name="Unittests in test_cal.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test03_CreateTenantDB_py - 2019.07.09 at 15h 33m 32s.xml">
-      <configuration name="Unittests in test03_CreateTenantDB.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_cal_py - 2019.07.10 at 14h 30m 40s.xml">
+      <configuration name="Unittests in test_cal.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test03_CreateTenantDB_py - 2019.07.09 at 17h 43m 14s.xml">
-      <configuration name="Unittests in test03_CreateTenantDB.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_cal_py - 2019.07.10 at 14h 31m 04s.xml">
+      <configuration name="Unittests in test_cal.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test03_CreateTenantDB_py - 2019.07.09 at 17h 50m 23s.xml">
-      <configuration name="Unittests in test03_CreateTenantDB.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_cal_py - 2019.07.10 at 14h 31m 12s.xml">
+      <configuration name="Unittests in test_cal.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test03_CreateTenantDB_py - 2019.07.09 at 17h 53m 51s.xml">
-      <configuration name="Unittests in test03_CreateTenantDB.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_cal_py - 2019.07.10 at 14h 31m 40s.xml">
+      <configuration name="Unittests in test_cal.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test03_CreateTenantDB_CreateTenantDbTest_test_get_db_list01 - 2019.07.09 at 17h 54m 57s.xml">
-      <configuration name="Unittests for test03_CreateTenantDB.CreateTenantDbTest.test_get_db_list01" configurationId="tests" />
+    <history-entry file="Unittests_in_test_cal_py - 2019.07.10 at 14h 31m 58s.xml">
+      <configuration name="Unittests in test_cal.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test03_CreateTenantDB_CreateTenantDbTest_test_get_db_list01 - 2019.07.09 at 17h 55m 09s.xml">
-      <configuration name="Unittests for test03_CreateTenantDB.CreateTenantDbTest.test_get_db_list01" configurationId="tests" />
+    <history-entry file="Unittests_in_test_cal_py - 2019.07.10 at 14h 32m 08s.xml">
+      <configuration name="Unittests in test_cal.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test03_CreateTenantDB_py - 2019.07.09 at 17h 56m 36s.xml">
-      <configuration name="Unittests in test03_CreateTenantDB.py" configurationId="tests" />
+    <history-entry file="Unittests_for_test01_OrcLogin_LoginTest_test_login01 - 2019.07.10 at 17h 32m 27s.xml">
+      <configuration name="Unittests for test01_OrcLogin.LoginTest.test_login01" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -430,7 +436,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.25568798" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.3206934" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39842874" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -467,34 +473,6 @@
     <SUITE FILE_PATH="coverage/poppy$test.coverage" NAME="test Coverage Results" MODIFIED="1560504502250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/python_auto参考/interfaceTest/common/Log.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-950">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python_auto参考/interfaceTest/result/20190702155525/output.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testCase/test01_OrcLogin.py" />
-    <entry file="file://$PROJECT_DIR$/log/2019_07_02.log" />
-    <entry file="file://$PROJECT_DIR$/common/logger.py" />
-    <entry file="file://$PROJECT_DIR$/logs/20190702/err.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/20190702/error.log" />
     <entry file="file://$PROJECT_DIR$/logs/20190702/log.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
@@ -503,13 +481,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/20190702/all_log.log" />
-    <entry file="file://$PROJECT_DIR$/common/myLog.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/sendEmail.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -532,13 +503,6 @@
             <element signature="e#1092#1193#1" />
             <element signature="e#1448#1568#1" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../demo/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -712,13 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testCase/appdev_api/test01_OrcLogin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="63" column="76" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="63" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/case_list.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -736,17 +693,68 @@
     <entry file="file://$PROJECT_DIR$/report/2019-07-09 17-02-36report.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/testCase/appdev_api/test02_UpdateOrcPw.py">
+    <entry file="file://$PROJECT_DIR$/../demo/testlog">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1825">
-          <caret line="31" column="67" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="67" />
+        <state relative-caret-position="100">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runcase.py">
+    <entry file="file://$PROJECT_DIR$/logs/20190710/err.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
+        <state relative-caret-position="50">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../demo/sss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../demo/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#24#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/myLog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="99" column="28" lean-forward="true" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../demo/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/test_cal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/appdev_api/test01_OrcLogin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
           </folding>
@@ -755,11 +763,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testCase/appdev_api/test03_CreateTenantDB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="163" column="53" lean-forward="true" selection-start-line="163" selection-start-column="53" selection-end-line="163" selection-end-column="53" />
+        <state relative-caret-position="3952">
+          <caret line="170" column="54" lean-forward="true" selection-start-line="170" selection-start-column="54" selection-end-line="170" selection-end-column="54" />
           <folding>
             <element signature="e#24#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/20190710/log.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-117">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/2019-07-10 17-59-02report.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runcase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="93" column="37" lean-forward="true" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/appdev_api/test02_UpdateOrcPw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="155" column="59" lean-forward="true" selection-start-line="155" selection-start-column="59" selection-end-line="155" selection-end-column="59" />
         </state>
       </provider>
     </entry>

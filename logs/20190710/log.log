@@ -1,0 +1,92 @@
+[2019-07-10 13:27:57] - test01_OrcLogin.py, Line 30]  - INFO: ----------test_login01开始测试----------
+[2019-07-10 13:27:57] - test01_OrcLogin.py, Line 37]  - INFO: 第一步: 获取请求数据
+[2019-07-10 13:27:57] - test01_OrcLogin.py, Line 37]  - INFO: 请求方法：post
+[2019-07-10 13:27:57] - test01_OrcLogin.py, Line 37]  - INFO: url：http://172.16.1.201:3002/orchestrator_admin/login
+[2019-07-10 13:27:57] - test01_OrcLogin.py, Line 37]  - INFO: 请求数据：{'username': 'orc_admin', 'password': 'orc_admin'}
+[2019-07-10 13:27:57] - test01_OrcLogin.py, Line 37]  - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-10 13:27:57] - test01_OrcLogin.py, Line 38]  - INFO: {
+  "_id": "5be12191a30debdbb49f3508",
+  "username": "orc_admin",
+  "status": true,
+  "orchestrator_admin_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYyNzM2NDczfQ.-KEiYo_bGReZ29YFQaPGuY8DMzyxRdNgDRylhg0nQ8A"
+}
+[2019-07-10 13:27:57] - test01_OrcLogin.py, Line 42]  - INFO: 第三步：提取orc_token
+[2019-07-10 13:27:57] - test01_OrcLogin.py, Line 42]  - INFO: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYyNzM2NDczfQ.-KEiYo_bGReZ29YFQaPGuY8DMzyxRdNgDRylhg0nQ8A
+[2019-07-10 13:27:57] - test01_OrcLogin.py, Line 52]  - INFO: ----------test_login01测试结束----------
+[2019-07-10 13:30:46] - test01_OrcLogin.py, Line 30]  - INFO: ----------test_login01开始测试----------
+[2019-07-10 13:30:46] - test01_OrcLogin.py, Line 37]  - INFO: 第一步: 获取请求数据
+[2019-07-10 13:30:46] - test01_OrcLogin.py, Line 37]  - INFO: 请求方法：post
+[2019-07-10 13:30:46] - test01_OrcLogin.py, Line 37]  - INFO: url：http://172.16.1.201:3002/orchestrator_admin/login
+[2019-07-10 13:30:46] - test01_OrcLogin.py, Line 37]  - INFO: 请求数据：{'username': 'orc_admin', 'password': 'orc_admin'}
+[2019-07-10 13:30:46] - test01_OrcLogin.py, Line 37]  - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-10 13:30:46] - test01_OrcLogin.py, Line 38]  - INFO: {
+  "_id": "5be12191a30debdbb49f3508",
+  "username": "orc_admin",
+  "status": true,
+  "orchestrator_admin_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYyNzM2NjQyfQ.mcqL6r0wssLWWGSwicGUOndRZ89W0Ubbx1KcOTdh4xE"
+}
+[2019-07-10 13:30:46] - test01_OrcLogin.py, Line 42]  - INFO: 第三步：提取orc_token
+[2019-07-10 13:30:46] - test01_OrcLogin.py, Line 42]  - INFO: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYyNzM2NjQyfQ.mcqL6r0wssLWWGSwicGUOndRZ89W0Ubbx1KcOTdh4xE
+[2019-07-10 13:30:46] - test01_OrcLogin.py, Line 52]  - INFO: ----------test_login01测试结束----------
+[2019-07-10 17:32:27] - test01_OrcLogin.py, Line 30]  - INFO: ----------test_login01开始测试----------
+[2019-07-10 17:32:27] - test01_OrcLogin.py, Line 37]  - INFO: 第一步: 获取请求数据
+[2019-07-10 17:32:27] - test01_OrcLogin.py, Line 37]  - INFO: 请求方法：post
+[2019-07-10 17:32:27] - test01_OrcLogin.py, Line 37]  - INFO: url：http://172.16.1.201:3002/orchestrator_admin/login
+[2019-07-10 17:32:27] - test01_OrcLogin.py, Line 37]  - INFO: 请求数据：{'username': 'orc_admin', 'password': 'orc_admin'}
+[2019-07-10 17:32:27] - test01_OrcLogin.py, Line 37]  - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-10 17:32:27] - test01_OrcLogin.py, Line 38]  - INFO: {
+  "_id": "5be12191a30debdbb49f3508",
+  "username": "orc_admin",
+  "status": true,
+  "orchestrator_admin_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYyNzUxMTQzfQ.1b7V4KoHuEj7wUexDBxBuLLNkyYTixNkOW9PnDcLRu0"
+}
+[2019-07-10 17:32:27] - test01_OrcLogin.py, Line 42]  - INFO: 第三步：提取orc_token
+[2019-07-10 17:32:27] - test01_OrcLogin.py, Line 42]  - INFO: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYyNzUxMTQzfQ.1b7V4KoHuEj7wUexDBxBuLLNkyYTixNkOW9PnDcLRu0
+[2019-07-10 17:32:27] - test01_OrcLogin.py, Line 52]  - INFO: ----------test_login01测试结束----------
+[2019-07-10 17:59:02] - test01_OrcLogin.py, Line 30]  - INFO: ----------test_login01开始测试----------
+[2019-07-10 17:59:02] - test01_OrcLogin.py, Line 37]  - INFO: 第一步: 获取请求数据
+[2019-07-10 17:59:02] - test01_OrcLogin.py, Line 37]  - INFO: 请求方法：post
+[2019-07-10 17:59:02] - test01_OrcLogin.py, Line 37]  - INFO: url：http://172.16.1.201:3002/orchestrator_admin/login
+[2019-07-10 17:59:02] - test01_OrcLogin.py, Line 37]  - INFO: 请求数据：{'username': 'orc_admin', 'password': 'orc_admin'}
+[2019-07-10 17:59:02] - test01_OrcLogin.py, Line 37]  - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-10 17:59:03] - test01_OrcLogin.py, Line 38]  - INFO: {
+  "_id": "5be12191a30debdbb49f3508",
+  "username": "orc_admin",
+  "status": true,
+  "orchestrator_admin_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYyNzUyNzM4fQ.8AFmROT7wbrXI0GpXnaf6pQM35ralYchYop-9X5Rp74"
+}
+[2019-07-10 17:59:03] - test01_OrcLogin.py, Line 42]  - INFO: 第三步：提取orc_token
+[2019-07-10 17:59:03] - test01_OrcLogin.py, Line 42]  - INFO: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYyNzUyNzM4fQ.8AFmROT7wbrXI0GpXnaf6pQM35ralYchYop-9X5Rp74
+[2019-07-10 17:59:03] - test01_OrcLogin.py, Line 52]  - INFO: ----------test_login01测试结束----------
+[2019-07-10 17:59:03] - INFO: 还原密码之后重新获取orc_token成功
+[2019-07-10 17:59:03] - INFO: 还原密码之后重新获取orc_token成功
+[2019-07-10 17:59:03] - INFO: 还原密码之后重新获取orc_token成功
+[2019-07-10 17:59:03] - INFO: 还原密码之后重新获取orc_token成功
+[2019-07-10 17:59:04] - INFO: check_new_login重新获取orc_admin_token成功
+[2019-07-10 17:59:04] - INFO: restore_orc_pw orc admin密码还原成功
+[2019-07-10 17:59:04] - INFO: 还原密码之后重新获取orc_token成功
+[2019-07-10 17:59:04] - WARNING: ============TEST END============
+[2019-07-10 17:59:04] - ERROR: 发送电子邮件为未知状态，请检查配置！
+[2019-07-10 18:01:21] - INFO: check_new_login重新获取orc_admin_token成功
+[2019-07-10 18:01:21] - INFO: restore_orc_pw orc admin密码还原成功
+[2019-07-10 18:01:21] - INFO: 还原密码之后重新获取orc_token成功
+[2019-07-10 18:01:39] - test01_OrcLogin.py, Line 30]  - INFO: ----------test_login01开始测试----------
+[2019-07-10 18:01:39] - test01_OrcLogin.py, Line 37]  - INFO: 第一步: 获取请求数据
+[2019-07-10 18:01:39] - test01_OrcLogin.py, Line 37]  - INFO: 请求方法：post
+[2019-07-10 18:01:39] - test01_OrcLogin.py, Line 37]  - INFO: url：http://172.16.1.201:3002/orchestrator_admin/login
+[2019-07-10 18:01:39] - test01_OrcLogin.py, Line 37]  - INFO: 请求数据：{'username': 'orc_admin', 'password': 'orc_admin'}
+[2019-07-10 18:01:39] - test01_OrcLogin.py, Line 37]  - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-10 18:01:39] - test01_OrcLogin.py, Line 38]  - INFO: {
+  "_id": "5be12191a30debdbb49f3508",
+  "username": "orc_admin",
+  "status": true,
+  "orchestrator_admin_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYyNzUyODk1fQ._5KTm9y1dhl8QbAc5H6_Jge0xdBZrUDMDJ_9zhpl7wQ"
+}
+[2019-07-10 18:01:39] - test01_OrcLogin.py, Line 42]  - INFO: 第三步：提取orc_token
+[2019-07-10 18:01:39] - test01_OrcLogin.py, Line 42]  - INFO: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYyNzUyODk1fQ._5KTm9y1dhl8QbAc5H6_Jge0xdBZrUDMDJ_9zhpl7wQ
+[2019-07-10 18:01:39] - test01_OrcLogin.py, Line 52]  - INFO: ----------test_login01测试结束----------
+[2019-07-10 18:01:40] - INFO: check_new_login重新获取orc_admin_token成功
+[2019-07-10 18:01:40] - INFO: restore_orc_pw orc admin密码还原成功
+[2019-07-10 18:01:40] - INFO: 还原密码之后重新获取orc_token成功
+[2019-07-10 18:01:41] - WARNING: ============TEST END============
+[2019-07-10 18:01:41] - ERROR: 发送电子邮件为未知状态，请检查配置！

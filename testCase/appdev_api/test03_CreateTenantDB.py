@@ -35,7 +35,8 @@ class CreateTenantDbTest(unittest.TestCase):
         # 断言
         self.assertEqual(status_code, 200, msg=">>>test01_get_db_list接口请求失败")
         self.assertFalse(dict_json["status"], msg='>>>test01_get_db_list创建DB失败，实际返回结果：%s' % dict_json)
-        self.assertEqual(dict_json["err"]["code"], 404, msg=">>>test01_get_db_list断言失败，实际返回结果：%s" % dict_json["err"]["code"])
+        self.assertEqual(dict_json["err"]["code"], 404,
+                         msg=">>>test01_get_db_list断言失败，实际返回结果：%s" % dict_json["err"]["code"])
         self.assertEqual(dict_json["err"]["message"], "No records found",
                          msg=">>>test01_get_db_list断言失败，实际返回结果：%s" % dict_json["err"]["message"])
 
@@ -86,7 +87,8 @@ class CreateTenantDbTest(unittest.TestCase):
         # 断言
         self.assertEqual(status_code, 200, msg=">>>test04_create_db接口请求失败")
         self.assertFalse(dict_json["status"], msg=">>>test04_create_db断言失败，实际返回结果：%s" % dict_json)
-        self.assertEqual(dict_json["err"]["code"], 400, msg=">>>test04_create_db断言失败，实际返回结果：%s" % dict_json["err"]["code"])
+        self.assertEqual(dict_json["err"]["code"], 400,
+                         msg=">>>test04_create_db断言失败，实际返回结果：%s" % dict_json["err"]["code"])
         self.assertEqual(dict_json["err"]["message"], "Provide tenant name",
                          msg=">>>test04_create_db断言失败，实际返回结果：%s" % dict_json["err"]["message"])
 
@@ -124,7 +126,8 @@ class CreateTenantDbTest(unittest.TestCase):
         # 断言
         self.assertEqual(status_code, 200, msg=">>>test06_create_db接口请求失败")
         self.assertFalse(dict_json["status"], msg=">>>test06_create_db断言失败，实际返回结果：%s" % dict_json)
-        self.assertEqual(dict_json["err"]["code"], 400, msg=">>>test06_create_db断言失败，实际返回结果：%s" % dict_json["err"]["code"])
+        self.assertEqual(dict_json["err"]["code"], 400,
+                         msg=">>>test06_create_db断言失败，实际返回结果：%s" % dict_json["err"]["code"])
         self.assertEqual(dict_json["err"]["message"], "Tenant name/DB already exists",
                          msg=">>>test06_create_db断言失败，实际返回结果：%s" % dict_json["err"]["message"])
 
@@ -143,7 +146,8 @@ class CreateTenantDbTest(unittest.TestCase):
         # 断言
         self.assertEqual(status_code, 200, msg=">>>test07_create_db接口请求失败")
         self.assertFalse(dict_json["status"], msg=">>>test07_create_db断言失败，实际返回结果：%s" % dict_json)
-        self.assertEqual(dict_json["err"]["code"], 400, msg=">>>test07_create_db断言失败，实际返回结果：%s" % dict_json["err"]["code"])
+        self.assertEqual(dict_json["err"]["code"], 400,
+                         msg=">>>test07_create_db断言失败，实际返回结果：%s" % dict_json["err"]["code"])
         self.assertEqual(dict_json["err"]["message"], "Tenant name/DB already exists",
                          msg=">>>test07_create_db断言失败，实际返回结果：%s" % dict_json["err"]["message"])
 
@@ -162,8 +166,17 @@ class CreateTenantDbTest(unittest.TestCase):
         self.assertEqual(status_code, 200, msg=">>>test08_get_db_list接口请求失败")
         self.assertTrue(dict_json["status"], msg='test08_get_db_list创建DB失败，实际返回结果：%s' % dict_json)
         self.assertIs("_id", dict_json["results"][0])
+        self.assertIn('tenant_name', dict_json["results"][0])
+        self.assertIs("db", dict_json["results"][0])
+        self.assertIn('info', dict_json["results"][0])
+        self.assertIn('active_status', dict_json["results"][0])
         self.assertEqual(dict_json["results"][0]["tenant_name"], "autotest",
                          msg=">>>test08_get_db_list断言失败，实际返回结果：%s" % dict_json["results"][0]["tenant_name"])
+        self.assertIs("_id", dict_json["results"][1])
+        self.assertIn('tenant_name', dict_json["results"][1])
+        self.assertIs("db", dict_json["results"][1])
+        self.assertIn('info', dict_json["results"][1])
+        self.assertIn('active_status', dict_json["results"][1])
         self.assertEqual(dict_json["results"][1]["tenant_name"], "test_autolive",
                          msg=">>>test08_get_db_list断言失败，实际返回结果：%s" % dict_json["results"][1]["tenant_name"])
 
