@@ -45,5 +45,5 @@ class ReadConfig:
 if __name__ == "__main__":
     r = ReadConfig()
     orc_token = 'wwww'
-    s = r.get_report('testers')
+    s = r.get_base_url()
     print(s)

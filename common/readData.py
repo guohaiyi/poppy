@@ -83,5 +83,5 @@ class ReadData:
 
 if __name__ == "__main__":
     a = ReadData()
-    b = a.get_request_data(2)
+    b = a.get_case_name(2)
     print(b)
