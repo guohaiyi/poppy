@@ -1,12 +1,13 @@
 # -*- coding: UTF-8 -*-
-import time
 import os
 import sys
+import time
 import unittest
-from common.myLog import MyLog
-from config.readConfig import ReadConfig
+
 from common.HTMLTestRunnerNew import HTMLTestRunner
+from common.myLog import MyLog
 from common.sendEmail import SendEmail
+from config.readConfig import ReadConfig
 
 proDir = os.path.split(os.path.realpath(__file__))[0]
 case_list_path = os.path.join(proDir, "case_list.txt")
@@ -88,7 +89,7 @@ class RunTest:
         except Exception as e:
             self.logger.error(str(e))
         finally:
-            self.logger.warning("============TEST END============")
+            self.logger.warning("---------------TEST END---------------")
             fp.close()
             # 发送电子邮件
             if self.is_send == 'yes':
