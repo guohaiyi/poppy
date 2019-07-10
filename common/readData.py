@@ -1,4 +1,5 @@
-# -*- coding: UTF-8 -*-
+#!/usr/bin/python3
+# coding=utf-8
 from common.operationExcel import OperationExcel
 from config.excelConfig import SetExcel
 from common.operationJson import OperationJson

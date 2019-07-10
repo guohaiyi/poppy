@@ -1,4 +1,5 @@
-#coding=utf-8
+#!/usr/bin/python3
+# coding=utf-8
 """
 A连接信息 TestRunner for use with the Python unit testing framework. It
 generates a HTML report to show the result at a glance.

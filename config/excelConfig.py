@@ -1,4 +1,5 @@
-# -*- coding: UTF-8 -*-
+#!/usr/bin/python3
+# coding=utf-8
 class SetExcel:
     def __init__(self):
         self.module = "A"

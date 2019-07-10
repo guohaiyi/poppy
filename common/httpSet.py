@@ -1,6 +1,7 @@
-# -*- coding: UTF-8 -*-
-import requests
+#!/usr/bin/python3
+# coding=utf-8
 import json
+import requests
 from common.myLog import MyLog
 
 

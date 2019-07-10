@@ -1,4 +1,5 @@
-# -*- coding: UTF-8 -*-
+#!/usr/bin/python3
+# coding=utf-8
 import smtplib
 import os
 from common.myLog import MyLog
