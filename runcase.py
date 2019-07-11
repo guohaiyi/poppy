@@ -15,20 +15,27 @@ test_case_path = os.path.join(proDir, "testCase")
 
 
 class RunTest:
+
     def __init__(self):
-        # 导入TestCase目录下的全部测试用例
-        # self.discover = unittest.defaultTestLoader.discover(test_case_path, pattern='test*.py')
         self.logger = MyLog()
         self.readconfig = ReadConfig()
         self.send_mail = SendEmail()
         self.is_send = self.readconfig.get_email("is_send")
+
+        # 导入TestCase目录下的全部测试用例
+        # self.discover = unittest.defaultTestLoader.discover(test_case_path, pattern='test*.py')
+
         # 导入指定测试用例列表文件
         self.case_list_file = case_list_path
         self.case_list_list = []
-        # 导入测试报告信息
-        self.testers = self.readconfig.get_report("testers")
-        self.title = self.readconfig.get_report("title")
-        self.description = self.readconfig.get_report("description")
+
+        # 测试报告基本信息
+        # self.testers = self.readconfig.get_report("testers")
+        # self.title = self.readconfig.get_report("title")
+        # self.description = self.readconfig.get_report("description")
+        self.testers = "HaiYi"
+        self.title = "Poppy接口测试报告"
+        self.description = "测试环境：Develop，IP地址：%s" % self.readconfig.get_base_url()
 
     def get_case_list(self):
         """

@@ -3264,3 +3264,1408 @@
 [2019-07-11 23:08:41] - INFO: ----------测试结束----------
 [2019-07-11 23:08:41] - WARNING: ---------------All Test End---------------
 [2019-07-11 23:08:41] - INFO: 不发送电子邮件！
+[2019-07-11 23:45:59] - INFO: --------测试开始---------
+[2019-07-11 23:45:59] - INFO: --------测试结束---------
+[2019-07-11 23:45:59] - INFO: --------测试开始---------
+[2019-07-11 23:45:59] - INFO: --------测试结束---------
+[2019-07-11 23:45:59] - INFO: ----------测试开始----------
+[2019-07-11 23:45:59] - test01_OrcLogin.py, Line 30]  - INFO: test_login01
+[2019-07-11 23:45:59] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:45:59] - INFO: 请求方法：post
+[2019-07-11 23:45:59] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:45:59] - INFO: 请求数据：{'username': 'orc_admin', 'password': 'orc_admin'}
+[2019-07-11 23:45:59] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:45:59] - INFO: {
+  "_id": "5be12191a30debdbb49f3508",
+  "username": "orc_admin",
+  "status": true,
+  "orchestrator_admin_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYyODU5OTA3fQ.L0p87-tXYaCrYhJhRMIG39LT5Ha9GzWGbmkDzfNAakw"
+}
+[2019-07-11 23:45:59] - test01_OrcLogin.py, Line 42]  - INFO: 提取orc_token
+[2019-07-11 23:45:59] - test01_OrcLogin.py, Line 42]  - INFO: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYyODU5OTA3fQ.L0p87-tXYaCrYhJhRMIG39LT5Ha9GzWGbmkDzfNAakw
+[2019-07-11 23:45:59] - INFO: 第三步：断言
+[2019-07-11 23:45:59] - INFO: ----------测试结束----------
+[2019-07-11 23:45:59] - INFO: ----------测试开始----------
+[2019-07-11 23:45:59] - test01_OrcLogin.py, Line 62]  - INFO: test_login02
+[2019-07-11 23:45:59] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:45:59] - INFO: 请求方法：post
+[2019-07-11 23:45:59] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:45:59] - INFO: 请求数据：{'username': 'orc_admin', 'password': '654321'}
+[2019-07-11 23:45:59] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:45:59] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username or password error"
+  }
+}
+[2019-07-11 23:45:59] - INFO: 第三步：断言
+[2019-07-11 23:45:59] - INFO: ----------测试结束----------
+[2019-07-11 23:45:59] - INFO: ----------测试开始----------
+[2019-07-11 23:45:59] - test01_OrcLogin.py, Line 83]  - INFO: test_login03
+[2019-07-11 23:45:59] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:45:59] - INFO: 请求方法：post
+[2019-07-11 23:45:59] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:45:59] - INFO: 请求数据：{'username': 'orc_admin1', 'password': '123456'}
+[2019-07-11 23:45:59] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:45:59] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "Username does not exists"
+  }
+}
+[2019-07-11 23:45:59] - INFO: 第三步：断言
+[2019-07-11 23:45:59] - INFO: ----------测试结束----------
+[2019-07-11 23:45:59] - INFO: ----------测试开始----------
+[2019-07-11 23:45:59] - test01_OrcLogin.py, Line 105]  - INFO: test_login04
+[2019-07-11 23:45:59] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:45:59] - INFO: 请求方法：post
+[2019-07-11 23:45:59] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:45:59] - INFO: 请求数据：{'password': '123456'}
+[2019-07-11 23:45:59] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:45:59] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username is needed"
+  }
+}
+[2019-07-11 23:45:59] - INFO: 第三步：断言
+[2019-07-11 23:45:59] - INFO: ----------测试结束----------
+[2019-07-11 23:45:59] - INFO: ----------测试开始----------
+[2019-07-11 23:45:59] - test01_OrcLogin.py, Line 126]  - INFO: test_login05
+[2019-07-11 23:45:59] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:45:59] - INFO: 请求方法：post
+[2019-07-11 23:45:59] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:45:59] - INFO: 请求数据：{'username': 'orc_admin'}
+[2019-07-11 23:45:59] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:45:59] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Password is needed"
+  }
+}
+[2019-07-11 23:45:59] - INFO: 第三步：断言
+[2019-07-11 23:45:59] - INFO: ----------测试结束----------
+[2019-07-11 23:45:59] - INFO: ----------测试开始----------
+[2019-07-11 23:45:59] - test02_UpdateOrcPw.py, Line 30]  - INFO: test_update01
+[2019-07-11 23:45:59] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:45:59] - INFO: 请求方法：put
+[2019-07-11 23:45:59] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:45:59] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': 'orc_admin', 'current_password': '123456'}
+[2019-07-11 23:46:00] - INFO: ----------测试结束----------
+[2019-07-11 23:46:00] - INFO: ----------测试开始----------
+[2019-07-11 23:46:00] - test02_UpdateOrcPw.py, Line 54]  - INFO: test_update02
+[2019-07-11 23:46:00] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:46:00] - INFO: 请求方法：put
+[2019-07-11 23:46:00] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:46:00] - INFO: 请求数据：{'username': 'orc_admin_no', 'new_password': 'orc_admin', 'current_password': '123456'}
+[2019-07-11 23:46:00] - INFO: ----------测试结束----------
+[2019-07-11 23:46:00] - INFO: ----------测试开始----------
+[2019-07-11 23:46:00] - test02_UpdateOrcPw.py, Line 78]  - INFO: test_update03
+[2019-07-11 23:46:00] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:46:00] - INFO: 请求方法：put
+[2019-07-11 23:46:00] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:46:00] - INFO: 请求数据：{'username': 'orc_admin', 'current_password': '123456'}
+[2019-07-11 23:46:00] - INFO: ----------测试结束----------
+[2019-07-11 23:46:00] - INFO: ----------测试开始----------
+[2019-07-11 23:46:00] - test02_UpdateOrcPw.py, Line 102]  - INFO: test_update04
+[2019-07-11 23:46:00] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:46:00] - INFO: 请求方法：put
+[2019-07-11 23:46:00] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:46:00] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': 'orc_admin'}
+[2019-07-11 23:46:00] - INFO: ----------测试结束----------
+[2019-07-11 23:46:00] - INFO: ----------测试开始----------
+[2019-07-11 23:46:00] - test02_UpdateOrcPw.py, Line 126]  - INFO: test_update05
+[2019-07-11 23:46:00] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:46:00] - INFO: 请求方法：put
+[2019-07-11 23:46:00] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:46:00] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': '123456', 'current_password': 'orc_admin'}
+[2019-07-11 23:46:00] - check_new_login, Line 166]  - INFO: check_new_login重新获取orc_admin_token成功
+[2019-07-11 23:46:00] - restore_orc_pw, Line 183]  - INFO: restore_orc_pw orc admin密码还原成功
+[2019-07-11 23:46:00] - INFO: 还原密码之后重新获取orc_token成功restore_get_pw
+[2019-07-11 23:46:00] - INFO: ----------测试结束----------
+[2019-07-11 23:46:00] - INFO: ----------测试开始----------
+[2019-07-11 23:46:00] - test03_CreateTenantDB.py, Line 27]  - INFO: test_login01
+[2019-07-11 23:46:00] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:46:00] - INFO: 请求方法：get
+[2019-07-11 23:46:00] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:46:00] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:46:00] - INFO: {
+  "status": true,
+  "results": [
+    {
+      "_id": "5d272b280656dd0758a62a8c",
+      "tenant_name": "haiyitenant",
+      "db": "hydb",
+      "info": "test",
+      "active_status": true
+    },
+    {
+      "_id": "5d2749df0152e20ff4dda419",
+      "tenant_name": "autotest",
+      "db": "autotest",
+      "info": "autotest",
+      "active_status": true
+    },
+    {
+      "_id": "5d2749df0152e20ff4dda41e",
+      "tenant_name": "test_autolive",
+      "db": "test_autolive",
+      "info": "test_autolive",
+      "active_status": true
+    }
+  ]
+}
+[2019-07-11 23:46:00] - INFO: ----------测试结束----------
+[2019-07-11 23:46:00] - INFO: ----------测试开始----------
+[2019-07-11 23:46:00] - test03_CreateTenantDB.py, Line 51]  - INFO: test_login01
+[2019-07-11 23:46:00] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:46:00] - INFO: 请求方法：post
+[2019-07-11 23:46:00] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:46:00] - INFO: 请求数据：{'tenant_name': 'autotest', 'db': 'autotest', 'info': 'autotest', 'is_auto': False}
+[2019-07-11 23:46:00] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:46:00] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-11 23:46:00] - INFO: ----------测试结束----------
+[2019-07-11 23:46:00] - INFO: ----------测试开始----------
+[2019-07-11 23:46:00] - test03_CreateTenantDB.py, Line 72]  - INFO: test_login01
+[2019-07-11 23:46:00] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:46:00] - INFO: 请求方法：post
+[2019-07-11 23:46:00] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:46:00] - INFO: 请求数据：{'tenant_name': 'test_autolive', 'db': 'test_autolive', 'info': 'test_autolive', 'is_auto': True}
+[2019-07-11 23:46:00] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:46:00] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-11 23:46:00] - INFO: ----------测试结束----------
+[2019-07-11 23:46:00] - INFO: ----------测试开始----------
+[2019-07-11 23:46:00] - test03_CreateTenantDB.py, Line 93]  - INFO: test_login01
+[2019-07-11 23:46:00] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:46:00] - INFO: 请求方法：post
+[2019-07-11 23:46:00] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:46:00] - INFO: 请求数据：{'db': 'lack_teant_name', 'info': 'lack_teant_name', 'is_auto': False}
+[2019-07-11 23:46:00] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:46:00] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide tenant name"
+  }
+}
+[2019-07-11 23:46:00] - INFO: ----------测试结束----------
+[2019-07-11 23:46:00] - INFO: ----------测试开始----------
+[2019-07-11 23:46:00] - test03_CreateTenantDB.py, Line 120]  - INFO: test_login01
+[2019-07-11 23:46:00] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:46:00] - INFO: 请求方法：post
+[2019-07-11 23:46:00] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:46:00] - INFO: 请求数据：{'tenant_name': 'lack_db_name', 'info': 'lack_db_name', 'is_auto': False}
+[2019-07-11 23:46:00] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:46:00] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide db"
+  }
+}
+[2019-07-11 23:46:00] - INFO: ----------测试结束----------
+[2019-07-11 23:46:01] - INFO: ----------测试开始----------
+[2019-07-11 23:46:01] - test03_CreateTenantDB.py, Line 146]  - INFO: test_login01
+[2019-07-11 23:46:01] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:46:01] - INFO: 请求方法：post
+[2019-07-11 23:46:01] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:46:01] - INFO: 请求数据：{'tenant_name': 'autotest', 'db': 'test', 'info': 'test', 'is_auto': False}
+[2019-07-11 23:46:01] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:46:01] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-11 23:46:01] - INFO: ----------测试结束----------
+[2019-07-11 23:46:01] - INFO: ----------测试开始----------
+[2019-07-11 23:46:01] - test03_CreateTenantDB.py, Line 173]  - INFO: test_login01
+[2019-07-11 23:46:01] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:46:01] - INFO: 请求方法：post
+[2019-07-11 23:46:01] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:46:01] - INFO: 请求数据：{'tenant_name': 'test', 'db': 'autotest', 'info': 'test', 'is_auto': False}
+[2019-07-11 23:46:01] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:46:01] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-11 23:46:01] - INFO: ----------测试结束----------
+[2019-07-11 23:46:01] - INFO: ----------测试开始----------
+[2019-07-11 23:46:01] - test03_CreateTenantDB.py, Line 200]  - INFO: test_login01
+[2019-07-11 23:46:01] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:46:01] - INFO: 请求方法：get
+[2019-07-11 23:46:01] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:46:01] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:46:01] - INFO: {
+  "status": true,
+  "results": [
+    {
+      "_id": "5d272b280656dd0758a62a8c",
+      "tenant_name": "haiyitenant",
+      "db": "hydb",
+      "info": "test",
+      "active_status": true
+    },
+    {
+      "_id": "5d2749df0152e20ff4dda419",
+      "tenant_name": "autotest",
+      "db": "autotest",
+      "info": "autotest",
+      "active_status": true
+    },
+    {
+      "_id": "5d2749df0152e20ff4dda41e",
+      "tenant_name": "test_autolive",
+      "db": "test_autolive",
+      "info": "test_autolive",
+      "active_status": true
+    }
+  ]
+}
+[2019-07-11 23:46:01] - INFO: ----------测试结束----------
+[2019-07-11 23:46:01] - WARNING: ---------------All Test End---------------
+[2019-07-11 23:46:01] - INFO: 不发送电子邮件！
+[2019-07-11 23:48:20] - INFO: --------测试开始---------
+[2019-07-11 23:48:20] - INFO: --------测试结束---------
+[2019-07-11 23:48:20] - INFO: --------测试开始---------
+[2019-07-11 23:48:20] - INFO: --------测试结束---------
+[2019-07-11 23:48:20] - INFO: ----------测试开始----------
+[2019-07-11 23:48:20] - test01_OrcLogin.py, Line 30]  - INFO: test_login01
+[2019-07-11 23:48:20] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:48:20] - INFO: 请求方法：post
+[2019-07-11 23:48:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:48:20] - INFO: 请求数据：{'username': 'orc_admin', 'password': 'orc_admin'}
+[2019-07-11 23:48:20] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:48:20] - INFO: {
+  "_id": "5be12191a30debdbb49f3508",
+  "username": "orc_admin",
+  "status": true,
+  "orchestrator_admin_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYyODYwMDQ4fQ.IqT4solTORkqpuyjV-fMXBDoeOywh55eaBaxJ6Ma9Ic"
+}
+[2019-07-11 23:48:20] - test01_OrcLogin.py, Line 42]  - INFO: 提取orc_token
+[2019-07-11 23:48:20] - test01_OrcLogin.py, Line 42]  - INFO: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYyODYwMDQ4fQ.IqT4solTORkqpuyjV-fMXBDoeOywh55eaBaxJ6Ma9Ic
+[2019-07-11 23:48:20] - INFO: 第三步：断言
+[2019-07-11 23:48:20] - INFO: ----------测试结束----------
+[2019-07-11 23:48:20] - INFO: ----------测试开始----------
+[2019-07-11 23:48:20] - test01_OrcLogin.py, Line 62]  - INFO: test_login02
+[2019-07-11 23:48:20] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:48:20] - INFO: 请求方法：post
+[2019-07-11 23:48:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:48:20] - INFO: 请求数据：{'username': 'orc_admin', 'password': '654321'}
+[2019-07-11 23:48:20] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:48:20] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username or password error"
+  }
+}
+[2019-07-11 23:48:20] - INFO: 第三步：断言
+[2019-07-11 23:48:20] - INFO: ----------测试结束----------
+[2019-07-11 23:48:20] - INFO: ----------测试开始----------
+[2019-07-11 23:48:20] - test01_OrcLogin.py, Line 83]  - INFO: test_login03
+[2019-07-11 23:48:20] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:48:20] - INFO: 请求方法：post
+[2019-07-11 23:48:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:48:20] - INFO: 请求数据：{'username': 'orc_admin1', 'password': '123456'}
+[2019-07-11 23:48:20] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:48:20] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "Username does not exists"
+  }
+}
+[2019-07-11 23:48:20] - INFO: 第三步：断言
+[2019-07-11 23:48:20] - INFO: ----------测试结束----------
+[2019-07-11 23:48:20] - INFO: ----------测试开始----------
+[2019-07-11 23:48:20] - test01_OrcLogin.py, Line 105]  - INFO: test_login04
+[2019-07-11 23:48:20] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:48:20] - INFO: 请求方法：post
+[2019-07-11 23:48:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:48:20] - INFO: 请求数据：{'password': '123456'}
+[2019-07-11 23:48:20] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:48:20] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username is needed"
+  }
+}
+[2019-07-11 23:48:20] - INFO: 第三步：断言
+[2019-07-11 23:48:20] - INFO: ----------测试结束----------
+[2019-07-11 23:48:20] - INFO: ----------测试开始----------
+[2019-07-11 23:48:20] - test01_OrcLogin.py, Line 126]  - INFO: test_login05
+[2019-07-11 23:48:20] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:48:20] - INFO: 请求方法：post
+[2019-07-11 23:48:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:48:20] - INFO: 请求数据：{'username': 'orc_admin'}
+[2019-07-11 23:48:20] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:48:20] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Password is needed"
+  }
+}
+[2019-07-11 23:48:20] - INFO: 第三步：断言
+[2019-07-11 23:48:20] - INFO: ----------测试结束----------
+[2019-07-11 23:48:20] - INFO: ----------测试开始----------
+[2019-07-11 23:48:20] - test02_UpdateOrcPw.py, Line 30]  - INFO: test_update01
+[2019-07-11 23:48:20] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:48:20] - INFO: 请求方法：put
+[2019-07-11 23:48:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:48:20] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': 'orc_admin', 'current_password': '123456'}
+[2019-07-11 23:48:20] - INFO: ----------测试结束----------
+[2019-07-11 23:48:20] - INFO: ----------测试开始----------
+[2019-07-11 23:48:20] - test02_UpdateOrcPw.py, Line 54]  - INFO: test_update02
+[2019-07-11 23:48:20] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:48:20] - INFO: 请求方法：put
+[2019-07-11 23:48:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:48:20] - INFO: 请求数据：{'username': 'orc_admin_no', 'new_password': 'orc_admin', 'current_password': '123456'}
+[2019-07-11 23:48:20] - INFO: ----------测试结束----------
+[2019-07-11 23:48:20] - INFO: ----------测试开始----------
+[2019-07-11 23:48:20] - test02_UpdateOrcPw.py, Line 78]  - INFO: test_update03
+[2019-07-11 23:48:20] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:48:20] - INFO: 请求方法：put
+[2019-07-11 23:48:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:48:20] - INFO: 请求数据：{'username': 'orc_admin', 'current_password': '123456'}
+[2019-07-11 23:48:20] - INFO: ----------测试结束----------
+[2019-07-11 23:48:20] - INFO: ----------测试开始----------
+[2019-07-11 23:48:20] - test02_UpdateOrcPw.py, Line 102]  - INFO: test_update04
+[2019-07-11 23:48:20] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:48:20] - INFO: 请求方法：put
+[2019-07-11 23:48:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:48:20] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': 'orc_admin'}
+[2019-07-11 23:48:20] - INFO: ----------测试结束----------
+[2019-07-11 23:48:20] - INFO: ----------测试开始----------
+[2019-07-11 23:48:20] - test02_UpdateOrcPw.py, Line 126]  - INFO: test_update05
+[2019-07-11 23:48:20] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:48:20] - INFO: 请求方法：put
+[2019-07-11 23:48:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:48:20] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': '123456', 'current_password': 'orc_admin'}
+[2019-07-11 23:48:21] - check_new_login, Line 166]  - INFO: check_new_login重新获取orc_admin_token成功
+[2019-07-11 23:48:21] - restore_orc_pw, Line 183]  - INFO: restore_orc_pw orc admin密码还原成功
+[2019-07-11 23:48:21] - INFO: 还原密码之后重新获取orc_token成功restore_get_pw
+[2019-07-11 23:48:21] - INFO: ----------测试结束----------
+[2019-07-11 23:48:21] - INFO: ----------测试开始----------
+[2019-07-11 23:48:21] - test03_CreateTenantDB.py, Line 27]  - INFO: test_login01
+[2019-07-11 23:48:21] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:48:21] - INFO: 请求方法：get
+[2019-07-11 23:48:21] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:48:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:48:21] - INFO: {
+  "status": true,
+  "results": [
+    {
+      "_id": "5d272b280656dd0758a62a8c",
+      "tenant_name": "haiyitenant",
+      "db": "hydb",
+      "info": "test",
+      "active_status": true
+    },
+    {
+      "_id": "5d2749df0152e20ff4dda419",
+      "tenant_name": "autotest",
+      "db": "autotest",
+      "info": "autotest",
+      "active_status": true
+    },
+    {
+      "_id": "5d2749df0152e20ff4dda41e",
+      "tenant_name": "test_autolive",
+      "db": "test_autolive",
+      "info": "test_autolive",
+      "active_status": true
+    }
+  ]
+}
+[2019-07-11 23:48:21] - INFO: ----------测试结束----------
+[2019-07-11 23:48:21] - INFO: ----------测试开始----------
+[2019-07-11 23:48:21] - test03_CreateTenantDB.py, Line 51]  - INFO: test_login01
+[2019-07-11 23:48:21] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:48:21] - INFO: 请求方法：post
+[2019-07-11 23:48:21] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:48:21] - INFO: 请求数据：{'tenant_name': 'autotest', 'db': 'autotest', 'info': 'autotest', 'is_auto': False}
+[2019-07-11 23:48:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:48:21] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-11 23:48:21] - INFO: ----------测试结束----------
+[2019-07-11 23:48:21] - INFO: ----------测试开始----------
+[2019-07-11 23:48:21] - test03_CreateTenantDB.py, Line 72]  - INFO: test_login01
+[2019-07-11 23:48:21] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:48:21] - INFO: 请求方法：post
+[2019-07-11 23:48:21] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:48:21] - INFO: 请求数据：{'tenant_name': 'test_autolive', 'db': 'test_autolive', 'info': 'test_autolive', 'is_auto': True}
+[2019-07-11 23:48:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:48:21] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-11 23:48:21] - INFO: ----------测试结束----------
+[2019-07-11 23:48:21] - INFO: ----------测试开始----------
+[2019-07-11 23:48:21] - test03_CreateTenantDB.py, Line 93]  - INFO: test_login01
+[2019-07-11 23:48:21] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:48:21] - INFO: 请求方法：post
+[2019-07-11 23:48:21] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:48:21] - INFO: 请求数据：{'db': 'lack_teant_name', 'info': 'lack_teant_name', 'is_auto': False}
+[2019-07-11 23:48:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:48:21] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide tenant name"
+  }
+}
+[2019-07-11 23:48:21] - INFO: ----------测试结束----------
+[2019-07-11 23:48:21] - INFO: ----------测试开始----------
+[2019-07-11 23:48:21] - test03_CreateTenantDB.py, Line 120]  - INFO: test_login01
+[2019-07-11 23:48:21] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:48:21] - INFO: 请求方法：post
+[2019-07-11 23:48:21] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:48:21] - INFO: 请求数据：{'tenant_name': 'lack_db_name', 'info': 'lack_db_name', 'is_auto': False}
+[2019-07-11 23:48:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:48:21] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide db"
+  }
+}
+[2019-07-11 23:48:21] - INFO: ----------测试结束----------
+[2019-07-11 23:48:21] - INFO: ----------测试开始----------
+[2019-07-11 23:48:21] - test03_CreateTenantDB.py, Line 146]  - INFO: test_login01
+[2019-07-11 23:48:21] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:48:21] - INFO: 请求方法：post
+[2019-07-11 23:48:21] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:48:21] - INFO: 请求数据：{'tenant_name': 'autotest', 'db': 'test', 'info': 'test', 'is_auto': False}
+[2019-07-11 23:48:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:48:21] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-11 23:48:21] - INFO: ----------测试结束----------
+[2019-07-11 23:48:21] - INFO: ----------测试开始----------
+[2019-07-11 23:48:21] - test03_CreateTenantDB.py, Line 173]  - INFO: test_login01
+[2019-07-11 23:48:21] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:48:21] - INFO: 请求方法：post
+[2019-07-11 23:48:21] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:48:21] - INFO: 请求数据：{'tenant_name': 'test', 'db': 'autotest', 'info': 'test', 'is_auto': False}
+[2019-07-11 23:48:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:48:21] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-11 23:48:21] - INFO: ----------测试结束----------
+[2019-07-11 23:48:21] - INFO: ----------测试开始----------
+[2019-07-11 23:48:21] - test03_CreateTenantDB.py, Line 200]  - INFO: test_login01
+[2019-07-11 23:48:21] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:48:21] - INFO: 请求方法：get
+[2019-07-11 23:48:21] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:48:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:48:21] - INFO: {
+  "status": true,
+  "results": [
+    {
+      "_id": "5d272b280656dd0758a62a8c",
+      "tenant_name": "haiyitenant",
+      "db": "hydb",
+      "info": "test",
+      "active_status": true
+    },
+    {
+      "_id": "5d2749df0152e20ff4dda419",
+      "tenant_name": "autotest",
+      "db": "autotest",
+      "info": "autotest",
+      "active_status": true
+    },
+    {
+      "_id": "5d2749df0152e20ff4dda41e",
+      "tenant_name": "test_autolive",
+      "db": "test_autolive",
+      "info": "test_autolive",
+      "active_status": true
+    }
+  ]
+}
+[2019-07-11 23:48:21] - INFO: ----------测试结束----------
+[2019-07-11 23:48:21] - WARNING: ---------------All Test End---------------
+[2019-07-11 23:48:21] - INFO: 不发送电子邮件！
+[2019-07-11 23:51:02] - INFO: --------测试开始---------
+[2019-07-11 23:51:02] - INFO: --------测试结束---------
+[2019-07-11 23:51:02] - INFO: --------测试开始---------
+[2019-07-11 23:51:02] - INFO: --------测试结束---------
+[2019-07-11 23:51:03] - INFO: ----------测试开始----------
+[2019-07-11 23:51:03] - test01_OrcLogin.py, Line 30]  - INFO: test_login01
+[2019-07-11 23:51:03] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:03] - INFO: 请求方法：post
+[2019-07-11 23:51:03] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:51:03] - INFO: 请求数据：{'username': 'orc_admin', 'password': 'orc_admin'}
+[2019-07-11 23:51:03] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:03] - INFO: {
+  "_id": "5be12191a30debdbb49f3508",
+  "username": "orc_admin",
+  "status": true,
+  "orchestrator_admin_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYyODYwMjExfQ.GJsy2BzoJBkym0b0ZYffnf1jcaaayCWXIVwgfVgEtK8"
+}
+[2019-07-11 23:51:03] - test01_OrcLogin.py, Line 42]  - INFO: 提取orc_token
+[2019-07-11 23:51:03] - test01_OrcLogin.py, Line 42]  - INFO: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYyODYwMjExfQ.GJsy2BzoJBkym0b0ZYffnf1jcaaayCWXIVwgfVgEtK8
+[2019-07-11 23:51:03] - INFO: 第三步：断言
+[2019-07-11 23:51:03] - INFO: ----------测试结束----------
+[2019-07-11 23:51:03] - INFO: ----------测试开始----------
+[2019-07-11 23:51:03] - test01_OrcLogin.py, Line 62]  - INFO: test_login02
+[2019-07-11 23:51:03] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:03] - INFO: 请求方法：post
+[2019-07-11 23:51:03] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:51:03] - INFO: 请求数据：{'username': 'orc_admin', 'password': '654321'}
+[2019-07-11 23:51:03] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:03] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username or password error"
+  }
+}
+[2019-07-11 23:51:03] - INFO: 第三步：断言
+[2019-07-11 23:51:03] - INFO: ----------测试结束----------
+[2019-07-11 23:51:03] - INFO: ----------测试开始----------
+[2019-07-11 23:51:03] - test01_OrcLogin.py, Line 83]  - INFO: test_login03
+[2019-07-11 23:51:03] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:03] - INFO: 请求方法：post
+[2019-07-11 23:51:03] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:51:03] - INFO: 请求数据：{'username': 'orc_admin1', 'password': '123456'}
+[2019-07-11 23:51:03] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:03] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "Username does not exists"
+  }
+}
+[2019-07-11 23:51:03] - INFO: 第三步：断言
+[2019-07-11 23:51:03] - INFO: ----------测试结束----------
+[2019-07-11 23:51:03] - INFO: ----------测试开始----------
+[2019-07-11 23:51:03] - test01_OrcLogin.py, Line 105]  - INFO: test_login04
+[2019-07-11 23:51:03] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:03] - INFO: 请求方法：post
+[2019-07-11 23:51:03] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:51:03] - INFO: 请求数据：{'password': '123456'}
+[2019-07-11 23:51:03] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:03] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username is needed"
+  }
+}
+[2019-07-11 23:51:03] - INFO: 第三步：断言
+[2019-07-11 23:51:03] - INFO: ----------测试结束----------
+[2019-07-11 23:51:03] - INFO: ----------测试开始----------
+[2019-07-11 23:51:03] - test01_OrcLogin.py, Line 126]  - INFO: test_login05
+[2019-07-11 23:51:03] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:03] - INFO: 请求方法：post
+[2019-07-11 23:51:03] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:51:03] - INFO: 请求数据：{'username': 'orc_admin'}
+[2019-07-11 23:51:03] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:03] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Password is needed"
+  }
+}
+[2019-07-11 23:51:03] - INFO: 第三步：断言
+[2019-07-11 23:51:03] - INFO: ----------测试结束----------
+[2019-07-11 23:51:03] - INFO: ----------测试开始----------
+[2019-07-11 23:51:03] - test02_UpdateOrcPw.py, Line 30]  - INFO: test_update01
+[2019-07-11 23:51:03] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:03] - INFO: 请求方法：put
+[2019-07-11 23:51:03] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:51:03] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': 'orc_admin', 'current_password': '123456'}
+[2019-07-11 23:51:03] - INFO: ----------测试结束----------
+[2019-07-11 23:51:03] - INFO: ----------测试开始----------
+[2019-07-11 23:51:03] - test02_UpdateOrcPw.py, Line 54]  - INFO: test_update02
+[2019-07-11 23:51:03] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:03] - INFO: 请求方法：put
+[2019-07-11 23:51:03] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:51:03] - INFO: 请求数据：{'username': 'orc_admin_no', 'new_password': 'orc_admin', 'current_password': '123456'}
+[2019-07-11 23:51:03] - INFO: ----------测试结束----------
+[2019-07-11 23:51:03] - INFO: ----------测试开始----------
+[2019-07-11 23:51:03] - test02_UpdateOrcPw.py, Line 78]  - INFO: test_update03
+[2019-07-11 23:51:03] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:03] - INFO: 请求方法：put
+[2019-07-11 23:51:03] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:51:03] - INFO: 请求数据：{'username': 'orc_admin', 'current_password': '123456'}
+[2019-07-11 23:51:03] - INFO: ----------测试结束----------
+[2019-07-11 23:51:03] - INFO: ----------测试开始----------
+[2019-07-11 23:51:03] - test02_UpdateOrcPw.py, Line 102]  - INFO: test_update04
+[2019-07-11 23:51:03] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:03] - INFO: 请求方法：put
+[2019-07-11 23:51:03] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:51:03] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': 'orc_admin'}
+[2019-07-11 23:51:03] - INFO: ----------测试结束----------
+[2019-07-11 23:51:03] - INFO: ----------测试开始----------
+[2019-07-11 23:51:03] - test02_UpdateOrcPw.py, Line 126]  - INFO: test_update05
+[2019-07-11 23:51:03] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:03] - INFO: 请求方法：put
+[2019-07-11 23:51:03] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:51:03] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': '123456', 'current_password': 'orc_admin'}
+[2019-07-11 23:51:03] - check_new_login, Line 166]  - INFO: check_new_login重新获取orc_admin_token成功
+[2019-07-11 23:51:04] - restore_orc_pw, Line 183]  - INFO: restore_orc_pw orc admin密码还原成功
+[2019-07-11 23:51:04] - INFO: 还原密码之后重新获取orc_token成功restore_get_pw
+[2019-07-11 23:51:04] - INFO: ----------测试结束----------
+[2019-07-11 23:51:04] - INFO: ----------测试开始----------
+[2019-07-11 23:51:04] - test03_CreateTenantDB.py, Line 27]  - INFO: test_login01
+[2019-07-11 23:51:04] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:04] - INFO: 请求方法：get
+[2019-07-11 23:51:04] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:51:04] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:04] - INFO: {
+  "status": true,
+  "results": [
+    {
+      "_id": "5d272b280656dd0758a62a8c",
+      "tenant_name": "haiyitenant",
+      "db": "hydb",
+      "info": "test",
+      "active_status": true
+    },
+    {
+      "_id": "5d2749df0152e20ff4dda419",
+      "tenant_name": "autotest",
+      "db": "autotest",
+      "info": "autotest",
+      "active_status": true
+    },
+    {
+      "_id": "5d2749df0152e20ff4dda41e",
+      "tenant_name": "test_autolive",
+      "db": "test_autolive",
+      "info": "test_autolive",
+      "active_status": true
+    }
+  ]
+}
+[2019-07-11 23:51:04] - INFO: ----------测试结束----------
+[2019-07-11 23:51:04] - INFO: ----------测试开始----------
+[2019-07-11 23:51:04] - test03_CreateTenantDB.py, Line 51]  - INFO: test_login01
+[2019-07-11 23:51:04] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:04] - INFO: 请求方法：post
+[2019-07-11 23:51:04] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:51:04] - INFO: 请求数据：{'tenant_name': 'autotest', 'db': 'autotest', 'info': 'autotest', 'is_auto': False}
+[2019-07-11 23:51:04] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:04] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-11 23:51:04] - INFO: ----------测试结束----------
+[2019-07-11 23:51:04] - INFO: ----------测试开始----------
+[2019-07-11 23:51:04] - test03_CreateTenantDB.py, Line 72]  - INFO: test_login01
+[2019-07-11 23:51:04] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:04] - INFO: 请求方法：post
+[2019-07-11 23:51:04] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:51:04] - INFO: 请求数据：{'tenant_name': 'test_autolive', 'db': 'test_autolive', 'info': 'test_autolive', 'is_auto': True}
+[2019-07-11 23:51:04] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:04] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-11 23:51:04] - INFO: ----------测试结束----------
+[2019-07-11 23:51:04] - INFO: ----------测试开始----------
+[2019-07-11 23:51:04] - test03_CreateTenantDB.py, Line 93]  - INFO: test_login01
+[2019-07-11 23:51:04] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:04] - INFO: 请求方法：post
+[2019-07-11 23:51:04] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:51:04] - INFO: 请求数据：{'db': 'lack_teant_name', 'info': 'lack_teant_name', 'is_auto': False}
+[2019-07-11 23:51:04] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:04] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide tenant name"
+  }
+}
+[2019-07-11 23:51:04] - INFO: ----------测试结束----------
+[2019-07-11 23:51:04] - INFO: ----------测试开始----------
+[2019-07-11 23:51:04] - test03_CreateTenantDB.py, Line 120]  - INFO: test_login01
+[2019-07-11 23:51:04] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:04] - INFO: 请求方法：post
+[2019-07-11 23:51:04] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:51:04] - INFO: 请求数据：{'tenant_name': 'lack_db_name', 'info': 'lack_db_name', 'is_auto': False}
+[2019-07-11 23:51:04] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:04] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide db"
+  }
+}
+[2019-07-11 23:51:04] - INFO: ----------测试结束----------
+[2019-07-11 23:51:04] - INFO: ----------测试开始----------
+[2019-07-11 23:51:04] - test03_CreateTenantDB.py, Line 146]  - INFO: test_login01
+[2019-07-11 23:51:04] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:04] - INFO: 请求方法：post
+[2019-07-11 23:51:04] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:51:04] - INFO: 请求数据：{'tenant_name': 'autotest', 'db': 'test', 'info': 'test', 'is_auto': False}
+[2019-07-11 23:51:04] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:04] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-11 23:51:04] - INFO: ----------测试结束----------
+[2019-07-11 23:51:04] - INFO: ----------测试开始----------
+[2019-07-11 23:51:04] - test03_CreateTenantDB.py, Line 173]  - INFO: test_login01
+[2019-07-11 23:51:04] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:04] - INFO: 请求方法：post
+[2019-07-11 23:51:04] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:51:04] - INFO: 请求数据：{'tenant_name': 'test', 'db': 'autotest', 'info': 'test', 'is_auto': False}
+[2019-07-11 23:51:04] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:04] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-11 23:51:04] - INFO: ----------测试结束----------
+[2019-07-11 23:51:04] - INFO: ----------测试开始----------
+[2019-07-11 23:51:04] - test03_CreateTenantDB.py, Line 200]  - INFO: test_login01
+[2019-07-11 23:51:04] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:04] - INFO: 请求方法：get
+[2019-07-11 23:51:04] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:51:04] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:04] - INFO: {
+  "status": true,
+  "results": [
+    {
+      "_id": "5d272b280656dd0758a62a8c",
+      "tenant_name": "haiyitenant",
+      "db": "hydb",
+      "info": "test",
+      "active_status": true
+    },
+    {
+      "_id": "5d2749df0152e20ff4dda419",
+      "tenant_name": "autotest",
+      "db": "autotest",
+      "info": "autotest",
+      "active_status": true
+    },
+    {
+      "_id": "5d2749df0152e20ff4dda41e",
+      "tenant_name": "test_autolive",
+      "db": "test_autolive",
+      "info": "test_autolive",
+      "active_status": true
+    }
+  ]
+}
+[2019-07-11 23:51:04] - INFO: ----------测试结束----------
+[2019-07-11 23:51:04] - WARNING: ---------------All Test End---------------
+[2019-07-11 23:51:04] - INFO: 不发送电子邮件！
+[2019-07-11 23:51:54] - INFO: --------测试开始---------
+[2019-07-11 23:51:54] - INFO: --------测试结束---------
+[2019-07-11 23:51:54] - INFO: --------测试开始---------
+[2019-07-11 23:51:54] - INFO: --------测试结束---------
+[2019-07-11 23:51:55] - INFO: ----------测试开始----------
+[2019-07-11 23:51:55] - test01_OrcLogin.py, Line 30]  - INFO: test_login01
+[2019-07-11 23:51:55] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:55] - INFO: 请求方法：post
+[2019-07-11 23:51:55] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:51:55] - INFO: 请求数据：{'username': 'orc_admin', 'password': 'orc_admin'}
+[2019-07-11 23:51:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:55] - INFO: {
+  "_id": "5be12191a30debdbb49f3508",
+  "username": "orc_admin",
+  "status": true,
+  "orchestrator_admin_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYyODYwMjYzfQ.XfLb4tcVq70kZ81kzgT_VIs3iOcqqnKcUJKPGkg2HlE"
+}
+[2019-07-11 23:51:55] - test01_OrcLogin.py, Line 42]  - INFO: 提取orc_token
+[2019-07-11 23:51:55] - test01_OrcLogin.py, Line 42]  - INFO: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYyODYwMjYzfQ.XfLb4tcVq70kZ81kzgT_VIs3iOcqqnKcUJKPGkg2HlE
+[2019-07-11 23:51:55] - INFO: 第三步：断言
+[2019-07-11 23:51:55] - INFO: ----------测试结束----------
+[2019-07-11 23:51:55] - INFO: ----------测试开始----------
+[2019-07-11 23:51:55] - test01_OrcLogin.py, Line 62]  - INFO: test_login02
+[2019-07-11 23:51:55] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:55] - INFO: 请求方法：post
+[2019-07-11 23:51:55] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:51:55] - INFO: 请求数据：{'username': 'orc_admin', 'password': '654321'}
+[2019-07-11 23:51:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:55] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username or password error"
+  }
+}
+[2019-07-11 23:51:55] - INFO: 第三步：断言
+[2019-07-11 23:51:55] - INFO: ----------测试结束----------
+[2019-07-11 23:51:55] - INFO: ----------测试开始----------
+[2019-07-11 23:51:55] - test01_OrcLogin.py, Line 83]  - INFO: test_login03
+[2019-07-11 23:51:55] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:55] - INFO: 请求方法：post
+[2019-07-11 23:51:55] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:51:55] - INFO: 请求数据：{'username': 'orc_admin1', 'password': '123456'}
+[2019-07-11 23:51:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:55] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "Username does not exists"
+  }
+}
+[2019-07-11 23:51:55] - INFO: 第三步：断言
+[2019-07-11 23:51:55] - INFO: ----------测试结束----------
+[2019-07-11 23:51:55] - INFO: ----------测试开始----------
+[2019-07-11 23:51:55] - test01_OrcLogin.py, Line 105]  - INFO: test_login04
+[2019-07-11 23:51:55] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:55] - INFO: 请求方法：post
+[2019-07-11 23:51:55] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:51:55] - INFO: 请求数据：{'password': '123456'}
+[2019-07-11 23:51:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:55] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username is needed"
+  }
+}
+[2019-07-11 23:51:55] - INFO: 第三步：断言
+[2019-07-11 23:51:55] - INFO: ----------测试结束----------
+[2019-07-11 23:51:55] - INFO: ----------测试开始----------
+[2019-07-11 23:51:55] - test01_OrcLogin.py, Line 126]  - INFO: test_login05
+[2019-07-11 23:51:55] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:55] - INFO: 请求方法：post
+[2019-07-11 23:51:55] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:51:55] - INFO: 请求数据：{'username': 'orc_admin'}
+[2019-07-11 23:51:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:55] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Password is needed"
+  }
+}
+[2019-07-11 23:51:55] - INFO: 第三步：断言
+[2019-07-11 23:51:55] - INFO: ----------测试结束----------
+[2019-07-11 23:51:55] - INFO: ----------测试开始----------
+[2019-07-11 23:51:55] - test02_UpdateOrcPw.py, Line 30]  - INFO: test_update01
+[2019-07-11 23:51:55] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:55] - INFO: 请求方法：put
+[2019-07-11 23:51:55] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:51:55] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': 'orc_admin', 'current_password': '123456'}
+[2019-07-11 23:51:55] - INFO: ----------测试结束----------
+[2019-07-11 23:51:55] - INFO: ----------测试开始----------
+[2019-07-11 23:51:55] - test02_UpdateOrcPw.py, Line 54]  - INFO: test_update02
+[2019-07-11 23:51:55] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:55] - INFO: 请求方法：put
+[2019-07-11 23:51:55] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:51:55] - INFO: 请求数据：{'username': 'orc_admin_no', 'new_password': 'orc_admin', 'current_password': '123456'}
+[2019-07-11 23:51:55] - INFO: ----------测试结束----------
+[2019-07-11 23:51:55] - INFO: ----------测试开始----------
+[2019-07-11 23:51:55] - test02_UpdateOrcPw.py, Line 78]  - INFO: test_update03
+[2019-07-11 23:51:55] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:55] - INFO: 请求方法：put
+[2019-07-11 23:51:55] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:51:55] - INFO: 请求数据：{'username': 'orc_admin', 'current_password': '123456'}
+[2019-07-11 23:51:55] - INFO: ----------测试结束----------
+[2019-07-11 23:51:55] - INFO: ----------测试开始----------
+[2019-07-11 23:51:55] - test02_UpdateOrcPw.py, Line 102]  - INFO: test_update04
+[2019-07-11 23:51:55] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:55] - INFO: 请求方法：put
+[2019-07-11 23:51:55] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:51:55] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': 'orc_admin'}
+[2019-07-11 23:51:55] - INFO: ----------测试结束----------
+[2019-07-11 23:51:55] - INFO: ----------测试开始----------
+[2019-07-11 23:51:55] - test02_UpdateOrcPw.py, Line 126]  - INFO: test_update05
+[2019-07-11 23:51:55] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:55] - INFO: 请求方法：put
+[2019-07-11 23:51:55] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:51:55] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': '123456', 'current_password': 'orc_admin'}
+[2019-07-11 23:51:55] - check_new_login, Line 166]  - INFO: check_new_login重新获取orc_admin_token成功
+[2019-07-11 23:51:56] - restore_orc_pw, Line 183]  - INFO: restore_orc_pw orc admin密码还原成功
+[2019-07-11 23:51:56] - INFO: 还原密码之后重新获取orc_token成功restore_get_pw
+[2019-07-11 23:51:56] - INFO: ----------测试结束----------
+[2019-07-11 23:51:56] - INFO: ----------测试开始----------
+[2019-07-11 23:51:56] - test03_CreateTenantDB.py, Line 27]  - INFO: test_login01
+[2019-07-11 23:51:56] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:56] - INFO: 请求方法：get
+[2019-07-11 23:51:56] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:51:56] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:56] - INFO: {
+  "status": true,
+  "results": [
+    {
+      "_id": "5d272b280656dd0758a62a8c",
+      "tenant_name": "haiyitenant",
+      "db": "hydb",
+      "info": "test",
+      "active_status": true
+    },
+    {
+      "_id": "5d2749df0152e20ff4dda419",
+      "tenant_name": "autotest",
+      "db": "autotest",
+      "info": "autotest",
+      "active_status": true
+    },
+    {
+      "_id": "5d2749df0152e20ff4dda41e",
+      "tenant_name": "test_autolive",
+      "db": "test_autolive",
+      "info": "test_autolive",
+      "active_status": true
+    }
+  ]
+}
+[2019-07-11 23:51:56] - INFO: ----------测试结束----------
+[2019-07-11 23:51:56] - INFO: ----------测试开始----------
+[2019-07-11 23:51:56] - test03_CreateTenantDB.py, Line 51]  - INFO: test_login01
+[2019-07-11 23:51:56] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:56] - INFO: 请求方法：post
+[2019-07-11 23:51:56] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:51:56] - INFO: 请求数据：{'tenant_name': 'autotest', 'db': 'autotest', 'info': 'autotest', 'is_auto': False}
+[2019-07-11 23:51:56] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:56] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-11 23:51:56] - INFO: ----------测试结束----------
+[2019-07-11 23:51:56] - INFO: ----------测试开始----------
+[2019-07-11 23:51:56] - test03_CreateTenantDB.py, Line 72]  - INFO: test_login01
+[2019-07-11 23:51:56] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:56] - INFO: 请求方法：post
+[2019-07-11 23:51:56] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:51:56] - INFO: 请求数据：{'tenant_name': 'test_autolive', 'db': 'test_autolive', 'info': 'test_autolive', 'is_auto': True}
+[2019-07-11 23:51:56] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:56] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-11 23:51:56] - INFO: ----------测试结束----------
+[2019-07-11 23:51:56] - INFO: ----------测试开始----------
+[2019-07-11 23:51:56] - test03_CreateTenantDB.py, Line 93]  - INFO: test_login01
+[2019-07-11 23:51:56] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:56] - INFO: 请求方法：post
+[2019-07-11 23:51:56] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:51:56] - INFO: 请求数据：{'db': 'lack_teant_name', 'info': 'lack_teant_name', 'is_auto': False}
+[2019-07-11 23:51:56] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:56] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide tenant name"
+  }
+}
+[2019-07-11 23:51:56] - INFO: ----------测试结束----------
+[2019-07-11 23:51:56] - INFO: ----------测试开始----------
+[2019-07-11 23:51:56] - test03_CreateTenantDB.py, Line 120]  - INFO: test_login01
+[2019-07-11 23:51:56] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:56] - INFO: 请求方法：post
+[2019-07-11 23:51:56] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:51:56] - INFO: 请求数据：{'tenant_name': 'lack_db_name', 'info': 'lack_db_name', 'is_auto': False}
+[2019-07-11 23:51:56] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:56] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide db"
+  }
+}
+[2019-07-11 23:51:56] - INFO: ----------测试结束----------
+[2019-07-11 23:51:56] - INFO: ----------测试开始----------
+[2019-07-11 23:51:56] - test03_CreateTenantDB.py, Line 146]  - INFO: test_login01
+[2019-07-11 23:51:56] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:56] - INFO: 请求方法：post
+[2019-07-11 23:51:56] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:51:56] - INFO: 请求数据：{'tenant_name': 'autotest', 'db': 'test', 'info': 'test', 'is_auto': False}
+[2019-07-11 23:51:56] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:56] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-11 23:51:56] - INFO: ----------测试结束----------
+[2019-07-11 23:51:56] - INFO: ----------测试开始----------
+[2019-07-11 23:51:56] - test03_CreateTenantDB.py, Line 173]  - INFO: test_login01
+[2019-07-11 23:51:56] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:56] - INFO: 请求方法：post
+[2019-07-11 23:51:56] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:51:56] - INFO: 请求数据：{'tenant_name': 'test', 'db': 'autotest', 'info': 'test', 'is_auto': False}
+[2019-07-11 23:51:56] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:56] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-11 23:51:56] - INFO: ----------测试结束----------
+[2019-07-11 23:51:56] - INFO: ----------测试开始----------
+[2019-07-11 23:51:56] - test03_CreateTenantDB.py, Line 200]  - INFO: test_login01
+[2019-07-11 23:51:56] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:51:56] - INFO: 请求方法：get
+[2019-07-11 23:51:56] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:51:56] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:51:56] - INFO: {
+  "status": true,
+  "results": [
+    {
+      "_id": "5d272b280656dd0758a62a8c",
+      "tenant_name": "haiyitenant",
+      "db": "hydb",
+      "info": "test",
+      "active_status": true
+    },
+    {
+      "_id": "5d2749df0152e20ff4dda419",
+      "tenant_name": "autotest",
+      "db": "autotest",
+      "info": "autotest",
+      "active_status": true
+    },
+    {
+      "_id": "5d2749df0152e20ff4dda41e",
+      "tenant_name": "test_autolive",
+      "db": "test_autolive",
+      "info": "test_autolive",
+      "active_status": true
+    }
+  ]
+}
+[2019-07-11 23:51:56] - INFO: ----------测试结束----------
+[2019-07-11 23:51:56] - WARNING: ---------------All Test End---------------
+[2019-07-11 23:51:56] - INFO: 不发送电子邮件！
+[2019-07-11 23:54:08] - INFO: --------测试开始---------
+[2019-07-11 23:54:08] - INFO: --------测试结束---------
+[2019-07-11 23:54:08] - INFO: --------测试开始---------
+[2019-07-11 23:54:08] - INFO: --------测试结束---------
+[2019-07-11 23:54:08] - INFO: ----------测试开始----------
+[2019-07-11 23:54:08] - test01_OrcLogin.py, Line 30]  - INFO: test_login01
+[2019-07-11 23:54:08] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:54:08] - INFO: 请求方法：post
+[2019-07-11 23:54:08] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:54:08] - INFO: 请求数据：{'username': 'orc_admin', 'password': 'orc_admin'}
+[2019-07-11 23:54:08] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:54:08] - INFO: {
+  "_id": "5be12191a30debdbb49f3508",
+  "username": "orc_admin",
+  "status": true,
+  "orchestrator_admin_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYyODYwMzk2fQ.ddDYaD8pHH-rH5WVrX_ldhCP7rFYyQgQcMlICMar8Ck"
+}
+[2019-07-11 23:54:08] - test01_OrcLogin.py, Line 42]  - INFO: 提取orc_token
+[2019-07-11 23:54:08] - test01_OrcLogin.py, Line 42]  - INFO: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYyODYwMzk2fQ.ddDYaD8pHH-rH5WVrX_ldhCP7rFYyQgQcMlICMar8Ck
+[2019-07-11 23:54:08] - INFO: 第三步：断言
+[2019-07-11 23:54:08] - INFO: ----------测试结束----------
+[2019-07-11 23:54:08] - INFO: ----------测试开始----------
+[2019-07-11 23:54:08] - test01_OrcLogin.py, Line 62]  - INFO: test_login02
+[2019-07-11 23:54:08] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:54:08] - INFO: 请求方法：post
+[2019-07-11 23:54:08] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:54:08] - INFO: 请求数据：{'username': 'orc_admin', 'password': '654321'}
+[2019-07-11 23:54:08] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:54:08] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username or password error"
+  }
+}
+[2019-07-11 23:54:08] - INFO: 第三步：断言
+[2019-07-11 23:54:08] - INFO: ----------测试结束----------
+[2019-07-11 23:54:08] - INFO: ----------测试开始----------
+[2019-07-11 23:54:08] - test01_OrcLogin.py, Line 83]  - INFO: test_login03
+[2019-07-11 23:54:08] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:54:08] - INFO: 请求方法：post
+[2019-07-11 23:54:08] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:54:08] - INFO: 请求数据：{'username': 'orc_admin1', 'password': '123456'}
+[2019-07-11 23:54:08] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:54:08] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "Username does not exists"
+  }
+}
+[2019-07-11 23:54:08] - INFO: 第三步：断言
+[2019-07-11 23:54:08] - INFO: ----------测试结束----------
+[2019-07-11 23:54:08] - INFO: ----------测试开始----------
+[2019-07-11 23:54:08] - test01_OrcLogin.py, Line 105]  - INFO: test_login04
+[2019-07-11 23:54:08] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:54:08] - INFO: 请求方法：post
+[2019-07-11 23:54:08] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:54:08] - INFO: 请求数据：{'password': '123456'}
+[2019-07-11 23:54:08] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:54:08] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username is needed"
+  }
+}
+[2019-07-11 23:54:08] - INFO: 第三步：断言
+[2019-07-11 23:54:08] - INFO: ----------测试结束----------
+[2019-07-11 23:54:08] - INFO: ----------测试开始----------
+[2019-07-11 23:54:08] - test01_OrcLogin.py, Line 126]  - INFO: test_login05
+[2019-07-11 23:54:08] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:54:08] - INFO: 请求方法：post
+[2019-07-11 23:54:08] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-11 23:54:08] - INFO: 请求数据：{'username': 'orc_admin'}
+[2019-07-11 23:54:08] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:54:08] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Password is needed"
+  }
+}
+[2019-07-11 23:54:08] - INFO: 第三步：断言
+[2019-07-11 23:54:08] - INFO: ----------测试结束----------
+[2019-07-11 23:54:08] - INFO: ----------测试开始----------
+[2019-07-11 23:54:08] - test02_UpdateOrcPw.py, Line 30]  - INFO: test_update01
+[2019-07-11 23:54:08] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:54:08] - INFO: 请求方法：put
+[2019-07-11 23:54:08] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:54:08] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': 'orc_admin', 'current_password': '123456'}
+[2019-07-11 23:54:08] - INFO: ----------测试结束----------
+[2019-07-11 23:54:08] - INFO: ----------测试开始----------
+[2019-07-11 23:54:08] - test02_UpdateOrcPw.py, Line 54]  - INFO: test_update02
+[2019-07-11 23:54:08] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:54:08] - INFO: 请求方法：put
+[2019-07-11 23:54:08] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:54:08] - INFO: 请求数据：{'username': 'orc_admin_no', 'new_password': 'orc_admin', 'current_password': '123456'}
+[2019-07-11 23:54:08] - INFO: ----------测试结束----------
+[2019-07-11 23:54:08] - INFO: ----------测试开始----------
+[2019-07-11 23:54:08] - test02_UpdateOrcPw.py, Line 78]  - INFO: test_update03
+[2019-07-11 23:54:08] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:54:08] - INFO: 请求方法：put
+[2019-07-11 23:54:08] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:54:08] - INFO: 请求数据：{'username': 'orc_admin', 'current_password': '123456'}
+[2019-07-11 23:54:08] - INFO: ----------测试结束----------
+[2019-07-11 23:54:08] - INFO: ----------测试开始----------
+[2019-07-11 23:54:08] - test02_UpdateOrcPw.py, Line 102]  - INFO: test_update04
+[2019-07-11 23:54:08] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:54:08] - INFO: 请求方法：put
+[2019-07-11 23:54:08] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:54:08] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': 'orc_admin'}
+[2019-07-11 23:54:08] - INFO: ----------测试结束----------
+[2019-07-11 23:54:08] - INFO: ----------测试开始----------
+[2019-07-11 23:54:08] - test02_UpdateOrcPw.py, Line 126]  - INFO: test_update05
+[2019-07-11 23:54:08] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:54:08] - INFO: 请求方法：put
+[2019-07-11 23:54:08] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-11 23:54:08] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': '123456', 'current_password': 'orc_admin'}
+[2019-07-11 23:54:09] - check_new_login, Line 166]  - INFO: check_new_login重新获取orc_admin_token成功
+[2019-07-11 23:54:09] - restore_orc_pw, Line 183]  - INFO: restore_orc_pw orc admin密码还原成功
+[2019-07-11 23:54:09] - INFO: 还原密码之后重新获取orc_token成功restore_get_pw
+[2019-07-11 23:54:09] - INFO: ----------测试结束----------
+[2019-07-11 23:54:09] - INFO: ----------测试开始----------
+[2019-07-11 23:54:09] - test03_CreateTenantDB.py, Line 27]  - INFO: test_login01
+[2019-07-11 23:54:09] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:54:09] - INFO: 请求方法：get
+[2019-07-11 23:54:09] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:54:09] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:54:09] - INFO: {
+  "status": true,
+  "results": [
+    {
+      "_id": "5d272b280656dd0758a62a8c",
+      "tenant_name": "haiyitenant",
+      "db": "hydb",
+      "info": "test",
+      "active_status": true
+    },
+    {
+      "_id": "5d2749df0152e20ff4dda419",
+      "tenant_name": "autotest",
+      "db": "autotest",
+      "info": "autotest",
+      "active_status": true
+    },
+    {
+      "_id": "5d2749df0152e20ff4dda41e",
+      "tenant_name": "test_autolive",
+      "db": "test_autolive",
+      "info": "test_autolive",
+      "active_status": true
+    }
+  ]
+}
+[2019-07-11 23:54:09] - INFO: ----------测试结束----------
+[2019-07-11 23:54:09] - INFO: ----------测试开始----------
+[2019-07-11 23:54:09] - test03_CreateTenantDB.py, Line 51]  - INFO: test_login01
+[2019-07-11 23:54:09] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:54:09] - INFO: 请求方法：post
+[2019-07-11 23:54:09] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:54:09] - INFO: 请求数据：{'tenant_name': 'autotest', 'db': 'autotest', 'info': 'autotest', 'is_auto': False}
+[2019-07-11 23:54:09] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:54:09] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-11 23:54:09] - INFO: ----------测试结束----------
+[2019-07-11 23:54:09] - INFO: ----------测试开始----------
+[2019-07-11 23:54:09] - test03_CreateTenantDB.py, Line 72]  - INFO: test_login01
+[2019-07-11 23:54:09] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:54:09] - INFO: 请求方法：post
+[2019-07-11 23:54:09] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:54:09] - INFO: 请求数据：{'tenant_name': 'test_autolive', 'db': 'test_autolive', 'info': 'test_autolive', 'is_auto': True}
+[2019-07-11 23:54:09] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:54:09] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-11 23:54:09] - INFO: ----------测试结束----------
+[2019-07-11 23:54:09] - INFO: ----------测试开始----------
+[2019-07-11 23:54:09] - test03_CreateTenantDB.py, Line 93]  - INFO: test_login01
+[2019-07-11 23:54:09] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:54:09] - INFO: 请求方法：post
+[2019-07-11 23:54:09] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:54:09] - INFO: 请求数据：{'db': 'lack_teant_name', 'info': 'lack_teant_name', 'is_auto': False}
+[2019-07-11 23:54:09] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:54:09] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide tenant name"
+  }
+}
+[2019-07-11 23:54:09] - INFO: ----------测试结束----------
+[2019-07-11 23:54:09] - INFO: ----------测试开始----------
+[2019-07-11 23:54:09] - test03_CreateTenantDB.py, Line 120]  - INFO: test_login01
+[2019-07-11 23:54:09] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:54:09] - INFO: 请求方法：post
+[2019-07-11 23:54:09] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:54:09] - INFO: 请求数据：{'tenant_name': 'lack_db_name', 'info': 'lack_db_name', 'is_auto': False}
+[2019-07-11 23:54:09] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:54:09] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide db"
+  }
+}
+[2019-07-11 23:54:09] - INFO: ----------测试结束----------
+[2019-07-11 23:54:09] - INFO: ----------测试开始----------
+[2019-07-11 23:54:09] - test03_CreateTenantDB.py, Line 146]  - INFO: test_login01
+[2019-07-11 23:54:09] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:54:09] - INFO: 请求方法：post
+[2019-07-11 23:54:09] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:54:09] - INFO: 请求数据：{'tenant_name': 'autotest', 'db': 'test', 'info': 'test', 'is_auto': False}
+[2019-07-11 23:54:09] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:54:09] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-11 23:54:09] - INFO: ----------测试结束----------
+[2019-07-11 23:54:09] - INFO: ----------测试开始----------
+[2019-07-11 23:54:09] - test03_CreateTenantDB.py, Line 173]  - INFO: test_login01
+[2019-07-11 23:54:09] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:54:09] - INFO: 请求方法：post
+[2019-07-11 23:54:09] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:54:09] - INFO: 请求数据：{'tenant_name': 'test', 'db': 'autotest', 'info': 'test', 'is_auto': False}
+[2019-07-11 23:54:09] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:54:09] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-11 23:54:09] - INFO: ----------测试结束----------
+[2019-07-11 23:54:09] - INFO: ----------测试开始----------
+[2019-07-11 23:54:09] - test03_CreateTenantDB.py, Line 200]  - INFO: test_login01
+[2019-07-11 23:54:09] - INFO: 第一步: 获取请求数据
+[2019-07-11 23:54:09] - INFO: 请求方法：get
+[2019-07-11 23:54:09] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-11 23:54:09] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-11 23:54:09] - INFO: {
+  "status": true,
+  "results": [
+    {
+      "_id": "5d272b280656dd0758a62a8c",
+      "tenant_name": "haiyitenant",
+      "db": "hydb",
+      "info": "test",
+      "active_status": true
+    },
+    {
+      "_id": "5d2749df0152e20ff4dda419",
+      "tenant_name": "autotest",
+      "db": "autotest",
+      "info": "autotest",
+      "active_status": true
+    },
+    {
+      "_id": "5d2749df0152e20ff4dda41e",
+      "tenant_name": "test_autolive",
+      "db": "test_autolive",
+      "info": "test_autolive",
+      "active_status": true
+    }
+  ]
+}
+[2019-07-11 23:54:09] - INFO: ----------测试结束----------
+[2019-07-11 23:54:09] - WARNING: ---------------All Test End---------------
+[2019-07-11 23:54:09] - INFO: 不发送电子邮件！

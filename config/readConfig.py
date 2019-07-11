@@ -42,8 +42,6 @@ class ReadConfig:
         report_vale = self.cf.get("REPORT", report_key)
         return report_vale
 
-    def get_internet_report(self):
-        url = "http://192.168.0.103:8033/origin/report/2019-07-11%2022-38-21report.html"
 
 
 if __name__ == "__main__":
