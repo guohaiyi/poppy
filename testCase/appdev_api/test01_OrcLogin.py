@@ -28,7 +28,7 @@ class LoginTest(unittest.TestCase):
 
     def test_login01(self):
         """orc admin正常登录"""
-        self.log.info(message="----------test_login01----------", name="test01_OrcLogin.py", line=30)
+        self.log.info(message="test_login01", name="test01_OrcLogin.py", line=30)
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[0])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[0])
@@ -60,7 +60,7 @@ class LoginTest(unittest.TestCase):
 
     def test_login02(self):
         """登录失败，密码错误"""
-        self.log.info(message="----------test_login02----------", name="test01_OrcLogin.py", line=62)
+        self.log.info(message="test_login02", name="test01_OrcLogin.py", line=62)
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[1])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[1])
@@ -86,7 +86,7 @@ class LoginTest(unittest.TestCase):
 
     def test_login03(self):
         """登录失败，账户不存在"""
-        self.log.info(message="----------test_login03----------", name="test01_OrcLogin.py", line=83)
+        self.log.info(message="test_login03", name="test01_OrcLogin.py", line=83)
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[2])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[2])
@@ -114,7 +114,7 @@ class LoginTest(unittest.TestCase):
     # @unittest.skip("跳过测试")
     def test_login04(self):
         """登录失败，缺少username字段"""
-        self.log.info(message="----------test_login04----------", name="test01_OrcLogin.py", line=105)
+        self.log.info(message="test_login04", name="test01_OrcLogin.py", line=105)
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[3])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[3])
@@ -141,7 +141,7 @@ class LoginTest(unittest.TestCase):
 
     def test_login05(self):
         """登录失败，缺少password字段"""
-        self.log.info(message="----------test_login05----------", name="test01_OrcLogin.py", line=126)
+        self.log.info(message="test_login05", name="test01_OrcLogin.py", line=126)
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[4])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[4])

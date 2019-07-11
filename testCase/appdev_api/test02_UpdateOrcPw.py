@@ -28,7 +28,7 @@ class TestUpdateOrcPw(unittest.TestCase):
 
     def test_update01(self):
         """更新密码失败：旧密码错误"""
-        self.log.info(message="----------test_update01----------", name="test02_UpdateOrcPw.py", line=30)
+        self.log.info(message="test_update01", name="test02_UpdateOrcPw.py", line=30)
         # 配置请求数据
         method = self.data.get_method(self.sheet, self.row[0])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[0])
@@ -52,7 +52,7 @@ class TestUpdateOrcPw(unittest.TestCase):
 
     def test_update02(self):
         """更新密码失败：username不存在"""
-        self.log.info(message="----------test_update02----------", name="test02_UpdateOrcPw.py", line=54)
+        self.log.info(message="test_update02", name="test02_UpdateOrcPw.py", line=54)
         # 配置请求数据
         method = self.data.get_method(self.sheet, self.row[1])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[1])
@@ -76,7 +76,7 @@ class TestUpdateOrcPw(unittest.TestCase):
 
     def test_update03(self):
         """更新密码失败：缺少new_password字段"""
-        self.log.info(message="----------test_update03----------", name="test02_UpdateOrcPw.py", line=78)
+        self.log.info(message="test_update03", name="test02_UpdateOrcPw.py", line=78)
         # 配置请求数据
         method = self.data.get_method(self.sheet, self.row[2])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[2])
@@ -100,7 +100,7 @@ class TestUpdateOrcPw(unittest.TestCase):
 
     def test_update04(self):
         """更新密码失败：缺少current_password字段"""
-        self.log.info(message="----------test_update04----------", name="test02_UpdateOrcPw.py", line=102)
+        self.log.info(message="test_update04", name="test02_UpdateOrcPw.py", line=102)
         # 配置请求数据
         method = self.data.get_method(self.sheet, self.row[3])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[3])
@@ -124,7 +124,7 @@ class TestUpdateOrcPw(unittest.TestCase):
 
     def test_update05(self):
         """更新密码成功"""
-        self.log.info(message="----------test_update05----------", name="test02_UpdateOrcPw.py", line=126)
+        self.log.info(message="test_update05", name="test02_UpdateOrcPw.py", line=126)
         # 配置请求数据
         method = self.data.get_method(self.sheet, self.row[4])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[4])

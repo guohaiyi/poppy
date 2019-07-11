@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../demo/.idea/demo.iml" filepath="$PROJECT_DIR$/../demo/.idea/demo.iml" />
       <module fileurl="file://D:/python_auto参考/interfaceTest/.idea/interfaceTest.iml" filepath="D:/python_auto参考/interfaceTest/.idea/interfaceTest.iml" />
+      <module fileurl="file://D:/poppy/my_rf/.idea/my_rf.iml" filepath="D:/poppy/my_rf/.idea/my_rf.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/poppy.iml" filepath="$PROJECT_DIR$/.idea/poppy.iml" />
     </modules>
   </component>

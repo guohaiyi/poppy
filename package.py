@@ -2,14 +2,20 @@
 # coding=utf-8
 import os
 
-count = 2
-while count:
-    try:
-        import requests
+# 判断是否安装requests
+try:
+    import requests
 
-        print("已检测到requests模块,无需安装--- OK")
-        break
-    except:
-        print("未检测到requests模块，现在开始安装......")
-        os.system('pip3 install requests')
-        count -= 1
+    print("已检测到requests模块,无需安装OK...")
+except:
+    print("未检测到requests模块，现在开始安装......")
+    os.system('pip3 install requests')
+
+# 判断是否安装requests
+try:
+    import openpyxl
+
+    print("已检测到openpyxl模块,无需安装OK...")
+except:
+    print("未检测到openpyxl模块，现在开始安装......")
+    os.system('pip3 install openpyxl')

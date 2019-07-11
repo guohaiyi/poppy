@@ -89,7 +89,7 @@ class RunTest:
         except Exception as e:
             self.logger.error(str(e))
         finally:
-            self.logger.warning("---------------TEST END---------------")
+            self.logger.warning("---------------All Test End---------------")
             fp.close()
             # 发送电子邮件
             if self.is_send == 'yes':

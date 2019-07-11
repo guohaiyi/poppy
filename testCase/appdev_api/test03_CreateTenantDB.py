@@ -26,7 +26,7 @@ class CreateTenantDbTest(unittest.TestCase):
 
     def test01_get_db_list(self):
         """获取Tenant DB列表：Tenant DB列表为空"""
-        self.log.info(message="----------test_login01----------", name="test03_CreateTenantDB.py", line=27)
+        self.log.info(message="test_login01", name="test03_CreateTenantDB.py", line=27)
         # 设置请求数据
         method = self.data.get_method(self.sheet, self.row[6])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[6])
@@ -51,7 +51,7 @@ class CreateTenantDbTest(unittest.TestCase):
 
     def test02_create_db(self):
         """创建Tenant DB，不创建autolive"""
-        self.log.info(message="----------test_login01----------", name="test03_CreateTenantDB.py", line=51)
+        self.log.info(message="test_login01", name="test03_CreateTenantDB.py", line=51)
         # 设置请求数据
         method = self.data.get_method(self.sheet, self.row[0])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[0])
@@ -74,7 +74,7 @@ class CreateTenantDbTest(unittest.TestCase):
 
     def test03_create_db(self):
         """创建成功，并创建autolive"""
-        self.log.info(message="----------test_login01----------", name="test03_CreateTenantDB.py", line=72)
+        self.log.info(message="test_login01", name="test03_CreateTenantDB.py", line=72)
         # 设置请求数据
         method = self.data.get_method(self.sheet, self.row[1])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[1])
@@ -97,7 +97,7 @@ class CreateTenantDbTest(unittest.TestCase):
 
     def test04_create_db(self):
         """创建失败：缺少tenant name"""
-        self.log.info(message="----------test_login01----------", name="test03_CreateTenantDB.py", line=93)
+        self.log.info(message="test_login01", name="test03_CreateTenantDB.py", line=93)
         # 设置请求数据
         method = self.data.get_method(self.sheet, self.row[2])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[2])
@@ -124,7 +124,7 @@ class CreateTenantDbTest(unittest.TestCase):
 
     def test05_create_db(self):
         """创建失败：缺少db name"""
-        self.log.info(message="----------test_login01----------", name="test03_CreateTenantDB.py", line=120)
+        self.log.info(message="test_login01", name="test03_CreateTenantDB.py", line=120)
         # 设置请求数据
         method = self.data.get_method(self.sheet, self.row[3])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[4])
@@ -150,7 +150,7 @@ class CreateTenantDbTest(unittest.TestCase):
 
     def test06_create_db(self):
         """创建失败：tenant name已被占用"""
-        self.log.info(message="----------test_login01----------", name="test03_CreateTenantDB.py", line=146)
+        self.log.info(message="test_login01", name="test03_CreateTenantDB.py", line=146)
         # 设置请求数据
         method = self.data.get_method(self.sheet, self.row[4])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[4])
@@ -177,7 +177,7 @@ class CreateTenantDbTest(unittest.TestCase):
 
     def test07_create_db(self):
         """创建失败：db name已被占用"""
-        self.log.info(message="----------test_login01----------", name="test03_CreateTenantDB.py", line=173)
+        self.log.info(message="test_login01", name="test03_CreateTenantDB.py", line=173)
         # 设置请求数据
         method = self.data.get_method(self.sheet, self.row[5])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[5])
@@ -204,7 +204,7 @@ class CreateTenantDbTest(unittest.TestCase):
 
     def test08_get_db_list(self):
         """获取Tenant DB列表"""
-        self.log.info(message="----------test_login01----------", name="test03_CreateTenantDB.py", line=200)
+        self.log.info(message="test_login01", name="test03_CreateTenantDB.py", line=200)
         # 设置请求数据
         method = self.data.get_method(self.sheet, self.row[7])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[7])
