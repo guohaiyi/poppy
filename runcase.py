@@ -72,7 +72,7 @@ class RunTest:
         """
         try:
             test_suite = self.set_test_suite()  # 获取测试套件
-            now = time.strftime("%Y-%m-%d %H-%M-%S", time.localtime(time.time()))  # 获取当前日期时间
+            now = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime(time.time()))  # 获取当前日期时间
             public_path = os.path.dirname(os.path.abspath(sys.argv[0]))
             filename = public_path + "/report/" + now + "_report.html"  # 保存的报告路径和名称
             print("测试报告：%s" % filename)
