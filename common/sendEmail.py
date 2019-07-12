@@ -4,6 +4,7 @@ import smtplib
 import os
 from common.myLog import MyLog
 from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 from email.header import Header
 from config.readConfig import ReadConfig
 
@@ -29,15 +30,25 @@ class SendEmail:
             self.receive_user_list.append(i)
 
     def send_email(self):
+        """把最新的测试报告以邮件的方式发送"""
+        # 构造邮件
         file_new = self.get_new_report()
         f = open(file_new, 'rb')
         content = f.read()
-        f.close()
-        message = MIMEText(content, _subtype='html', _charset='utf-8')  # 内容，格式，编码
+        message = MIMEMultipart()
         message['From'] = "{}".format(sender)  # 发件人
         message['To'] = ",".join(self.receive_user_list)  # 收件人
         message['Subject'] = Header(title, 'utf-8')  # 标题
-        # 构造邮件并发送
+        message.attach(MIMEText(content, 'html', 'utf-8'))
+
+        # 添加附件
+        filename = file_new[-31:]
+        att = MIMEText(content, 'base64', 'utf-8')
+        att["Content-Type"] = 'application/octet-stream'
+        att["Content-Disposition"] = 'attachment; filename=%s' % filename
+        message.attach(att)
+
+        # 发送邮件
         try:
             server = smtplib.SMTP()
             server.connect(host)
@@ -50,6 +61,7 @@ class SendEmail:
             self.logger.error("邮件发送失败！请检查邮件配置%s" % e)
 
     def get_new_report(self):
+        """获取最新的测试报告"""
         lists = os.listdir(reportpath)
         if lists:
             lists.sort(key=lambda fn: os.path.getmtime(reportpath + '\\' + fn))

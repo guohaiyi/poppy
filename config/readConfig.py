@@ -38,11 +38,6 @@ class ReadConfig:
         excel_vale = self.cf.get("EXCEL", excel_key)
         return excel_vale
 
-    def get_report(self, report_key):
-        report_vale = self.cf.get("REPORT", report_key)
-        return report_vale
-
-
 
 if __name__ == "__main__":
     r = ReadConfig()
