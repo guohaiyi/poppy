@@ -1,14 +1,12 @@
 import unittest
 from common.cal import Cal
 from common.myLog import MyLog
-from common.readData import ReadData
 
 
 class TestCal(unittest.TestCase):
     def setUp(self) -> None:
         self.cal = Cal()
         self.log = MyLog()
-        self.data = ReadData()
         self.log.info("--------测试开始---------")
 
     def test_add(self):
