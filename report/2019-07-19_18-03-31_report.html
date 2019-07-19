@@ -116,18 +116,18 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">Poppy接口测试报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> HaiYi</p>
-<p class='attribute'><strong>开始时间 : </strong> 2019-07-18 18:09:07</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:01.507500</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 22，通过 18，失败 4，通过率= 81.82%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-07-19 18:03:31</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:01.764000</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 22，通过 20，失败 2，通过率= 90.91%</p>
 
 <p class='description'>测试环境：Develop，IP地址：http://172.16.1.201:3002</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 81.82% }</a>
-<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 4 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 18 }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 90.91% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 2 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 20 }</a>
 <a class="btn btn-info" href='javascript:showCase(3)'>所有{ 22 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
@@ -238,8 +238,8 @@ function html_escape(s) {
 <tr class='failClass warning'>
     <td>appdev_api.test03_CreateTenantDB.CreateTenantDbTest</td>
     <td class="text-center">8</td>
-    <td class="text-center">5</td>
-    <td class="text-center">3</td>
+    <td class="text-center">6</td>
+    <td class="text-center">2</td>
     <td class="text-center">0</td>
     <td class="text-center"><a href="javascript:showClassDetail('c4',8)" class="detail" id='c4'>详细</a></td>
 </tr>
@@ -256,9 +256,9 @@ function html_escape(s) {
     <pre>
     
 ft4_1: Traceback (most recent call last):
-  File "D:\www\poppy\testCase\appdev_api\test03_CreateTenantDB.py", line 46, in test01_get_db_list
+  File "D:\www\poppy\testCase\appdev_api\test03_CreateTenantDB.py", line 49, in test01_get_db_list
     self.assertFalse(dict_json["status"], msg='&gt;&gt;&gt;test01_get_db_list创建DB失败，实际返回结果：%s' % dict_json)
-AssertionError: True is not false : &gt;&gt;&gt;test01_get_db_list创建DB失败，实际返回结果：{'status': True, 'results': [{'_id': '5d304508aeaa1fd503280a71', 'tenant_name': 'auto_user_tenant', 'db': 'auto_user_tenant', 'info': 'auto_user_tenant', 'active_status': True}, {'_id': '5d304508aeaa1fd503280a72', 'tenant_name': 'test_autolive', 'db': 'test_autolive', 'info': 'test_autolive', 'active_status': True}]}
+AssertionError: True is not false : &gt;&gt;&gt;test01_get_db_list创建DB失败，实际返回结果：{'status': True, 'results': [{'_id': '5d317a88aeaa1fd50328275a', 'tenant_name': 'haiyitenant', 'db': 'hydb', 'info': 'test', 'active_status': True}]}
 
 
     </pre>
@@ -266,48 +266,14 @@ AssertionError: True is not false : &gt;&gt;&gt;test01_get_db_list创建DB失败
     </td>
 </tr>
 
-<tr id='ft4_2' class='none'>
-    <td class='failCase'><div class='testcase'>test02_create_db: 创建Tenant DB，不创建autolive</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft4_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_2'>失败</button>
-    <div id='div_ft4_2' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft4_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_2'>失败</button>
-    <div id='div_ft4_2' class="collapse in" align="left">
-    <pre>
-    
-ft4_2: Traceback (most recent call last):
-  File "D:\www\poppy\testCase\appdev_api\test03_CreateTenantDB.py", line 73, in test02_create_db
-    self.assertTrue(dict_json["status"], msg='&gt;&gt;&gt;test02_create_db创建DB失败，实际返回结果：%s' % dict_json)
-AssertionError: False is not true : &gt;&gt;&gt;test02_create_db创建DB失败，实际返回结果：{'status': False, 'err': {'code': 400, 'message': 'Tenant name/DB already exists'}}
-
-
-    </pre>
-    </div>
-    </td>
+<tr id='pt4_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test02_create_db: 创建Tenant DB，不创建autolive</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='ft4_3' class='none'>
-    <td class='failCase'><div class='testcase'>test03_create_db: 创建成功，并创建autolive</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft4_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_3'>失败</button>
-    <div id='div_ft4_3' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft4_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_3'>失败</button>
-    <div id='div_ft4_3' class="collapse in" align="left">
-    <pre>
-    
-ft4_3: Traceback (most recent call last):
-  File "D:\www\poppy\testCase\appdev_api\test03_CreateTenantDB.py", line 96, in test03_create_db
-    self.assertTrue(dict_json["status"], msg='&gt;&gt;&gt;test03_create_db创建DB失败，实际返回结果：%s' % dict_json)
-AssertionError: False is not true : &gt;&gt;&gt;test03_create_db创建DB失败，实际返回结果：{'status': False, 'err': {'code': 400, 'message': 'Tenant name/DB already exists'}}
-
-
-    </pre>
-    </div>
-    </td>
+<tr id='pt4_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test03_create_db: 创建成功，并创建autolive</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt4_4' class='hiddenRow'>
@@ -330,40 +296,43 @@ AssertionError: False is not true : &gt;&gt;&gt;test03_create_db创建DB失败�
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt4_8' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test08_get_db_list: 获取Tenant DB列表</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr class='failClass warning'>
-    <td>appdev_api.test06_CreateTenantAdmin.LoginTest</td>
-    <td class="text-center">1</td>
-    <td class="text-center">0</td>
-    <td class="text-center">1</td>
-    <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c5',1)" class="detail" id='c5'>详细</a></td>
-</tr>
-
-<tr id='ft5_1' class='none'>
-    <td class='failCase'><div class='testcase'>test01_cre_tenant: 创建Tenant andmin</div></td>
+<tr id='ft4_8' class='none'>
+    <td class='failCase'><div class='testcase'>test08_get_db_list: 获取Tenant DB列表</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft5_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft5_1'>失败</button>
-    <div id='div_ft5_1' class="collapse">  -->
+    <button id='btn_ft4_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_8'>失败</button>
+    <div id='div_ft4_8' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft5_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft5_1'>失败</button>
-    <div id='div_ft5_1' class="collapse in" align="left">
+    <button id='btn_ft4_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_8'>失败</button>
+    <div id='div_ft4_8' class="collapse in" align="left">
     <pre>
     
-ft5_1: Traceback (most recent call last):
-  File "D:\www\poppy\testCase\appdev_api\test06_CreateTenantAdmin.py", line 55, in test01_cre_tenant
-    self.assertTrue(dict_json["status"], msg="&gt;&gt;&gt;test01_cre_tenant断言失败，实际返回结果：%s" % dict_json)
-AssertionError: False is not true : &gt;&gt;&gt;test01_cre_tenant断言失败，实际返回结果：{'status': False, 'err': {'code': 400, 'message': 'Username not available for this tenant. Try another username.'}}
+ft4_8: Traceback (most recent call last):
+  File "D:\www\poppy\testCase\appdev_api\test03_CreateTenantDB.py", line 234, in test08_get_db_list
+    msg="&gt;&gt;&gt;test08_get_db_list断言失败，实际返回结果：%s" % dict_json["results"][0]["tenant_name"])
+AssertionError: 'haiyitenant' != 'auto_user_tenant'
+- haiyitenant
++ auto_user_tenant
+ : &gt;&gt;&gt;test08_get_db_list断言失败，实际返回结果：haiyitenant
 
 
     </pre>
     </div>
     </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>appdev_api.test06_CreateTenantAdmin.LoginTest</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c5',1)" class="detail" id='c5'>详细</a></td>
+</tr>
+
+<tr id='pt5_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test01_cre_tenant: 创建Tenant andmin</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr class='passClass warning'>
@@ -376,17 +345,17 @@ AssertionError: False is not true : &gt;&gt;&gt;test01_cre_tenant断言失败，
 </tr>
 
 <tr id='pt6_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test01_cre_tenant: Tenant admin正常登录</div></td>
+    <td class='passCase'><div class='testcase'>test01_admin_login: Tenant admin正常登录</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
     <td>22</td>
-    <td>18</td>
-    <td>4</td>
+    <td>20</td>
+    <td>2</td>
     <td>0</td>
-    <td>通过率：81.82%</td>
+    <td>通过率：90.91%</td>
 </tr>
 </table>
 

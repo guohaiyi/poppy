@@ -90,7 +90,7 @@ class ReadTestData:
 
 
 if __name__ == "__main__":
-    file_name = "../testDataFile/tenant_account.json"
+    file_name = "../testDataFile/user.json"
     a = ReadTestData(file_name)
-    b = a.get_request_data('app_test_case', 31)
+    b = a.get_param('cmb_test_case', 16)
     print(b)

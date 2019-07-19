@@ -50,6 +50,6 @@ class OperationJson:
 
 if __name__ == "__main__":
     a = OperationJson()
-    b = a.key_get_data("tenant_admin")
+    b = a.key_get_data("user")
     # b = a.key_get_data("orc_login_header")
-    print(b)
+    print(b["user_id"])

@@ -1,0 +1,37 @@
+{
+  "default_live_tube": {
+    "source_type": "RTMP"
+  },
+  "default_live_channel": {
+    "live_tube_id": "5d2ffaf4f1854cafc51f79d2"
+  },
+  "set_live_tube": {
+    "source_type": "RTMP",
+    "channel_profile": "testqq",
+    "out_type": {
+      "hls_out": [
+        {
+          "isVod": false,
+          "legacy_hls_support": true
+        },
+        {
+          "isVod": true,
+          "legacy_hls_support": false
+        }
+      ],
+      "rtmp_out": 1,
+      "mp4_out": [
+        {
+          "isVod": false
+        },
+        {
+          "isVod": true
+        }
+      ]
+    },
+    "autorestart": true
+  },
+  "set_live_channel": {
+    "live_tube_id": "5d2ffaf4f1854cafc51f79d2"
+  }
+}

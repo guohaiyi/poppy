@@ -30,7 +30,7 @@ class LoginTest(unittest.TestCase):
     def tearDown(self):
         self.log.info(message="----------测试结束----------", name="test01_TenantAdminLogin.py")
 
-    def test01_cre_tenant(self):
+    def test01_admin_login(self):
         """Tenant admin正常登录"""
         self.log.info(message="test01_cre_tenant", name="test06_CreateTenantAdmin.py", line=32)
         # 获取测试数据
