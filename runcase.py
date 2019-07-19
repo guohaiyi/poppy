@@ -1,4 +1,5 @@
-# -*- coding: UTF-8 -*-
+#!/usr/bin/python3
+# coding=utf-8
 import os
 import sys
 import time
@@ -78,8 +79,9 @@ class RunTest:
             test_suite = self.set_test_suite()  # 获取测试套件
             now = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime(time.time()))  # 获取当前日期时间
             public_path = os.path.dirname(os.path.abspath(sys.argv[0]))
-            filename = public_path + "/report/" + now + "_report.html"  # 保存的报告路径和名称
-            print("测试报告：%s" % filename)
+            # filename = public_path + "/report/" + now + "_report.html"  # 保存的报告路径和名称
+            filename = public_path + "/report/" + "index.html"  # 保存的报告路径和名称
+            print("测试报告目录：%s" % filename)
             fp = open(filename, 'wb')
             runner = HTMLTestRunner(stream=fp,
                                     tester=self.testers,
@@ -99,11 +101,11 @@ class RunTest:
             # 发送电子邮件
             if self.is_send == 'yes':
                 self.send_mail.send_email()
-                print("已发送电子邮件")
+                print("测试报告已发送电子邮件")
             elif self.is_send == 'no':
-                self.logger.info("不发送电子邮件！")
+                self.logger.info("测试报告不发送电子邮件！")
             else:
-                self.logger.error("发送电子邮件为未知状态，请检查配置！")
+                self.logger.error("测试报告发送电子邮件为未知状态，请检查配置！")
 
 
 if __name__ == "__main__":

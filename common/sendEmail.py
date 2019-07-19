@@ -71,4 +71,4 @@ class SendEmail:
 
 if __name__ == "__main__":
     s = SendEmail()
-    s.send_email()
+    s.get_new_report()

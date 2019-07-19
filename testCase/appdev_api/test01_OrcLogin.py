@@ -12,6 +12,7 @@ from config.readConfig import ReadConfig
 
 proDir = os.path.split(os.path.realpath(__file__))[0]
 file_name = os.path.join(proDir, "../../testDataFile/orchestrator_account.json")
+print('file_name:%s' % file_name)
 
 
 class LoginTest(unittest.TestCase):

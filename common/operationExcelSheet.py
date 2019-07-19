@@ -69,4 +69,4 @@ class OperationExcel:
 
 if __name__ == "__main__":
     s = OperationExcel()
-    print(s.write_data('cmb_test_case', 'A', 3, 'test'))
+    print(s.from_ab_get_data('app_test_case', 'J', 30))

@@ -11,7 +11,7 @@ except:
     print("未检测到requests模块，现在开始安装......")
     os.system('pip3 install requests')
 
-# 判断是否安装requests
+# 判断是否安装openpyxl
 try:
     import openpyxl
 

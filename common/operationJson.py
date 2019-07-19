@@ -49,9 +49,7 @@ class OperationJson:
 
 
 if __name__ == "__main__":
-    w_key1 = "header"
-    w_key2 = "Authorization"
     a = OperationJson()
-    b = a.write_data("123456789", "tenant_name")
+    b = a.key_get_data("tenant_admin")
     # b = a.key_get_data("orc_login_header")
     print(b)

@@ -227,7 +227,7 @@ class CreateTenantDbTest(unittest.TestCase):
         self.assertIn("db", dict_json["results"][0])
         self.assertIn('info', dict_json["results"][0])
         self.assertIn('active_status', dict_json["results"][0])
-        self.assertEqual(dict_json["results"][0]["tenant_name"], "autotest",
+        self.assertEqual(dict_json["results"][0]["tenant_name"], "auto_user_tenant",
                          msg=">>>test08_get_db_list断言失败，实际返回结果：%s" % dict_json["results"][0]["tenant_name"])
         self.assertIn("_id", dict_json["results"][1])
         self.assertIn('tenant_name', dict_json["results"][1])

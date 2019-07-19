@@ -1,8 +1,8 @@
 {
   "tenant_db": {
-    "tenant_name": "autotest",
-    "db": "autotest",
-    "info": "autotest",
+    "tenant_name": "auto_user_tenant",
+    "db": "auto_user_tenant",
+    "info": "auto_user_tenant",
     "is_auto": false
   },
   "tenant_db_autolive": {
@@ -22,14 +22,14 @@
     "is_auto": false
   },
   "tenant_name_exists": {
-    "tenant_name": "autotest",
+    "tenant_name": "auto_user_tenant",
     "db": "test",
     "info": "test",
     "is_auto": false
   },
   "db_name_exists": {
     "tenant_name": "test",
-    "db": "autotest",
+    "db": "auto_user_tenant",
     "info": "test",
     "is_auto": false
   }

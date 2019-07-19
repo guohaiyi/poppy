@@ -1,14 +1,14 @@
 {
-  "orc_login_header": {
+  "login_header": {
     "Content-Type": "application/json"
   },
   "orc_token_header": {
     "Content-Type": "application/json",
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYzMjYwNjI5fQ.3WTDtHiBvavsPmyin0q0JIP2tsKAgs2L3CT6YNPoVvw"
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYzNDQ0NTQ0fQ.0Fji7L9d0ZnJO8RR9X4ete2eVMrqDaBsRbxN-ABGn-I"
   },
   "tenant_token_header": {
     "Content-Type": "application/json",
-    "Authorization": "123456789"
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZDMwNDUwOGFlYWExZmQ1MDMyODBhNzUiLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwidGVuYW50IjoiYXV0b191c2VyX3RlbmFudCIsImlhdCI6MTU2MzQ0NDU0NSwiZXhwIjoxNTk1MDAyMTQ1fQ.ZA5SEBVe6fnyTlMzet4sgLO5Gp4OM7JhMjSRoa9xLOg"
   },
   "tenant_name": "123456789",
   "tenant_name_no": "test_tenant_no"
