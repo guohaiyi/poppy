@@ -27,6 +27,9 @@ class LoginTest(unittest.TestCase):
         self.row = [2, 3, 4, 5, 6]
         self.log.info(message="----------测试开始----------", name="test01_OrcLogin.py")
 
+    def tearDown(self):
+        self.log.info(message="----------测试结束----------", name="test01_OrcLogin.py")
+
     def test_login01(self):
         """orc admin正常登录"""
         self.log.info(message="test_login01", name="test01_OrcLogin.py", line=30)
@@ -166,9 +169,6 @@ class LoginTest(unittest.TestCase):
         self.assertEqual(dict_json["err"]["code"], 400, msg=">>>test_login05断言失败，实际返回结果：%s" % dict_json["err"]["code"])
         self.assertEqual(dict_json["err"]["message"], "Password is needed",
                          msg=">>>test_login05断言失败，实际返回结果：%s" % dict_json["err"]["message"])
-
-    def tearDown(self):
-        self.log.info(message="----------测试结束----------", name="test01_OrcLogin.py")
 
 
 if __name__ == "__main__":

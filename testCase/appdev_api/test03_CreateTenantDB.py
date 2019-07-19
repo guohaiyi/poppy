@@ -24,6 +24,9 @@ class CreateTenantDbTest(unittest.TestCase):
         self.row = [12, 13, 14, 15, 16, 17, 18, 19]
         self.log.info(message="----------测试开始----------", name="test01_OrcLogin.py")
 
+    def tearDown(self):
+        self.log.info(message="----------测试结束----------", name="test01_OrcLogin.py")
+
     def test01_get_db_list(self):
         """获取Tenant DB列表：Tenant DB列表为空"""
         self.log.info(message="test_login01", name="test03_CreateTenantDB.py", line=27)
@@ -236,9 +239,6 @@ class CreateTenantDbTest(unittest.TestCase):
         self.assertIn('active_status', dict_json["results"][1])
         self.assertEqual(dict_json["results"][1]["tenant_name"], "test_autolive",
                          msg=">>>test08_get_db_list断言失败，实际返回结果：%s" % dict_json["results"][1]["tenant_name"])
-
-    def tearDown(self):
-        self.log.info(message="----------测试结束----------", name="test01_OrcLogin.py")
 
 
 if __name__ == "__main__":

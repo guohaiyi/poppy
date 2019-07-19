@@ -26,6 +26,9 @@ class TestUpdateOrcPw(unittest.TestCase):
         self.row = [7, 8, 9, 10, 11]
         self.log.info(message="----------测试开始----------", name="test02_UpdateOrcPw.py")
 
+    def tearDown(self) -> None:
+        self.log.info(message="----------测试结束----------", name="test02_UpdateOrcPw.py")
+
     def test_update01(self):
         """更新密码失败：旧密码错误"""
         self.log.info(message="test_update01", name="test02_UpdateOrcPw.py", line=30)
@@ -204,9 +207,6 @@ class TestUpdateOrcPw(unittest.TestCase):
             self.log.info("还原密码之后重新获取orc_token成功""restore_get_pw", 203)
         else:
             self.log.error("还原密码之后重新获取orc_token失败""restore_get_pw", 205)
-
-    def tearDown(self) -> None:
-        self.log.info(message="----------测试结束----------", name="test02_UpdateOrcPw.py")
 
 
 if __name__ == "__main__":
