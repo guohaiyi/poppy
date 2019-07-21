@@ -1,0 +1,2423 @@
+[2019-07-20 00:33:33] - INFO: ----------测试开始----------
+[2019-07-20 00:33:33] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 00:33:33] - INFO: 第一步: 获取请求数据
+[2019-07-20 00:33:33] - INFO: 请求方法：get
+[2019-07-20 00:33:33] - INFO: url：http://172.16.1.201:3002/tenant/name/
+[2019-07-20 00:33:33] - INFO: data：auto_user_tenant
+[2019-07-20 00:33:54] - ERROR: Error:HTTPConnectionPool(host='172.16.1.201', port=3002): Max retries exceeded with url: /tenant/name/?auto_user_tenant (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002D4B405A208>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+[2019-07-20 00:33:54] - INFO: ----------测试结束----------
+[2019-07-20 00:33:54] - INFO: ----------测试开始----------
+[2019-07-20 00:33:54] - test04_GetTenantDbData.py, Line 32]  - INFO: test02_get_db_data
+[2019-07-20 00:33:54] - INFO: 第一步: 获取请求数据
+[2019-07-20 00:33:54] - INFO: 请求方法：get
+[2019-07-20 00:33:54] - INFO: url：http://172.16.1.201:3002/tenant/name/
+[2019-07-20 00:33:54] - INFO: data：tenant_name_no
+[2019-07-20 00:34:15] - ERROR: Error:HTTPConnectionPool(host='172.16.1.201', port=3002): Max retries exceeded with url: /tenant/name/?tenant_name_no (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002D4B411B5F8>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+[2019-07-20 00:34:15] - INFO: ----------测试结束----------
+[2019-07-20 00:34:15] - INFO: ----------测试开始----------
+[2019-07-20 00:34:15] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 00:34:15] - INFO: 第一步: 获取请求数据
+[2019-07-20 00:34:15] - INFO: 请求方法：get
+[2019-07-20 00:34:15] - INFO: url：http://172.16.1.201:3002/tenant/db/
+[2019-07-20 00:34:15] - INFO: data：{'tenant_name': 'auto_tenant_name', 'db': 'auto_tenant_db', 'info': 'auto_tenant', 'is_auto': False}
+[2019-07-20 00:34:36] - ERROR: Error:HTTPConnectionPool(host='172.16.1.201', port=3002): Max retries exceeded with url: /tenant/db/?tenant_name=auto_tenant_name&db=auto_tenant_db&info=auto_tenant&is_auto=False (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002D4B4AA8278>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+[2019-07-20 00:34:36] - INFO: ----------测试结束----------
+[2019-07-20 00:34:36] - INFO: ----------测试开始----------
+[2019-07-20 00:34:36] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 00:34:36] - INFO: ----------测试结束----------
+[2019-07-20 00:34:36] - INFO: ----------测试开始----------
+[2019-07-20 00:34:36] - test04_GetTenantDbData.py, Line 32]  - INFO: test05_delete_db
+[2019-07-20 00:34:36] - INFO: 第一步: 获取请求数据
+[2019-07-20 00:34:36] - INFO: 请求方法：delete
+[2019-07-20 00:34:36] - INFO: url：http://172.16.1.201:3002/clearDB/
+[2019-07-20 00:34:36] - INFO: data：auto_live_tenant_name
+[2019-07-20 00:34:57] - ERROR: Error:HTTPConnectionPool(host='172.16.1.201', port=3002): Max retries exceeded with url: /clearDB/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002D4B4D17240>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+[2019-07-20 00:34:57] - INFO: ----------测试结束----------
+[2019-07-20 00:34:57] - INFO: ----------测试开始----------
+[2019-07-20 00:34:57] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 00:34:57] - INFO: 第一步: 获取请求数据
+[2019-07-20 00:34:57] - INFO: 请求方法：delete
+[2019-07-20 00:34:57] - INFO: url：http://172.16.1.201:3002/clearDB/
+[2019-07-20 00:34:57] - INFO: data：tenant_name_no
+[2019-07-20 00:35:18] - ERROR: Error:HTTPConnectionPool(host='172.16.1.201', port=3002): Max retries exceeded with url: /clearDB/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002D4B4E5DB00>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+[2019-07-20 00:35:18] - INFO: ----------测试结束----------
+[2019-07-20 00:35:18] - INFO: ----------测试开始----------
+[2019-07-20 00:35:18] - INFO: ----------测试结束----------
+[2019-07-20 00:37:06] - INFO: ----------测试开始----------
+[2019-07-20 00:37:22] - INFO: ----------测试开始----------
+[2019-07-20 00:38:47] - INFO: ----------测试开始----------
+[2019-07-20 14:22:14] - INFO: --------测试开始---------
+[2019-07-20 14:22:14] - INFO: --------测试结束---------
+[2019-07-20 14:22:14] - INFO: --------测试开始---------
+[2019-07-20 14:22:14] - INFO: --------测试结束---------
+[2019-07-20 14:22:14] - INFO: ----------测试开始----------
+[2019-07-20 14:22:14] - test01_OrcLogin.py, Line 35]  - INFO: test_login01
+[2019-07-20 14:22:14] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:22:14] - INFO: 请求方法：post
+[2019-07-20 14:22:14] - INFO: url：http://172.16.1.201:3002/orchestrator_admin/login
+[2019-07-20 14:22:14] - INFO: 请求数据：{'username': 'orc_admin', 'password': 'orc_admin'}
+[2019-07-20 14:22:35] - ERROR: Error:HTTPConnectionPool(host='172.16.1.201', port=3002): Max retries exceeded with url: /orchestrator_admin/login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000014BDBF0EFD0>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+[2019-07-20 14:22:35] - INFO: ----------测试结束----------
+[2019-07-20 14:22:35] - INFO: ----------测试开始----------
+[2019-07-20 14:22:35] - test01_OrcLogin.py, Line 67]  - INFO: test_login02
+[2019-07-20 14:22:35] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:22:35] - INFO: 请求方法：post
+[2019-07-20 14:22:35] - INFO: url：http://172.16.1.201:3002/orchestrator_admin/login
+[2019-07-20 14:22:35] - INFO: 请求数据：{'username': 'orc_admin', 'password': '654321'}
+[2019-07-20 14:22:56] - ERROR: Error:HTTPConnectionPool(host='172.16.1.201', port=3002): Max retries exceeded with url: /orchestrator_admin/login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000014BDC887400>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+[2019-07-20 14:22:56] - INFO: ----------测试结束----------
+[2019-07-20 14:22:56] - INFO: ----------测试开始----------
+[2019-07-20 14:22:56] - test01_OrcLogin.py, Line 93]  - INFO: test_login03
+[2019-07-20 14:22:56] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:22:56] - INFO: 请求方法：post
+[2019-07-20 14:22:56] - INFO: url：http://172.16.1.201:3002/orchestrator_admin/login
+[2019-07-20 14:22:56] - INFO: 请求数据：{'username': 'orc_admin1', 'password': '123456'}
+[2019-07-20 14:23:38] - INFO: --------测试开始---------
+[2019-07-20 14:23:38] - INFO: --------测试结束---------
+[2019-07-20 14:23:38] - INFO: --------测试开始---------
+[2019-07-20 14:23:38] - INFO: --------测试结束---------
+[2019-07-20 14:23:38] - INFO: ----------测试开始----------
+[2019-07-20 14:23:38] - test01_OrcLogin.py, Line 35]  - INFO: test_login01
+[2019-07-20 14:23:38] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:38] - INFO: 请求方法：post
+[2019-07-20 14:23:38] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 14:23:38] - INFO: 请求数据：{'username': 'orc_admin', 'password': 'orc_admin'}
+[2019-07-20 14:23:39] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:23:39] - INFO: {
+  "_id": "5be12191a30debdbb49f3508",
+  "username": "orc_admin",
+  "status": true,
+  "orchestrator_admin_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYzNjAzNzU5fQ.3n7BMm3wj8d5rlb2cvN3_2dGJ3h3LKSBynwaFgdbWZI"
+}
+[2019-07-20 14:23:39] - test01_OrcLogin.py, Line 53]  - INFO: 提取orc_token
+[2019-07-20 14:23:39] - test01_OrcLogin.py, Line 54]  - INFO: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYzNjAzNzU5fQ.3n7BMm3wj8d5rlb2cvN3_2dGJ3h3LKSBynwaFgdbWZI
+[2019-07-20 14:23:39] - INFO: 第三步：断言
+[2019-07-20 14:23:39] - INFO: ----------测试结束----------
+[2019-07-20 14:23:39] - INFO: ----------测试开始----------
+[2019-07-20 14:23:39] - test01_OrcLogin.py, Line 67]  - INFO: test_login02
+[2019-07-20 14:23:39] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:39] - INFO: 请求方法：post
+[2019-07-20 14:23:39] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 14:23:39] - INFO: 请求数据：{'username': 'orc_admin', 'password': '654321'}
+[2019-07-20 14:23:39] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:23:39] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username or password error"
+  }
+}
+[2019-07-20 14:23:39] - INFO: 第三步：断言
+[2019-07-20 14:23:39] - INFO: ----------测试结束----------
+[2019-07-20 14:23:39] - INFO: ----------测试开始----------
+[2019-07-20 14:23:39] - test01_OrcLogin.py, Line 93]  - INFO: test_login03
+[2019-07-20 14:23:39] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:39] - INFO: 请求方法：post
+[2019-07-20 14:23:39] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 14:23:39] - INFO: 请求数据：{'username': 'orc_admin1', 'password': '123456'}
+[2019-07-20 14:23:39] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:23:39] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "Username does not exists"
+  }
+}
+[2019-07-20 14:23:39] - INFO: 第三步：断言
+[2019-07-20 14:23:39] - INFO: ----------测试结束----------
+[2019-07-20 14:23:39] - INFO: ----------测试开始----------
+[2019-07-20 14:23:39] - test01_OrcLogin.py, Line 121]  - INFO: test_login04
+[2019-07-20 14:23:39] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:39] - INFO: 请求方法：post
+[2019-07-20 14:23:39] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 14:23:39] - INFO: 请求数据：{'password': '123456'}
+[2019-07-20 14:23:39] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:23:39] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username is needed"
+  }
+}
+[2019-07-20 14:23:39] - INFO: 第三步：断言
+[2019-07-20 14:23:39] - INFO: ----------测试结束----------
+[2019-07-20 14:23:39] - INFO: ----------测试开始----------
+[2019-07-20 14:23:39] - test01_OrcLogin.py, Line 148]  - INFO: test_login05
+[2019-07-20 14:23:39] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:39] - INFO: 请求方法：post
+[2019-07-20 14:23:39] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 14:23:39] - INFO: 请求数据：{'username': 'orc_admin'}
+[2019-07-20 14:23:39] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:23:39] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Password is needed"
+  }
+}
+[2019-07-20 14:23:39] - INFO: 第三步：断言
+[2019-07-20 14:23:39] - INFO: ----------测试结束----------
+[2019-07-20 14:23:39] - INFO: ----------测试开始----------
+[2019-07-20 14:23:39] - test02_UpdateOrcPw.py, Line 34]  - INFO: test_update01
+[2019-07-20 14:23:39] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:39] - INFO: 请求方法：put
+[2019-07-20 14:23:39] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 14:23:39] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': 'orc_admin', 'current_password': '123456'}
+[2019-07-20 14:23:39] - INFO: ----------测试结束----------
+[2019-07-20 14:23:39] - INFO: ----------测试开始----------
+[2019-07-20 14:23:39] - test02_UpdateOrcPw.py, Line 58]  - INFO: test_update02
+[2019-07-20 14:23:39] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:39] - INFO: 请求方法：put
+[2019-07-20 14:23:39] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 14:23:39] - INFO: 请求数据：{'username': 'orc_admin_no', 'new_password': 'orc_admin', 'current_password': '123456'}
+[2019-07-20 14:23:39] - INFO: ----------测试结束----------
+[2019-07-20 14:23:39] - INFO: ----------测试开始----------
+[2019-07-20 14:23:39] - test02_UpdateOrcPw.py, Line 82]  - INFO: test_update03
+[2019-07-20 14:23:39] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:39] - INFO: 请求方法：put
+[2019-07-20 14:23:39] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 14:23:39] - INFO: 请求数据：{'username': 'orc_admin', 'current_password': '123456'}
+[2019-07-20 14:23:39] - INFO: ----------测试结束----------
+[2019-07-20 14:23:39] - INFO: ----------测试开始----------
+[2019-07-20 14:23:39] - test02_UpdateOrcPw.py, Line 106]  - INFO: test_update04
+[2019-07-20 14:23:39] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:39] - INFO: 请求方法：put
+[2019-07-20 14:23:39] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 14:23:39] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': 'orc_admin'}
+[2019-07-20 14:23:39] - INFO: ----------测试结束----------
+[2019-07-20 14:23:39] - INFO: ----------测试开始----------
+[2019-07-20 14:23:39] - test02_UpdateOrcPw.py, Line 130]  - INFO: test_update05
+[2019-07-20 14:23:39] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:39] - INFO: 请求方法：put
+[2019-07-20 14:23:39] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 14:23:39] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': '123456', 'current_password': 'orc_admin'}
+[2019-07-20 14:23:40] - check_new_login, Line 170]  - INFO: check_new_login重新获取orc_admin_token成功
+[2019-07-20 14:23:40] - restore_orc_pw, Line 187]  - INFO: restore_orc_pw orc admin密码还原成功
+[2019-07-20 14:23:40] - INFO: 还原密码之后重新获取orc_token成功restore_get_pw
+[2019-07-20 14:23:40] - INFO: ----------测试结束----------
+[2019-07-20 14:23:40] - INFO: ----------测试开始----------
+[2019-07-20 14:23:40] - test03_CreateDBandGetList.py, Line 32]  - INFO: test01_get_db_list
+[2019-07-20 14:23:40] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:40] - INFO: 请求方法：get
+[2019-07-20 14:23:40] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:23:40] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:23:40] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "No records found"
+  }
+}
+[2019-07-20 14:23:40] - INFO: ----------测试结束----------
+[2019-07-20 14:23:40] - INFO: ----------测试开始----------
+[2019-07-20 14:23:40] - test03_CreateDBandGetList.py, Line 57]  - INFO: test02_create_db
+[2019-07-20 14:23:40] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:40] - INFO: 请求方法：post
+[2019-07-20 14:23:40] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:23:40] - INFO: 请求数据：{'tenant_name': 'auto_tenant_name', 'db': 'auto_tenant_db', 'info': 'auto_tenant', 'is_auto': False}
+[2019-07-20 14:23:40] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:23:40] - INFO: {
+  "status": true,
+  "tenant_db_id": "5d32b33011f14d0765c3e19e"
+}
+[2019-07-20 14:23:40] - INFO: ----------测试结束----------
+[2019-07-20 14:23:40] - INFO: ----------测试开始----------
+[2019-07-20 14:23:40] - test03_CreateDBandGetList.py, Line 80]  - INFO: test03_create_db
+[2019-07-20 14:23:40] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:40] - INFO: 请求方法：post
+[2019-07-20 14:23:40] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:23:40] - INFO: 请求数据：{'tenant_name': 'auto_live_tenant_name', 'db': 'auto_live_tenant_db', 'info': 'auto_live_tenant', 'is_auto': True}
+[2019-07-20 14:23:40] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:23:40] - INFO: {
+  "status": true,
+  "tenant_db_id": "5d32b33011f14d0765c3e1a3"
+}
+[2019-07-20 14:23:40] - INFO: ----------测试结束----------
+[2019-07-20 14:23:40] - INFO: ----------测试开始----------
+[2019-07-20 14:23:40] - test03_CreateDBandGetList.py, Line 103]  - INFO: test04_create_db
+[2019-07-20 14:23:40] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:40] - INFO: 请求方法：post
+[2019-07-20 14:23:40] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:23:40] - INFO: 请求数据：{'db': 'lack_tenant_name', 'info': 'lack_tenant_name', 'is_auto': False}
+[2019-07-20 14:23:40] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:23:40] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide tenant name"
+  }
+}
+[2019-07-20 14:23:40] - INFO: ----------测试结束----------
+[2019-07-20 14:23:40] - INFO: ----------测试开始----------
+[2019-07-20 14:23:40] - test03_CreateDBandGetList.py, Line 130]  - INFO: test05_create_db
+[2019-07-20 14:23:40] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:40] - INFO: 请求方法：post
+[2019-07-20 14:23:40] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:23:40] - INFO: 请求数据：{'tenant_name': 'lack_db_name', 'info': 'lack_db_name', 'is_auto': False}
+[2019-07-20 14:23:40] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:23:40] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide db"
+  }
+}
+[2019-07-20 14:23:40] - INFO: ----------测试结束----------
+[2019-07-20 14:23:40] - INFO: ----------测试开始----------
+[2019-07-20 14:23:40] - test03_CreateDBandGetList.py, Line 156]  - INFO: test06_create_db
+[2019-07-20 14:23:40] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:40] - INFO: 请求方法：post
+[2019-07-20 14:23:40] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:23:40] - INFO: 请求数据：{'tenant_name': 'auto_user_tenant', 'db': 'test', 'info': 'test', 'is_auto': False}
+[2019-07-20 14:23:40] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:23:40] - INFO: {
+  "status": true,
+  "tenant_db_id": "5d32b33011f14d0765c3e1a6"
+}
+[2019-07-20 14:23:40] - INFO: ----------测试结束----------
+[2019-07-20 14:23:41] - INFO: ----------测试开始----------
+[2019-07-20 14:23:41] - test03_CreateDBandGetList.py, Line 183]  - INFO: test07_create_db
+[2019-07-20 14:23:41] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:41] - INFO: 请求方法：post
+[2019-07-20 14:23:41] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:23:41] - INFO: 请求数据：{'tenant_name': 'test', 'db': 'auto_user_tenant', 'info': 'test', 'is_auto': False}
+[2019-07-20 14:23:41] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:23:41] - INFO: {
+  "status": true,
+  "tenant_db_id": "5d32b33011f14d0765c3e1a7"
+}
+[2019-07-20 14:23:41] - INFO: ----------测试结束----------
+[2019-07-20 14:23:41] - INFO: ----------测试开始----------
+[2019-07-20 14:23:41] - test03_CreateDBandGetList.py, Line 210]  - INFO: test08_get_db_list
+[2019-07-20 14:23:41] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:41] - INFO: 请求方法：get
+[2019-07-20 14:23:41] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:23:41] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:23:41] - INFO: {
+  "status": true,
+  "results": [
+    {
+      "_id": "5d32b33011f14d0765c3e19e",
+      "tenant_name": "auto_tenant_name",
+      "db": "auto_tenant_db",
+      "info": "auto_tenant",
+      "active_status": true
+    },
+    {
+      "_id": "5d32b33011f14d0765c3e1a3",
+      "tenant_name": "auto_live_tenant_name",
+      "db": "auto_live_tenant_db",
+      "info": "auto_live_tenant",
+      "active_status": true
+    },
+    {
+      "_id": "5d32b33011f14d0765c3e1a6",
+      "tenant_name": "auto_user_tenant",
+      "db": "test",
+      "info": "test",
+      "active_status": true
+    },
+    {
+      "_id": "5d32b33011f14d0765c3e1a7",
+      "tenant_name": "test",
+      "db": "auto_user_tenant",
+      "info": "test",
+      "active_status": true
+    }
+  ]
+}
+[2019-07-20 14:23:41] - INFO: ----------测试结束----------
+[2019-07-20 14:23:41] - INFO: ----------测试开始----------
+[2019-07-20 14:23:41] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 14:23:41] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:41] - INFO: 请求方法：get
+[2019-07-20 14:23:41] - INFO: url：http://192.168.0.103:3002/tenant/name/
+[2019-07-20 14:23:41] - INFO: data：auto_user_tenant
+[2019-07-20 14:23:41] - ERROR: Error:Expecting value: line 1 column 1 (char 0)
+[2019-07-20 14:23:41] - INFO: ----------测试结束----------
+[2019-07-20 14:23:41] - INFO: ----------测试开始----------
+[2019-07-20 14:23:41] - test04_GetTenantDbData.py, Line 32]  - INFO: test02_get_db_data
+[2019-07-20 14:23:41] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:41] - INFO: 请求方法：get
+[2019-07-20 14:23:41] - INFO: url：http://192.168.0.103:3002/tenant/name/
+[2019-07-20 14:23:41] - INFO: data：tenant_name_no
+[2019-07-20 14:23:41] - ERROR: Error:Expecting value: line 1 column 1 (char 0)
+[2019-07-20 14:23:41] - INFO: ----------测试结束----------
+[2019-07-20 14:23:41] - INFO: ----------测试开始----------
+[2019-07-20 14:23:41] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 14:23:41] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:41] - INFO: 请求方法：get
+[2019-07-20 14:23:41] - INFO: url：http://192.168.0.103:3002/tenant/db/
+[2019-07-20 14:23:41] - INFO: data：auto_user_tenant
+[2019-07-20 14:23:41] - ERROR: Error:Expecting value: line 1 column 1 (char 0)
+[2019-07-20 14:23:41] - INFO: ----------测试结束----------
+[2019-07-20 14:23:41] - INFO: ----------测试开始----------
+[2019-07-20 14:23:41] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 14:23:41] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:41] - INFO: 请求方法：get
+[2019-07-20 14:23:41] - INFO: url：http://192.168.0.103:3002/tenant/db/
+[2019-07-20 14:23:41] - INFO: data：tenant_db_no
+[2019-07-20 14:23:41] - ERROR: Error:Expecting value: line 1 column 1 (char 0)
+[2019-07-20 14:23:41] - INFO: ----------测试结束----------
+[2019-07-20 14:23:41] - INFO: ----------测试开始----------
+[2019-07-20 14:23:41] - test04_GetTenantDbData.py, Line 32]  - INFO: test05_delete_db
+[2019-07-20 14:23:41] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:41] - INFO: 请求方法：delete
+[2019-07-20 14:23:41] - INFO: url：http://192.168.0.103:3002/clearDB/
+[2019-07-20 14:23:41] - INFO: data：auto_live_tenant_name
+[2019-07-20 14:23:41] - ERROR: Error:Expecting value: line 1 column 1 (char 0)
+[2019-07-20 14:23:41] - INFO: ----------测试结束----------
+[2019-07-20 14:23:41] - INFO: ----------测试开始----------
+[2019-07-20 14:23:41] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 14:23:41] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:41] - INFO: 请求方法：delete
+[2019-07-20 14:23:41] - INFO: url：http://192.168.0.103:3002/clearDB/
+[2019-07-20 14:23:41] - INFO: data：tenant_name_no
+[2019-07-20 14:23:41] - ERROR: Error:Expecting value: line 1 column 1 (char 0)
+[2019-07-20 14:23:41] - INFO: ----------测试结束----------
+[2019-07-20 14:23:41] - INFO: ----------测试开始----------
+[2019-07-20 14:23:41] - test06_CreateTenantAdmin.py, Line 32]  - INFO: test01_cre_tenant
+[2019-07-20 14:23:41] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:23:41] - INFO: 请求方法：post
+[2019-07-20 14:23:41] - INFO: url：http://192.168.0.103:3002/tenant_admin/login
+[2019-07-20 14:23:41] - INFO: 请求数据：{'username': 'auto_user', 'password': '123456', 'tenant_name': 'auto_user_tenant'}
+[2019-07-20 14:23:41] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:23:41] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username/tenant_name error."
+  }
+}
+[2019-07-20 14:23:41] - INFO: 第三步：断言
+[2019-07-20 14:23:41] - INFO: ----------测试结束----------
+[2019-07-20 14:23:41] - WARNING: ---------------All Test End---------------
+[2019-07-20 14:23:41] - INFO: 测试报告不发送电子邮件！
+[2019-07-20 14:30:43] - INFO: ----------测试开始----------
+[2019-07-20 14:30:43] - test01_OrcLogin.py, Line 35]  - INFO: test_login01
+[2019-07-20 14:30:43] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:30:43] - INFO: 请求方法：post
+[2019-07-20 14:30:43] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 14:30:43] - INFO: 请求数据：{'username': 'orc_admin', 'password': 'orc_admin'}
+[2019-07-20 14:30:43] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:30:43] - INFO: {
+  "_id": "5be12191a30debdbb49f3508",
+  "username": "orc_admin",
+  "status": true,
+  "orchestrator_admin_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYzNjA0MTgzfQ.e1RlAudxSVluC8CgSm3pb8BCmvf6MkAebndlh0VVz6E"
+}
+[2019-07-20 14:30:43] - test01_OrcLogin.py, Line 53]  - INFO: 提取orc_token
+[2019-07-20 14:30:43] - test01_OrcLogin.py, Line 54]  - INFO: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYzNjA0MTgzfQ.e1RlAudxSVluC8CgSm3pb8BCmvf6MkAebndlh0VVz6E
+[2019-07-20 14:30:43] - INFO: 第三步：断言
+[2019-07-20 14:30:43] - INFO: ----------测试结束----------
+[2019-07-20 14:30:43] - INFO: ----------测试开始----------
+[2019-07-20 14:30:43] - test01_OrcLogin.py, Line 67]  - INFO: test_login02
+[2019-07-20 14:30:43] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:30:43] - INFO: 请求方法：post
+[2019-07-20 14:30:43] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 14:30:43] - INFO: 请求数据：{'username': 'orc_admin', 'password': '654321'}
+[2019-07-20 14:30:43] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:30:43] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username or password error"
+  }
+}
+[2019-07-20 14:30:43] - INFO: 第三步：断言
+[2019-07-20 14:30:43] - INFO: ----------测试结束----------
+[2019-07-20 14:30:43] - INFO: ----------测试开始----------
+[2019-07-20 14:30:43] - test01_OrcLogin.py, Line 93]  - INFO: test_login03
+[2019-07-20 14:30:43] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:30:43] - INFO: 请求方法：post
+[2019-07-20 14:30:43] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 14:30:43] - INFO: 请求数据：{'username': 'orc_admin1', 'password': '123456'}
+[2019-07-20 14:30:43] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:30:43] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "Username does not exists"
+  }
+}
+[2019-07-20 14:30:43] - INFO: 第三步：断言
+[2019-07-20 14:30:43] - INFO: ----------测试结束----------
+[2019-07-20 14:30:43] - INFO: ----------测试开始----------
+[2019-07-20 14:30:43] - test01_OrcLogin.py, Line 121]  - INFO: test_login04
+[2019-07-20 14:30:43] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:30:43] - INFO: 请求方法：post
+[2019-07-20 14:30:43] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 14:30:43] - INFO: 请求数据：{'password': '123456'}
+[2019-07-20 14:30:43] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:30:43] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username is needed"
+  }
+}
+[2019-07-20 14:30:43] - INFO: 第三步：断言
+[2019-07-20 14:30:43] - INFO: ----------测试结束----------
+[2019-07-20 14:30:43] - INFO: ----------测试开始----------
+[2019-07-20 14:30:43] - test01_OrcLogin.py, Line 148]  - INFO: test_login05
+[2019-07-20 14:30:43] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:30:43] - INFO: 请求方法：post
+[2019-07-20 14:30:43] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 14:30:43] - INFO: 请求数据：{'username': 'orc_admin'}
+[2019-07-20 14:30:43] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:30:43] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Password is needed"
+  }
+}
+[2019-07-20 14:30:43] - INFO: 第三步：断言
+[2019-07-20 14:30:43] - INFO: ----------测试结束----------
+[2019-07-20 14:30:54] - INFO: ----------测试开始----------
+[2019-07-20 14:30:54] - test03_CreateDBandGetList.py, Line 32]  - INFO: test01_get_db_list
+[2019-07-20 14:30:54] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:30:54] - INFO: 请求方法：get
+[2019-07-20 14:30:54] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:30:54] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:30:54] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "No records found"
+  }
+}
+[2019-07-20 14:30:54] - INFO: ----------测试结束----------
+[2019-07-20 14:30:54] - INFO: ----------测试开始----------
+[2019-07-20 14:30:54] - test03_CreateDBandGetList.py, Line 57]  - INFO: test02_create_db
+[2019-07-20 14:30:54] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:30:54] - INFO: 请求方法：post
+[2019-07-20 14:30:54] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:30:54] - INFO: 请求数据：{'tenant_name': 'auto_tenant_name', 'db': 'auto_tenant_db', 'info': 'auto_tenant', 'is_auto': False}
+[2019-07-20 14:30:54] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:30:54] - INFO: {
+  "status": true,
+  "tenant_db_id": "5d32b4e211f14d0765c3e1d2"
+}
+[2019-07-20 14:30:54] - INFO: ----------测试结束----------
+[2019-07-20 14:30:54] - INFO: ----------测试开始----------
+[2019-07-20 14:30:54] - test03_CreateDBandGetList.py, Line 80]  - INFO: test03_create_db
+[2019-07-20 14:30:54] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:30:54] - INFO: 请求方法：post
+[2019-07-20 14:30:54] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:30:54] - INFO: 请求数据：{'tenant_name': 'auto_live_tenant_name', 'db': 'auto_live_tenant_db', 'info': 'auto_live_tenant', 'is_auto': True}
+[2019-07-20 14:30:54] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:30:54] - INFO: {
+  "status": true,
+  "tenant_db_id": "5d32b4e211f14d0765c3e1d3"
+}
+[2019-07-20 14:30:54] - INFO: ----------测试结束----------
+[2019-07-20 14:30:54] - INFO: ----------测试开始----------
+[2019-07-20 14:30:54] - test03_CreateDBandGetList.py, Line 103]  - INFO: test04_create_db
+[2019-07-20 14:30:54] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:30:54] - INFO: 请求方法：post
+[2019-07-20 14:30:54] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:30:54] - INFO: 请求数据：{'db': 'lack_tenant_name', 'info': 'lack_tenant_name', 'is_auto': False}
+[2019-07-20 14:30:54] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:30:54] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide tenant name"
+  }
+}
+[2019-07-20 14:30:54] - INFO: ----------测试结束----------
+[2019-07-20 14:30:55] - INFO: ----------测试开始----------
+[2019-07-20 14:30:55] - test03_CreateDBandGetList.py, Line 130]  - INFO: test05_create_db
+[2019-07-20 14:30:55] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:30:55] - INFO: 请求方法：post
+[2019-07-20 14:30:55] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:30:55] - INFO: 请求数据：{'tenant_name': 'lack_db_name', 'info': 'lack_db_name', 'is_auto': False}
+[2019-07-20 14:30:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:30:55] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide db"
+  }
+}
+[2019-07-20 14:30:55] - INFO: ----------测试结束----------
+[2019-07-20 14:30:55] - INFO: ----------测试开始----------
+[2019-07-20 14:30:55] - test03_CreateDBandGetList.py, Line 156]  - INFO: test06_create_db
+[2019-07-20 14:30:55] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:30:55] - INFO: 请求方法：post
+[2019-07-20 14:30:55] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:30:55] - INFO: 请求数据：{'tenant_name': 'auto_tenant_name', 'db': 'test', 'info': 'test', 'is_auto': False}
+[2019-07-20 14:30:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:30:55] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-20 14:30:55] - INFO: ----------测试结束----------
+[2019-07-20 14:30:55] - INFO: ----------测试开始----------
+[2019-07-20 14:30:55] - test03_CreateDBandGetList.py, Line 183]  - INFO: test07_create_db
+[2019-07-20 14:30:55] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:30:55] - INFO: 请求方法：post
+[2019-07-20 14:30:55] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:30:55] - INFO: 请求数据：{'tenant_name': 'test', 'db': 'auto_tenant_db', 'info': 'test', 'is_auto': False}
+[2019-07-20 14:30:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:30:55] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-20 14:30:55] - INFO: ----------测试结束----------
+[2019-07-20 14:30:55] - INFO: ----------测试开始----------
+[2019-07-20 14:30:55] - test03_CreateDBandGetList.py, Line 210]  - INFO: test08_get_db_list
+[2019-07-20 14:30:55] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:30:55] - INFO: 请求方法：get
+[2019-07-20 14:30:55] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:30:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:30:55] - INFO: {
+  "status": true,
+  "results": [
+    {
+      "_id": "5d32b4e211f14d0765c3e1d2",
+      "tenant_name": "auto_tenant_name",
+      "db": "auto_tenant_db",
+      "info": "auto_tenant",
+      "active_status": true
+    },
+    {
+      "_id": "5d32b4e211f14d0765c3e1d3",
+      "tenant_name": "auto_live_tenant_name",
+      "db": "auto_live_tenant_db",
+      "info": "auto_live_tenant",
+      "active_status": true
+    }
+  ]
+}
+[2019-07-20 14:30:55] - INFO: ----------测试结束----------
+[2019-07-20 14:31:07] - INFO: ----------测试开始----------
+[2019-07-20 14:31:07] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 14:31:07] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:31:07] - INFO: 请求方法：get
+[2019-07-20 14:31:07] - INFO: url：http://192.168.0.103:3002/tenant/name/
+[2019-07-20 14:31:07] - INFO: data：auto_tenant_name
+[2019-07-20 14:31:07] - ERROR: Error:Expecting value: line 1 column 1 (char 0)
+[2019-07-20 14:31:07] - INFO: ----------测试结束----------
+[2019-07-20 14:31:07] - INFO: ----------测试开始----------
+[2019-07-20 14:31:07] - test04_GetTenantDbData.py, Line 32]  - INFO: test02_get_db_data
+[2019-07-20 14:31:07] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:31:07] - INFO: 请求方法：get
+[2019-07-20 14:31:07] - INFO: url：http://192.168.0.103:3002/tenant/name/
+[2019-07-20 14:31:07] - INFO: data：tenant_name_no
+[2019-07-20 14:31:07] - ERROR: Error:Expecting value: line 1 column 1 (char 0)
+[2019-07-20 14:31:07] - INFO: ----------测试结束----------
+[2019-07-20 14:31:08] - INFO: ----------测试开始----------
+[2019-07-20 14:31:08] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 14:31:08] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:31:08] - INFO: 请求方法：get
+[2019-07-20 14:31:08] - INFO: url：http://192.168.0.103:3002/tenant/db/
+[2019-07-20 14:31:08] - INFO: data：auto_tenant_db
+[2019-07-20 14:31:08] - ERROR: Error:Expecting value: line 1 column 1 (char 0)
+[2019-07-20 14:31:08] - INFO: ----------测试结束----------
+[2019-07-20 14:31:08] - INFO: ----------测试开始----------
+[2019-07-20 14:31:08] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 14:31:08] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:31:08] - INFO: 请求方法：get
+[2019-07-20 14:31:08] - INFO: url：http://192.168.0.103:3002/tenant/db/
+[2019-07-20 14:31:08] - INFO: data：tenant_db_no
+[2019-07-20 14:31:08] - ERROR: Error:Expecting value: line 1 column 1 (char 0)
+[2019-07-20 14:31:08] - INFO: ----------测试结束----------
+[2019-07-20 14:31:08] - INFO: ----------测试开始----------
+[2019-07-20 14:31:08] - test04_GetTenantDbData.py, Line 32]  - INFO: test05_delete_db
+[2019-07-20 14:31:08] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:31:08] - INFO: 请求方法：delete
+[2019-07-20 14:31:08] - INFO: url：http://192.168.0.103:3002/clearDB/
+[2019-07-20 14:31:08] - INFO: data：auto_live_tenant_name
+[2019-07-20 14:31:08] - ERROR: Error:Expecting value: line 1 column 1 (char 0)
+[2019-07-20 14:31:08] - INFO: ----------测试结束----------
+[2019-07-20 14:31:08] - INFO: ----------测试开始----------
+[2019-07-20 14:31:08] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 14:31:08] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:31:08] - INFO: 请求方法：delete
+[2019-07-20 14:31:08] - INFO: url：http://192.168.0.103:3002/clearDB/
+[2019-07-20 14:31:08] - INFO: data：tenant_name_no
+[2019-07-20 14:31:08] - ERROR: Error:Expecting value: line 1 column 1 (char 0)
+[2019-07-20 14:31:08] - INFO: ----------测试结束----------
+[2019-07-20 14:31:48] - INFO: ----------测试开始----------
+[2019-07-20 14:31:48] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 14:31:48] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:31:48] - INFO: 请求方法：get
+[2019-07-20 14:31:48] - INFO: url：http://192.168.0.103:3002/tenant/name/
+[2019-07-20 14:31:48] - INFO: data：auto_tenant_name
+[2019-07-20 14:31:48] - ERROR: Error:Expecting value: line 1 column 1 (char 0)
+[2019-07-20 14:31:48] - INFO: ----------测试结束----------
+[2019-07-20 14:33:04] - INFO: ----------测试开始----------
+[2019-07-20 14:33:04] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 14:33:04] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:33:04] - INFO: 请求方法：get
+[2019-07-20 14:33:04] - INFO: url：http://192.168.0.103:3002/tenant/name/
+[2019-07-20 14:33:04] - INFO: data：auto_tenant_name
+[2019-07-20 14:33:04] - ERROR: Error:Expecting value: line 1 column 1 (char 0)
+[2019-07-20 14:33:04] - INFO: ----------测试结束----------
+[2019-07-20 14:34:53] - INFO: ----------测试开始----------
+[2019-07-20 14:34:53] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 14:34:53] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:34:53] - INFO: 请求方法：get
+[2019-07-20 14:34:53] - INFO: url：http://192.168.0.103:3002/tenant/name/auto_tenant_name
+[2019-07-20 14:34:53] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:34:53] - INFO: {
+  "_id": "5d32b4e211f14d0765c3e1d2",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 14:34:53] - INFO: ----------测试结束----------
+[2019-07-20 14:37:20] - INFO: ----------测试开始----------
+[2019-07-20 14:37:20] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 14:37:20] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:37:20] - INFO: 请求方法：get
+[2019-07-20 14:37:20] - INFO: url：http://192.168.0.103:3002/tenant/name/auto_tenant_name
+[2019-07-20 14:37:20] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:37:20] - INFO: {
+  "_id": "5d32b4e211f14d0765c3e1d2",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 14:37:20] - INFO: ----------测试结束----------
+[2019-07-20 14:37:20] - INFO: ----------测试开始----------
+[2019-07-20 14:37:20] - test04_GetTenantDbData.py, Line 32]  - INFO: test02_get_db_data
+[2019-07-20 14:37:20] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:37:20] - INFO: 请求方法：get
+[2019-07-20 14:37:20] - INFO: url：http://192.168.0.103:3002/tenant/name/tenant_name_no
+[2019-07-20 14:37:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:37:21] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "No matching records found"
+  }
+}
+[2019-07-20 14:37:21] - INFO: ----------测试结束----------
+[2019-07-20 14:37:21] - INFO: ----------测试开始----------
+[2019-07-20 14:37:21] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 14:37:21] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:37:21] - INFO: 请求方法：get
+[2019-07-20 14:37:21] - INFO: url：http://192.168.0.103:3002/tenant/db/auto_tenant_db
+[2019-07-20 14:37:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:37:21] - INFO: {
+  "_id": "5d32b4e211f14d0765c3e1d2",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 14:37:21] - INFO: ----------测试结束----------
+[2019-07-20 14:37:21] - INFO: ----------测试开始----------
+[2019-07-20 14:37:21] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 14:37:21] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:37:21] - INFO: 请求方法：get
+[2019-07-20 14:37:21] - INFO: url：http://192.168.0.103:3002/tenant/db/tenant_db_no
+[2019-07-20 14:37:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:37:21] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "No matching records found"
+  }
+}
+[2019-07-20 14:37:21] - INFO: ----------测试结束----------
+[2019-07-20 14:37:21] - INFO: ----------测试开始----------
+[2019-07-20 14:37:21] - test04_GetTenantDbData.py, Line 32]  - INFO: test05_delete_db
+[2019-07-20 14:37:21] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:37:21] - INFO: 请求方法：delete
+[2019-07-20 14:37:21] - INFO: url：http://192.168.0.103:3002/clearDB/auto_live_tenant_name
+[2019-07-20 14:37:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:37:21] - INFO: {
+  "status": true
+}
+[2019-07-20 14:37:21] - INFO: ----------测试结束----------
+[2019-07-20 14:37:21] - INFO: ----------测试开始----------
+[2019-07-20 14:37:21] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 14:37:21] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:37:21] - INFO: 请求方法：delete
+[2019-07-20 14:37:21] - INFO: url：http://192.168.0.103:3002/clearDB/tenant_name_no
+[2019-07-20 14:37:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:37:21] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "Tenant_db doesn't exist"
+  }
+}
+[2019-07-20 14:37:21] - INFO: ----------测试结束----------
+[2019-07-20 14:43:34] - INFO: ----------测试开始----------
+[2019-07-20 14:43:34] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 14:43:34] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:43:34] - INFO: 请求方法：get
+[2019-07-20 14:43:34] - INFO: url：http://192.168.0.103:3002/tenant/name/auto_tenant_name
+[2019-07-20 14:43:34] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:43:34] - INFO: {
+  "_id": "5d32b4e211f14d0765c3e1d2",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 14:43:35] - INFO: ----------测试结束----------
+[2019-07-20 14:45:57] - INFO: ----------测试开始----------
+[2019-07-20 14:45:57] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 14:45:57] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:45:57] - INFO: 请求方法：get
+[2019-07-20 14:45:57] - INFO: url：http://192.168.0.103:3002/tenant/name/auto_tenant_name
+[2019-07-20 14:45:57] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:45:57] - INFO: {
+  "_id": "5d32b4e211f14d0765c3e1d2",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 14:45:57] - INFO: ----------测试结束----------
+[2019-07-20 14:46:13] - INFO: ----------测试开始----------
+[2019-07-20 14:46:13] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 14:46:13] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:46:13] - INFO: 请求方法：get
+[2019-07-20 14:46:13] - INFO: url：http://192.168.0.103:3002/tenant/name/auto_tenant_name
+[2019-07-20 14:46:13] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:46:13] - INFO: {
+  "_id": "5d32b4e211f14d0765c3e1d2",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 14:46:13] - INFO: ----------测试结束----------
+[2019-07-20 14:47:28] - INFO: ----------测试开始----------
+[2019-07-20 14:47:28] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 14:47:28] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:47:28] - INFO: 请求方法：get
+[2019-07-20 14:47:28] - INFO: url：http://192.168.0.103:3002/tenant/name/auto_tenant_name
+[2019-07-20 14:47:28] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:47:28] - INFO: {
+  "_id": "5d32b4e211f14d0765c3e1d2",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 14:47:28] - INFO: ----------测试结束----------
+[2019-07-20 14:48:55] - INFO: ----------测试开始----------
+[2019-07-20 14:48:55] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 14:48:55] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:48:55] - INFO: 请求方法：get
+[2019-07-20 14:48:55] - INFO: url：http://192.168.0.103:3002/tenant/name/auto_tenant_name
+[2019-07-20 14:48:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:48:55] - INFO: {
+  "_id": "5d32b4e211f14d0765c3e1d2",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 14:48:55] - INFO: ----------测试结束----------
+[2019-07-20 14:49:34] - INFO: ----------测试开始----------
+[2019-07-20 14:49:34] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 14:49:34] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:49:34] - INFO: 请求方法：get
+[2019-07-20 14:49:34] - INFO: url：http://192.168.0.103:3002/tenant/name/auto_tenant_name
+[2019-07-20 14:49:34] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:49:34] - INFO: {
+  "_id": "5d32b4e211f14d0765c3e1d2",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 14:49:34] - INFO: ----------测试结束----------
+[2019-07-20 14:51:46] - INFO: ----------测试开始----------
+[2019-07-20 14:51:46] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 14:51:46] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:51:46] - INFO: 请求方法：get
+[2019-07-20 14:51:46] - INFO: url：http://192.168.0.103:3002/tenant/name/auto_tenant_name
+[2019-07-20 14:51:46] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:51:46] - INFO: {
+  "_id": "5d32b4e211f14d0765c3e1d2",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 14:51:46] - INFO: ----------测试结束----------
+[2019-07-20 14:52:43] - INFO: ----------测试开始----------
+[2019-07-20 14:52:43] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 14:52:43] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:52:43] - INFO: 请求方法：get
+[2019-07-20 14:52:43] - INFO: url：http://192.168.0.103:3002/tenant/name/auto_tenant_name
+[2019-07-20 14:52:43] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:52:43] - INFO: {
+  "_id": "5d32b4e211f14d0765c3e1d2",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 14:52:43] - INFO: ----------测试结束----------
+[2019-07-20 14:53:05] - INFO: ----------测试开始----------
+[2019-07-20 14:53:05] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 14:53:05] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:53:05] - INFO: 请求方法：get
+[2019-07-20 14:53:05] - INFO: url：http://192.168.0.103:3002/tenant/name/auto_tenant_name
+[2019-07-20 14:53:05] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:53:05] - INFO: {
+  "_id": "5d32b4e211f14d0765c3e1d2",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 14:53:05] - INFO: ----------测试结束----------
+[2019-07-20 14:53:46] - INFO: ----------测试开始----------
+[2019-07-20 14:53:46] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 14:53:46] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:53:46] - INFO: 请求方法：get
+[2019-07-20 14:53:46] - INFO: url：http://192.168.0.103:3002/tenant/name/auto_tenant_name
+[2019-07-20 14:53:46] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:53:46] - INFO: {
+  "_id": "5d32b4e211f14d0765c3e1d2",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 14:53:46] - INFO: ----------测试结束----------
+[2019-07-20 14:54:47] - INFO: ----------测试开始----------
+[2019-07-20 14:54:47] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 14:54:47] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:54:47] - INFO: 请求方法：get
+[2019-07-20 14:54:47] - INFO: url：http://192.168.0.103:3002/tenant/name/auto_tenant_name
+[2019-07-20 14:54:47] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:54:47] - INFO: {
+  "_id": "5d32b4e211f14d0765c3e1d2",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 14:54:47] - INFO: ----------测试结束----------
+[2019-07-20 14:55:19] - INFO: --------测试开始---------
+[2019-07-20 14:55:19] - INFO: --------测试结束---------
+[2019-07-20 14:55:19] - INFO: --------测试开始---------
+[2019-07-20 14:55:19] - INFO: --------测试结束---------
+[2019-07-20 14:55:19] - INFO: ----------测试开始----------
+[2019-07-20 14:55:19] - test01_OrcLogin.py, Line 35]  - INFO: test_login01
+[2019-07-20 14:55:19] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:19] - INFO: 请求方法：post
+[2019-07-20 14:55:19] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 14:55:19] - INFO: 请求数据：{'username': 'orc_admin', 'password': 'orc_admin'}
+[2019-07-20 14:55:19] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:55:19] - INFO: {
+  "_id": "5be12191a30debdbb49f3508",
+  "username": "orc_admin",
+  "status": true,
+  "orchestrator_admin_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYzNjA1NjU5fQ.gtFexJLd9E0jxxXK-zcoV4kLh30Y7VS8xEWKlTuSJCI"
+}
+[2019-07-20 14:55:19] - test01_OrcLogin.py, Line 53]  - INFO: 提取orc_token
+[2019-07-20 14:55:19] - test01_OrcLogin.py, Line 54]  - INFO: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYzNjA1NjU5fQ.gtFexJLd9E0jxxXK-zcoV4kLh30Y7VS8xEWKlTuSJCI
+[2019-07-20 14:55:19] - INFO: 第三步：断言
+[2019-07-20 14:55:19] - INFO: ----------测试结束----------
+[2019-07-20 14:55:20] - INFO: ----------测试开始----------
+[2019-07-20 14:55:20] - test01_OrcLogin.py, Line 67]  - INFO: test_login02
+[2019-07-20 14:55:20] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:20] - INFO: 请求方法：post
+[2019-07-20 14:55:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 14:55:20] - INFO: 请求数据：{'username': 'orc_admin', 'password': '654321'}
+[2019-07-20 14:55:20] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:55:20] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username or password error"
+  }
+}
+[2019-07-20 14:55:20] - INFO: 第三步：断言
+[2019-07-20 14:55:20] - INFO: ----------测试结束----------
+[2019-07-20 14:55:20] - INFO: ----------测试开始----------
+[2019-07-20 14:55:20] - test01_OrcLogin.py, Line 93]  - INFO: test_login03
+[2019-07-20 14:55:20] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:20] - INFO: 请求方法：post
+[2019-07-20 14:55:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 14:55:20] - INFO: 请求数据：{'username': 'orc_admin1', 'password': '123456'}
+[2019-07-20 14:55:20] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:55:20] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "Username does not exists"
+  }
+}
+[2019-07-20 14:55:20] - INFO: 第三步：断言
+[2019-07-20 14:55:20] - INFO: ----------测试结束----------
+[2019-07-20 14:55:20] - INFO: ----------测试开始----------
+[2019-07-20 14:55:20] - test01_OrcLogin.py, Line 121]  - INFO: test_login04
+[2019-07-20 14:55:20] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:20] - INFO: 请求方法：post
+[2019-07-20 14:55:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 14:55:20] - INFO: 请求数据：{'password': '123456'}
+[2019-07-20 14:55:20] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:55:20] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username is needed"
+  }
+}
+[2019-07-20 14:55:20] - INFO: 第三步：断言
+[2019-07-20 14:55:20] - INFO: ----------测试结束----------
+[2019-07-20 14:55:20] - INFO: ----------测试开始----------
+[2019-07-20 14:55:20] - test01_OrcLogin.py, Line 148]  - INFO: test_login05
+[2019-07-20 14:55:20] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:20] - INFO: 请求方法：post
+[2019-07-20 14:55:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 14:55:20] - INFO: 请求数据：{'username': 'orc_admin'}
+[2019-07-20 14:55:20] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:55:20] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Password is needed"
+  }
+}
+[2019-07-20 14:55:20] - INFO: 第三步：断言
+[2019-07-20 14:55:20] - INFO: ----------测试结束----------
+[2019-07-20 14:55:20] - INFO: ----------测试开始----------
+[2019-07-20 14:55:20] - test02_UpdateOrcPw.py, Line 34]  - INFO: test_update01
+[2019-07-20 14:55:20] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:20] - INFO: 请求方法：put
+[2019-07-20 14:55:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 14:55:20] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': 'orc_admin', 'current_password': '123456'}
+[2019-07-20 14:55:20] - INFO: ----------测试结束----------
+[2019-07-20 14:55:20] - INFO: ----------测试开始----------
+[2019-07-20 14:55:20] - test02_UpdateOrcPw.py, Line 58]  - INFO: test_update02
+[2019-07-20 14:55:20] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:20] - INFO: 请求方法：put
+[2019-07-20 14:55:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 14:55:20] - INFO: 请求数据：{'username': 'orc_admin_no', 'new_password': 'orc_admin', 'current_password': '123456'}
+[2019-07-20 14:55:20] - INFO: ----------测试结束----------
+[2019-07-20 14:55:20] - INFO: ----------测试开始----------
+[2019-07-20 14:55:20] - test02_UpdateOrcPw.py, Line 82]  - INFO: test_update03
+[2019-07-20 14:55:20] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:20] - INFO: 请求方法：put
+[2019-07-20 14:55:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 14:55:20] - INFO: 请求数据：{'username': 'orc_admin', 'current_password': '123456'}
+[2019-07-20 14:55:20] - INFO: ----------测试结束----------
+[2019-07-20 14:55:20] - INFO: ----------测试开始----------
+[2019-07-20 14:55:20] - test02_UpdateOrcPw.py, Line 106]  - INFO: test_update04
+[2019-07-20 14:55:20] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:20] - INFO: 请求方法：put
+[2019-07-20 14:55:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 14:55:20] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': 'orc_admin'}
+[2019-07-20 14:55:20] - INFO: ----------测试结束----------
+[2019-07-20 14:55:20] - INFO: ----------测试开始----------
+[2019-07-20 14:55:20] - test02_UpdateOrcPw.py, Line 130]  - INFO: test_update05
+[2019-07-20 14:55:20] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:20] - INFO: 请求方法：put
+[2019-07-20 14:55:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 14:55:20] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': '123456', 'current_password': 'orc_admin'}
+[2019-07-20 14:55:21] - check_new_login, Line 170]  - INFO: check_new_login重新获取orc_admin_token成功
+[2019-07-20 14:55:21] - restore_orc_pw, Line 187]  - INFO: restore_orc_pw orc admin密码还原成功
+[2019-07-20 14:55:21] - INFO: 还原密码之后重新获取orc_token成功restore_get_pw
+[2019-07-20 14:55:21] - INFO: ----------测试结束----------
+[2019-07-20 14:55:21] - INFO: ----------测试开始----------
+[2019-07-20 14:55:21] - test03_CreateDBandGetList.py, Line 32]  - INFO: test01_get_db_list
+[2019-07-20 14:55:21] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:21] - INFO: 请求方法：get
+[2019-07-20 14:55:21] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:55:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:55:21] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "No records found"
+  }
+}
+[2019-07-20 14:55:21] - INFO: ----------测试结束----------
+[2019-07-20 14:55:21] - INFO: ----------测试开始----------
+[2019-07-20 14:55:21] - test03_CreateDBandGetList.py, Line 57]  - INFO: test02_create_db
+[2019-07-20 14:55:21] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:21] - INFO: 请求方法：post
+[2019-07-20 14:55:21] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:55:21] - INFO: 请求数据：{'tenant_name': 'auto_tenant_name', 'db': 'auto_tenant_db', 'info': 'auto_tenant', 'is_auto': False}
+[2019-07-20 14:55:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:55:21] - INFO: {
+  "status": true,
+  "tenant_db_id": "5d32ba9d11f14d0765c3e264"
+}
+[2019-07-20 14:55:21] - INFO: ----------测试结束----------
+[2019-07-20 14:55:21] - INFO: ----------测试开始----------
+[2019-07-20 14:55:21] - test03_CreateDBandGetList.py, Line 80]  - INFO: test03_create_db
+[2019-07-20 14:55:21] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:21] - INFO: 请求方法：post
+[2019-07-20 14:55:21] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:55:21] - INFO: 请求数据：{'tenant_name': 'auto_live_tenant_name', 'db': 'auto_live_tenant_db', 'info': 'auto_live_tenant', 'is_auto': True}
+[2019-07-20 14:55:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:55:21] - INFO: {
+  "status": true,
+  "tenant_db_id": "5d32ba9d11f14d0765c3e265"
+}
+[2019-07-20 14:55:21] - INFO: ----------测试结束----------
+[2019-07-20 14:55:21] - INFO: ----------测试开始----------
+[2019-07-20 14:55:21] - test03_CreateDBandGetList.py, Line 103]  - INFO: test04_create_db
+[2019-07-20 14:55:21] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:21] - INFO: 请求方法：post
+[2019-07-20 14:55:21] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:55:21] - INFO: 请求数据：{'db': 'lack_tenant_name', 'info': 'lack_tenant_name', 'is_auto': False}
+[2019-07-20 14:55:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:55:21] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide tenant name"
+  }
+}
+[2019-07-20 14:55:21] - INFO: ----------测试结束----------
+[2019-07-20 14:55:21] - INFO: ----------测试开始----------
+[2019-07-20 14:55:21] - test03_CreateDBandGetList.py, Line 130]  - INFO: test05_create_db
+[2019-07-20 14:55:21] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:21] - INFO: 请求方法：post
+[2019-07-20 14:55:21] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:55:21] - INFO: 请求数据：{'tenant_name': 'lack_db_name', 'info': 'lack_db_name', 'is_auto': False}
+[2019-07-20 14:55:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:55:21] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide db"
+  }
+}
+[2019-07-20 14:55:21] - INFO: ----------测试结束----------
+[2019-07-20 14:55:21] - INFO: ----------测试开始----------
+[2019-07-20 14:55:21] - test03_CreateDBandGetList.py, Line 156]  - INFO: test06_create_db
+[2019-07-20 14:55:21] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:21] - INFO: 请求方法：post
+[2019-07-20 14:55:21] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:55:21] - INFO: 请求数据：{'tenant_name': 'auto_tenant_name', 'db': 'test', 'info': 'test', 'is_auto': False}
+[2019-07-20 14:55:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:55:21] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-20 14:55:21] - INFO: ----------测试结束----------
+[2019-07-20 14:55:21] - INFO: ----------测试开始----------
+[2019-07-20 14:55:21] - test03_CreateDBandGetList.py, Line 183]  - INFO: test07_create_db
+[2019-07-20 14:55:21] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:21] - INFO: 请求方法：post
+[2019-07-20 14:55:21] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:55:21] - INFO: 请求数据：{'tenant_name': 'test', 'db': 'auto_tenant_db', 'info': 'test', 'is_auto': False}
+[2019-07-20 14:55:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:55:21] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-20 14:55:21] - INFO: ----------测试结束----------
+[2019-07-20 14:55:21] - INFO: ----------测试开始----------
+[2019-07-20 14:55:21] - test03_CreateDBandGetList.py, Line 210]  - INFO: test08_get_db_list
+[2019-07-20 14:55:21] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:21] - INFO: 请求方法：get
+[2019-07-20 14:55:21] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 14:55:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:55:21] - INFO: {
+  "status": true,
+  "results": [
+    {
+      "_id": "5d32ba9d11f14d0765c3e264",
+      "tenant_name": "auto_tenant_name",
+      "db": "auto_tenant_db",
+      "info": "auto_tenant",
+      "active_status": true
+    },
+    {
+      "_id": "5d32ba9d11f14d0765c3e265",
+      "tenant_name": "auto_live_tenant_name",
+      "db": "auto_live_tenant_db",
+      "info": "auto_live_tenant",
+      "active_status": true
+    }
+  ]
+}
+[2019-07-20 14:55:21] - INFO: ----------测试结束----------
+[2019-07-20 14:55:21] - INFO: ----------测试开始----------
+[2019-07-20 14:55:21] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 14:55:21] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:21] - INFO: 请求方法：get
+[2019-07-20 14:55:21] - INFO: url：http://192.168.0.103:3002/tenant/name/auto_tenant_name
+[2019-07-20 14:55:21] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:55:21] - INFO: {
+  "_id": "5d32ba9d11f14d0765c3e264",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 14:55:21] - INFO: ----------测试结束----------
+[2019-07-20 14:55:22] - INFO: ----------测试开始----------
+[2019-07-20 14:55:22] - test04_GetTenantDbData.py, Line 32]  - INFO: test02_get_db_data
+[2019-07-20 14:55:22] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:22] - INFO: 请求方法：get
+[2019-07-20 14:55:22] - INFO: url：http://192.168.0.103:3002/tenant/name/tenant_name_no
+[2019-07-20 14:55:22] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:55:22] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "No matching records found"
+  }
+}
+[2019-07-20 14:55:22] - INFO: ----------测试结束----------
+[2019-07-20 14:55:22] - INFO: ----------测试开始----------
+[2019-07-20 14:55:22] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 14:55:22] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:22] - INFO: 请求方法：get
+[2019-07-20 14:55:22] - INFO: url：http://192.168.0.103:3002/tenant/db/auto_tenant_db
+[2019-07-20 14:55:22] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:55:22] - INFO: {
+  "_id": "5d32ba9d11f14d0765c3e264",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 14:55:22] - INFO: ----------测试结束----------
+[2019-07-20 14:55:22] - INFO: ----------测试开始----------
+[2019-07-20 14:55:22] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 14:55:22] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:22] - INFO: 请求方法：get
+[2019-07-20 14:55:22] - INFO: url：http://192.168.0.103:3002/tenant/db/tenant_db_no
+[2019-07-20 14:55:22] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:55:22] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "No matching records found"
+  }
+}
+[2019-07-20 14:55:22] - INFO: ----------测试结束----------
+[2019-07-20 14:55:22] - INFO: ----------测试开始----------
+[2019-07-20 14:55:22] - test04_GetTenantDbData.py, Line 32]  - INFO: test05_delete_db
+[2019-07-20 14:55:22] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:22] - INFO: 请求方法：delete
+[2019-07-20 14:55:22] - INFO: url：http://192.168.0.103:3002/clearDB/auto_live_tenant_name
+[2019-07-20 14:55:22] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:55:22] - INFO: {
+  "status": true
+}
+[2019-07-20 14:55:22] - INFO: ----------测试结束----------
+[2019-07-20 14:55:22] - INFO: ----------测试开始----------
+[2019-07-20 14:55:22] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 14:55:22] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:22] - INFO: 请求方法：delete
+[2019-07-20 14:55:22] - INFO: url：http://192.168.0.103:3002/clearDB/tenant_name_no
+[2019-07-20 14:55:22] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:55:22] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "Tenant_db doesn't exist"
+  }
+}
+[2019-07-20 14:55:22] - INFO: ----------测试结束----------
+[2019-07-20 14:55:22] - INFO: ----------测试开始----------
+[2019-07-20 14:55:22] - test06_CreateTenantAdmin.py, Line 32]  - INFO: test01_cre_tenant
+[2019-07-20 14:55:22] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:55:22] - INFO: 请求方法：post
+[2019-07-20 14:55:22] - INFO: url：http://192.168.0.103:3002/tenant_admin/login
+[2019-07-20 14:55:22] - INFO: 请求数据：{'username': 'auto_user', 'password': '123456', 'tenant_name': 'auto_user_tenant'}
+[2019-07-20 14:55:22] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:55:22] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username/tenant_name error."
+  }
+}
+[2019-07-20 14:55:22] - INFO: 第三步：断言
+[2019-07-20 14:55:22] - INFO: ----------测试结束----------
+[2019-07-20 14:55:22] - WARNING: ---------------All Test End---------------
+[2019-07-20 14:55:22] - INFO: 测试报告不发送电子邮件！
+[2019-07-20 14:57:35] - INFO: ----------测试开始----------
+[2019-07-20 14:57:35] - test06_CreateTenantAdmin.py, Line 32]  - INFO: test01_cre_tenant
+[2019-07-20 14:57:35] - INFO: 第一步: 获取请求数据
+[2019-07-20 14:57:35] - INFO: 请求方法：post
+[2019-07-20 14:57:35] - INFO: url：http://192.168.0.103:3002/tenant_admin/login
+[2019-07-20 14:57:35] - INFO: 请求数据：{'username': 'auto_user', 'password': '123456', 'tenant_name': 'auto_user_tenant'}
+[2019-07-20 14:57:35] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 14:57:35] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username/tenant_name error."
+  }
+}
+[2019-07-20 14:57:35] - INFO: 第三步：断言
+[2019-07-20 14:57:35] - INFO: ----------测试结束----------
+[2019-07-20 23:20:18] - INFO: ----------测试开始----------
+[2019-07-20 23:20:18] - test06_CreateTenantAdmin.py, Line 32]  - INFO: test01_cre_tenant
+[2019-07-20 23:20:18] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:20:18] - INFO: 请求方法：post
+[2019-07-20 23:20:18] - INFO: url：http://192.168.0.103:3002/tenant_admin/login
+[2019-07-20 23:20:18] - INFO: 请求数据：{'username': 'auto_user', 'password': '123456', 'tenant_name': 'auto_user_tenant'}
+[2019-07-20 23:20:18] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:20:18] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username/tenant_name error."
+  }
+}
+[2019-07-20 23:20:18] - INFO: 第三步：断言
+[2019-07-20 23:20:18] - INFO: ----------测试结束----------
+[2019-07-20 23:20:46] - INFO: ----------测试开始----------
+[2019-07-20 23:20:46] - test06_CreateTenantAdmin.py, Line 32]  - INFO: test01_cre_tenant
+[2019-07-20 23:20:46] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:20:46] - INFO: 请求方法：post
+[2019-07-20 23:20:46] - INFO: url：http://192.168.0.103:3002/tenant_admin/login
+[2019-07-20 23:20:46] - INFO: 请求数据：{'username': 'auto_user', 'password': '123456', 'tenant_name': 'auto_user_tenant'}
+[2019-07-20 23:20:46] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:20:46] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username/tenant_name error."
+  }
+}
+[2019-07-20 23:20:46] - INFO: 第三步：断言
+[2019-07-20 23:20:46] - INFO: ----------测试结束----------
+[2019-07-20 23:25:59] - INFO: --------测试开始---------
+[2019-07-20 23:25:59] - INFO: --------测试结束---------
+[2019-07-20 23:25:59] - INFO: --------测试开始---------
+[2019-07-20 23:25:59] - INFO: --------测试结束---------
+[2019-07-20 23:25:59] - INFO: ----------测试开始----------
+[2019-07-20 23:25:59] - test01_OrcLogin.py, Line 35]  - INFO: test_login01
+[2019-07-20 23:25:59] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:25:59] - INFO: 请求方法：post
+[2019-07-20 23:25:59] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 23:25:59] - INFO: 请求数据：{'username': 'orc_admin', 'password': 'orc_admin'}
+[2019-07-20 23:26:00] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:26:00] - INFO: {
+  "_id": "5be12191a30debdbb49f3508",
+  "username": "orc_admin",
+  "status": true,
+  "orchestrator_admin_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYzNjM2MzYwfQ.qv6QO73wUBUfqpl9UJ1X1LE1jzCDVvpKNZfoKx_XZrA"
+}
+[2019-07-20 23:26:00] - test01_OrcLogin.py, Line 53]  - INFO: 提取orc_token
+[2019-07-20 23:26:00] - test01_OrcLogin.py, Line 54]  - INFO: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYzNjM2MzYwfQ.qv6QO73wUBUfqpl9UJ1X1LE1jzCDVvpKNZfoKx_XZrA
+[2019-07-20 23:26:00] - INFO: 第三步：断言
+[2019-07-20 23:26:00] - INFO: ----------测试结束----------
+[2019-07-20 23:26:00] - INFO: ----------测试开始----------
+[2019-07-20 23:26:00] - test01_OrcLogin.py, Line 67]  - INFO: test_login02
+[2019-07-20 23:26:00] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:00] - INFO: 请求方法：post
+[2019-07-20 23:26:00] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 23:26:00] - INFO: 请求数据：{'username': 'orc_admin', 'password': '654321'}
+[2019-07-20 23:26:00] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:26:00] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username or password error"
+  }
+}
+[2019-07-20 23:26:00] - INFO: 第三步：断言
+[2019-07-20 23:26:00] - INFO: ----------测试结束----------
+[2019-07-20 23:26:00] - INFO: ----------测试开始----------
+[2019-07-20 23:26:00] - test01_OrcLogin.py, Line 93]  - INFO: test_login03
+[2019-07-20 23:26:00] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:00] - INFO: 请求方法：post
+[2019-07-20 23:26:00] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 23:26:00] - INFO: 请求数据：{'username': 'orc_admin1', 'password': '123456'}
+[2019-07-20 23:26:00] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:26:00] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "Username does not exists"
+  }
+}
+[2019-07-20 23:26:00] - INFO: 第三步：断言
+[2019-07-20 23:26:00] - INFO: ----------测试结束----------
+[2019-07-20 23:26:00] - INFO: ----------测试开始----------
+[2019-07-20 23:26:00] - test01_OrcLogin.py, Line 121]  - INFO: test_login04
+[2019-07-20 23:26:00] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:00] - INFO: 请求方法：post
+[2019-07-20 23:26:00] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 23:26:00] - INFO: 请求数据：{'password': '123456'}
+[2019-07-20 23:26:00] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:26:00] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username is needed"
+  }
+}
+[2019-07-20 23:26:00] - INFO: 第三步：断言
+[2019-07-20 23:26:00] - INFO: ----------测试结束----------
+[2019-07-20 23:26:00] - INFO: ----------测试开始----------
+[2019-07-20 23:26:00] - test01_OrcLogin.py, Line 148]  - INFO: test_login05
+[2019-07-20 23:26:00] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:00] - INFO: 请求方法：post
+[2019-07-20 23:26:00] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 23:26:00] - INFO: 请求数据：{'username': 'orc_admin'}
+[2019-07-20 23:26:00] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:26:00] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Password is needed"
+  }
+}
+[2019-07-20 23:26:00] - INFO: 第三步：断言
+[2019-07-20 23:26:00] - INFO: ----------测试结束----------
+[2019-07-20 23:26:00] - INFO: ----------测试开始----------
+[2019-07-20 23:26:00] - test02_UpdateOrcPw.py, Line 34]  - INFO: test_update01
+[2019-07-20 23:26:00] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:00] - INFO: 请求方法：put
+[2019-07-20 23:26:00] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 23:26:00] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': 'orc_admin', 'current_password': '123456'}
+[2019-07-20 23:26:00] - INFO: ----------测试结束----------
+[2019-07-20 23:26:00] - INFO: ----------测试开始----------
+[2019-07-20 23:26:00] - test02_UpdateOrcPw.py, Line 58]  - INFO: test_update02
+[2019-07-20 23:26:00] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:00] - INFO: 请求方法：put
+[2019-07-20 23:26:00] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 23:26:00] - INFO: 请求数据：{'username': 'orc_admin_no', 'new_password': 'orc_admin', 'current_password': '123456'}
+[2019-07-20 23:26:00] - INFO: ----------测试结束----------
+[2019-07-20 23:26:00] - INFO: ----------测试开始----------
+[2019-07-20 23:26:00] - test02_UpdateOrcPw.py, Line 82]  - INFO: test_update03
+[2019-07-20 23:26:00] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:00] - INFO: 请求方法：put
+[2019-07-20 23:26:00] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 23:26:00] - INFO: 请求数据：{'username': 'orc_admin', 'current_password': '123456'}
+[2019-07-20 23:26:00] - INFO: ----------测试结束----------
+[2019-07-20 23:26:00] - INFO: ----------测试开始----------
+[2019-07-20 23:26:00] - test02_UpdateOrcPw.py, Line 106]  - INFO: test_update04
+[2019-07-20 23:26:00] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:00] - INFO: 请求方法：put
+[2019-07-20 23:26:00] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 23:26:00] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': 'orc_admin'}
+[2019-07-20 23:26:00] - INFO: ----------测试结束----------
+[2019-07-20 23:26:00] - INFO: ----------测试开始----------
+[2019-07-20 23:26:00] - test02_UpdateOrcPw.py, Line 130]  - INFO: test_update05
+[2019-07-20 23:26:00] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:00] - INFO: 请求方法：put
+[2019-07-20 23:26:00] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 23:26:00] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': '123456', 'current_password': 'orc_admin'}
+[2019-07-20 23:26:01] - check_new_login, Line 170]  - INFO: check_new_login重新获取orc_admin_token成功
+[2019-07-20 23:26:01] - restore_orc_pw, Line 187]  - INFO: restore_orc_pw orc admin密码还原成功
+[2019-07-20 23:26:01] - INFO: 还原密码之后重新获取orc_token成功restore_get_pw
+[2019-07-20 23:26:01] - INFO: ----------测试结束----------
+[2019-07-20 23:26:01] - INFO: ----------测试开始----------
+[2019-07-20 23:26:01] - test03_CreateDBandGetList.py, Line 32]  - INFO: test01_get_db_list
+[2019-07-20 23:26:01] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:01] - INFO: 请求方法：get
+[2019-07-20 23:26:01] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:26:01] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:26:01] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "No records found"
+  }
+}
+[2019-07-20 23:26:01] - INFO: ----------测试结束----------
+[2019-07-20 23:26:01] - INFO: ----------测试开始----------
+[2019-07-20 23:26:01] - test03_CreateDBandGetList.py, Line 57]  - INFO: test02_create_db
+[2019-07-20 23:26:01] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:01] - INFO: 请求方法：post
+[2019-07-20 23:26:01] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:26:01] - INFO: 请求数据：{'tenant_name': 'auto_tenant_name', 'db': 'auto_tenant_db', 'info': 'auto_tenant', 'is_auto': False}
+[2019-07-20 23:26:01] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:26:01] - INFO: {
+  "status": true,
+  "tenant_db_id": "5d33328911f14d0765c3ec78"
+}
+[2019-07-20 23:26:01] - INFO: ----------测试结束----------
+[2019-07-20 23:26:01] - INFO: ----------测试开始----------
+[2019-07-20 23:26:01] - test03_CreateDBandGetList.py, Line 80]  - INFO: test03_create_db
+[2019-07-20 23:26:01] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:01] - INFO: 请求方法：post
+[2019-07-20 23:26:01] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:26:01] - INFO: 请求数据：{'tenant_name': 'auto_live_tenant_name', 'db': 'auto_live_tenant_db', 'info': 'auto_live_tenant', 'is_auto': True}
+[2019-07-20 23:26:01] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:26:01] - INFO: {
+  "status": true,
+  "tenant_db_id": "5d33328911f14d0765c3ec79"
+}
+[2019-07-20 23:26:01] - INFO: ----------测试结束----------
+[2019-07-20 23:26:01] - INFO: ----------测试开始----------
+[2019-07-20 23:26:01] - test03_CreateDBandGetList.py, Line 103]  - INFO: test04_create_db
+[2019-07-20 23:26:01] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:01] - INFO: 请求方法：post
+[2019-07-20 23:26:01] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:26:01] - INFO: 请求数据：{'db': 'lack_tenant_name', 'info': 'lack_tenant_name', 'is_auto': False}
+[2019-07-20 23:26:01] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:26:01] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide tenant name"
+  }
+}
+[2019-07-20 23:26:01] - INFO: ----------测试结束----------
+[2019-07-20 23:26:02] - INFO: ----------测试开始----------
+[2019-07-20 23:26:02] - test03_CreateDBandGetList.py, Line 130]  - INFO: test05_create_db
+[2019-07-20 23:26:02] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:02] - INFO: 请求方法：post
+[2019-07-20 23:26:02] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:26:02] - INFO: 请求数据：{'tenant_name': 'lack_db_name', 'info': 'lack_db_name', 'is_auto': False}
+[2019-07-20 23:26:02] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:26:02] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide db"
+  }
+}
+[2019-07-20 23:26:02] - INFO: ----------测试结束----------
+[2019-07-20 23:26:02] - INFO: ----------测试开始----------
+[2019-07-20 23:26:02] - test03_CreateDBandGetList.py, Line 156]  - INFO: test06_create_db
+[2019-07-20 23:26:02] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:02] - INFO: 请求方法：post
+[2019-07-20 23:26:02] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:26:02] - INFO: 请求数据：{'tenant_name': 'auto_tenant_name', 'db': 'test', 'info': 'test', 'is_auto': False}
+[2019-07-20 23:26:02] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:26:02] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-20 23:26:02] - INFO: ----------测试结束----------
+[2019-07-20 23:26:02] - INFO: ----------测试开始----------
+[2019-07-20 23:26:02] - test03_CreateDBandGetList.py, Line 183]  - INFO: test07_create_db
+[2019-07-20 23:26:02] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:02] - INFO: 请求方法：post
+[2019-07-20 23:26:02] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:26:02] - INFO: 请求数据：{'tenant_name': 'test', 'db': 'auto_tenant_db', 'info': 'test', 'is_auto': False}
+[2019-07-20 23:26:02] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:26:02] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-20 23:26:02] - INFO: ----------测试结束----------
+[2019-07-20 23:26:02] - INFO: ----------测试开始----------
+[2019-07-20 23:26:02] - test03_CreateDBandGetList.py, Line 210]  - INFO: test08_get_db_list
+[2019-07-20 23:26:02] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:02] - INFO: 请求方法：get
+[2019-07-20 23:26:02] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:26:02] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:26:02] - INFO: {
+  "status": true,
+  "results": [
+    {
+      "_id": "5d33328911f14d0765c3ec78",
+      "tenant_name": "auto_tenant_name",
+      "db": "auto_tenant_db",
+      "info": "auto_tenant",
+      "active_status": true
+    },
+    {
+      "_id": "5d33328911f14d0765c3ec79",
+      "tenant_name": "auto_live_tenant_name",
+      "db": "auto_live_tenant_db",
+      "info": "auto_live_tenant",
+      "active_status": true
+    }
+  ]
+}
+[2019-07-20 23:26:02] - INFO: ----------测试结束----------
+[2019-07-20 23:26:02] - INFO: ----------测试开始----------
+[2019-07-20 23:26:02] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 23:26:02] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:02] - INFO: 请求方法：get
+[2019-07-20 23:26:02] - INFO: url：http://192.168.0.103:3002/tenant/name/auto_tenant_name
+[2019-07-20 23:26:02] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:26:02] - INFO: {
+  "_id": "5d33328911f14d0765c3ec78",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 23:26:02] - INFO: ----------测试结束----------
+[2019-07-20 23:26:02] - INFO: ----------测试开始----------
+[2019-07-20 23:26:02] - test04_GetTenantDbData.py, Line 32]  - INFO: test02_get_db_data
+[2019-07-20 23:26:02] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:02] - INFO: 请求方法：get
+[2019-07-20 23:26:02] - INFO: url：http://192.168.0.103:3002/tenant/name/tenant_name_no
+[2019-07-20 23:26:02] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:26:02] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "No matching records found"
+  }
+}
+[2019-07-20 23:26:02] - INFO: ----------测试结束----------
+[2019-07-20 23:26:02] - INFO: ----------测试开始----------
+[2019-07-20 23:26:02] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 23:26:02] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:02] - INFO: 请求方法：get
+[2019-07-20 23:26:02] - INFO: url：http://192.168.0.103:3002/tenant/db/auto_tenant_db
+[2019-07-20 23:26:02] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:26:02] - INFO: {
+  "_id": "5d33328911f14d0765c3ec78",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 23:26:02] - INFO: ----------测试结束----------
+[2019-07-20 23:26:02] - INFO: ----------测试开始----------
+[2019-07-20 23:26:02] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 23:26:02] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:02] - INFO: 请求方法：get
+[2019-07-20 23:26:02] - INFO: url：http://192.168.0.103:3002/tenant/db/tenant_db_no
+[2019-07-20 23:26:02] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:26:02] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "No matching records found"
+  }
+}
+[2019-07-20 23:26:02] - INFO: ----------测试结束----------
+[2019-07-20 23:26:02] - INFO: ----------测试开始----------
+[2019-07-20 23:26:02] - test04_GetTenantDbData.py, Line 32]  - INFO: test05_delete_db
+[2019-07-20 23:26:02] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:02] - INFO: 请求方法：delete
+[2019-07-20 23:26:02] - INFO: url：http://192.168.0.103:3002/clearDB/auto_live_tenant_name
+[2019-07-20 23:26:02] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:26:02] - INFO: {
+  "status": true
+}
+[2019-07-20 23:26:02] - INFO: ----------测试结束----------
+[2019-07-20 23:26:02] - INFO: ----------测试开始----------
+[2019-07-20 23:26:02] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 23:26:02] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:02] - INFO: 请求方法：delete
+[2019-07-20 23:26:02] - INFO: url：http://192.168.0.103:3002/clearDB/tenant_name_no
+[2019-07-20 23:26:03] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:26:03] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "Tenant_db doesn't exist"
+  }
+}
+[2019-07-20 23:26:03] - INFO: ----------测试结束----------
+[2019-07-20 23:26:03] - INFO: ----------测试开始----------
+[2019-07-20 23:26:03] - test06_CreateTenantAdmin.py, Line 32]  - INFO: test01_cre_tenant
+[2019-07-20 23:26:03] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:26:03] - INFO: 请求方法：post
+[2019-07-20 23:26:03] - INFO: url：http://192.168.0.103:3002/tenant_admin/login
+[2019-07-20 23:26:03] - INFO: 请求数据：{'username': 'auto_user', 'password': '123456', 'tenant_name': 'auto_user_tenant'}
+[2019-07-20 23:26:03] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:26:03] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username/tenant_name error."
+  }
+}
+[2019-07-20 23:26:03] - INFO: 第三步：断言
+[2019-07-20 23:26:03] - INFO: ----------测试结束----------
+[2019-07-20 23:26:03] - WARNING: ---------------All Test End---------------
+[2019-07-20 23:26:03] - INFO: 测试报告不发送电子邮件！
+[2019-07-20 23:30:20] - INFO: --------测试开始---------
+[2019-07-20 23:30:20] - INFO: --------测试结束---------
+[2019-07-20 23:30:20] - INFO: --------测试开始---------
+[2019-07-20 23:30:20] - INFO: --------测试结束---------
+[2019-07-20 23:30:20] - INFO: ----------测试开始----------
+[2019-07-20 23:30:20] - test01_OrcLogin.py, Line 35]  - INFO: test_login01
+[2019-07-20 23:30:20] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:20] - INFO: 请求方法：post
+[2019-07-20 23:30:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 23:30:20] - INFO: 请求数据：{'username': 'orc_admin', 'password': 'orc_admin'}
+[2019-07-20 23:30:20] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:20] - INFO: {
+  "_id": "5be12191a30debdbb49f3508",
+  "username": "orc_admin",
+  "status": true,
+  "orchestrator_admin_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYzNjM2NjIwfQ.ViCsNbFyXnS-qSN39Aa2rdPYthtO7bbk1YsTAUcQC7w"
+}
+[2019-07-20 23:30:20] - test01_OrcLogin.py, Line 53]  - INFO: 提取orc_token
+[2019-07-20 23:30:20] - test01_OrcLogin.py, Line 54]  - INFO: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYzNjM2NjIwfQ.ViCsNbFyXnS-qSN39Aa2rdPYthtO7bbk1YsTAUcQC7w
+[2019-07-20 23:30:20] - INFO: 第三步：断言
+[2019-07-20 23:30:20] - INFO: ----------测试结束----------
+[2019-07-20 23:30:20] - INFO: ----------测试开始----------
+[2019-07-20 23:30:20] - test01_OrcLogin.py, Line 67]  - INFO: test_login02
+[2019-07-20 23:30:20] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:20] - INFO: 请求方法：post
+[2019-07-20 23:30:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 23:30:20] - INFO: 请求数据：{'username': 'orc_admin', 'password': '654321'}
+[2019-07-20 23:30:20] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:20] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username or password error"
+  }
+}
+[2019-07-20 23:30:20] - INFO: 第三步：断言
+[2019-07-20 23:30:20] - INFO: ----------测试结束----------
+[2019-07-20 23:30:20] - INFO: ----------测试开始----------
+[2019-07-20 23:30:20] - test01_OrcLogin.py, Line 93]  - INFO: test_login03
+[2019-07-20 23:30:20] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:20] - INFO: 请求方法：post
+[2019-07-20 23:30:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 23:30:20] - INFO: 请求数据：{'username': 'orc_admin1', 'password': '123456'}
+[2019-07-20 23:30:20] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:20] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "Username does not exists"
+  }
+}
+[2019-07-20 23:30:20] - INFO: 第三步：断言
+[2019-07-20 23:30:20] - INFO: ----------测试结束----------
+[2019-07-20 23:30:20] - INFO: ----------测试开始----------
+[2019-07-20 23:30:20] - test01_OrcLogin.py, Line 121]  - INFO: test_login04
+[2019-07-20 23:30:20] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:20] - INFO: 请求方法：post
+[2019-07-20 23:30:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 23:30:20] - INFO: 请求数据：{'password': '123456'}
+[2019-07-20 23:30:20] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:20] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username is needed"
+  }
+}
+[2019-07-20 23:30:20] - INFO: 第三步：断言
+[2019-07-20 23:30:20] - INFO: ----------测试结束----------
+[2019-07-20 23:30:20] - INFO: ----------测试开始----------
+[2019-07-20 23:30:20] - test01_OrcLogin.py, Line 148]  - INFO: test_login05
+[2019-07-20 23:30:20] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:20] - INFO: 请求方法：post
+[2019-07-20 23:30:20] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 23:30:20] - INFO: 请求数据：{'username': 'orc_admin'}
+[2019-07-20 23:30:20] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:20] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Password is needed"
+  }
+}
+[2019-07-20 23:30:20] - INFO: 第三步：断言
+[2019-07-20 23:30:20] - INFO: ----------测试结束----------
+[2019-07-20 23:30:21] - INFO: ----------测试开始----------
+[2019-07-20 23:30:21] - test02_UpdateOrcPw.py, Line 34]  - INFO: test_update01
+[2019-07-20 23:30:21] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:21] - INFO: 请求方法：put
+[2019-07-20 23:30:21] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 23:30:21] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': 'orc_admin', 'current_password': '123456'}
+[2019-07-20 23:30:21] - INFO: ----------测试结束----------
+[2019-07-20 23:30:21] - INFO: ----------测试开始----------
+[2019-07-20 23:30:21] - test02_UpdateOrcPw.py, Line 58]  - INFO: test_update02
+[2019-07-20 23:30:21] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:21] - INFO: 请求方法：put
+[2019-07-20 23:30:21] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 23:30:21] - INFO: 请求数据：{'username': 'orc_admin_no', 'new_password': 'orc_admin', 'current_password': '123456'}
+[2019-07-20 23:30:21] - INFO: ----------测试结束----------
+[2019-07-20 23:30:21] - INFO: ----------测试开始----------
+[2019-07-20 23:30:21] - test02_UpdateOrcPw.py, Line 82]  - INFO: test_update03
+[2019-07-20 23:30:21] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:21] - INFO: 请求方法：put
+[2019-07-20 23:30:21] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 23:30:21] - INFO: 请求数据：{'username': 'orc_admin', 'current_password': '123456'}
+[2019-07-20 23:30:21] - INFO: ----------测试结束----------
+[2019-07-20 23:30:21] - INFO: ----------测试开始----------
+[2019-07-20 23:30:21] - test02_UpdateOrcPw.py, Line 106]  - INFO: test_update04
+[2019-07-20 23:30:21] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:21] - INFO: 请求方法：put
+[2019-07-20 23:30:21] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 23:30:21] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': 'orc_admin'}
+[2019-07-20 23:30:21] - INFO: ----------测试结束----------
+[2019-07-20 23:30:21] - INFO: ----------测试开始----------
+[2019-07-20 23:30:21] - test02_UpdateOrcPw.py, Line 130]  - INFO: test_update05
+[2019-07-20 23:30:21] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:21] - INFO: 请求方法：put
+[2019-07-20 23:30:21] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 23:30:21] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': '123456', 'current_password': 'orc_admin'}
+[2019-07-20 23:30:21] - check_new_login, Line 170]  - INFO: check_new_login重新获取orc_admin_token成功
+[2019-07-20 23:30:21] - restore_orc_pw, Line 187]  - INFO: restore_orc_pw orc admin密码还原成功
+[2019-07-20 23:30:21] - INFO: 还原密码之后重新获取orc_token成功restore_get_pw
+[2019-07-20 23:30:21] - INFO: ----------测试结束----------
+[2019-07-20 23:30:22] - INFO: ----------测试开始----------
+[2019-07-20 23:30:22] - test03_CreateDBandGetList.py, Line 32]  - INFO: test01_get_db_list
+[2019-07-20 23:30:22] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:22] - INFO: 请求方法：get
+[2019-07-20 23:30:22] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:30:22] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:22] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "No records found"
+  }
+}
+[2019-07-20 23:30:22] - INFO: ----------测试结束----------
+[2019-07-20 23:30:22] - INFO: ----------测试开始----------
+[2019-07-20 23:30:22] - test03_CreateDBandGetList.py, Line 57]  - INFO: test02_create_db
+[2019-07-20 23:30:22] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:22] - INFO: 请求方法：post
+[2019-07-20 23:30:22] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:30:22] - INFO: 请求数据：{'tenant_name': 'auto_tenant_name', 'db': 'auto_tenant_db', 'info': 'auto_tenant', 'is_auto': False}
+[2019-07-20 23:30:22] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:22] - INFO: {
+  "status": true,
+  "tenant_db_id": "5d33338e11f14d0765c3ec99"
+}
+[2019-07-20 23:30:22] - INFO: ----------测试结束----------
+[2019-07-20 23:30:22] - INFO: ----------测试开始----------
+[2019-07-20 23:30:22] - test03_CreateDBandGetList.py, Line 80]  - INFO: test03_create_db
+[2019-07-20 23:30:22] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:22] - INFO: 请求方法：post
+[2019-07-20 23:30:22] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:30:22] - INFO: 请求数据：{'tenant_name': 'auto_live_tenant_name', 'db': 'auto_live_tenant_db', 'info': 'auto_live_tenant', 'is_auto': True}
+[2019-07-20 23:30:22] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:22] - INFO: {
+  "status": true,
+  "tenant_db_id": "5d33338e11f14d0765c3ec9a"
+}
+[2019-07-20 23:30:22] - INFO: ----------测试结束----------
+[2019-07-20 23:30:22] - INFO: ----------测试开始----------
+[2019-07-20 23:30:22] - test03_CreateDBandGetList.py, Line 103]  - INFO: test04_create_db
+[2019-07-20 23:30:22] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:22] - INFO: 请求方法：post
+[2019-07-20 23:30:22] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:30:22] - INFO: 请求数据：{'db': 'lack_tenant_name', 'info': 'lack_tenant_name', 'is_auto': False}
+[2019-07-20 23:30:22] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:22] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide tenant name"
+  }
+}
+[2019-07-20 23:30:22] - INFO: ----------测试结束----------
+[2019-07-20 23:30:22] - INFO: ----------测试开始----------
+[2019-07-20 23:30:22] - test03_CreateDBandGetList.py, Line 130]  - INFO: test05_create_db
+[2019-07-20 23:30:22] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:22] - INFO: 请求方法：post
+[2019-07-20 23:30:22] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:30:22] - INFO: 请求数据：{'tenant_name': 'lack_db_name', 'info': 'lack_db_name', 'is_auto': False}
+[2019-07-20 23:30:22] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:22] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide db"
+  }
+}
+[2019-07-20 23:30:22] - INFO: ----------测试结束----------
+[2019-07-20 23:30:22] - INFO: ----------测试开始----------
+[2019-07-20 23:30:22] - test03_CreateDBandGetList.py, Line 156]  - INFO: test06_create_db
+[2019-07-20 23:30:22] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:22] - INFO: 请求方法：post
+[2019-07-20 23:30:22] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:30:22] - INFO: 请求数据：{'tenant_name': 'auto_tenant_name', 'db': 'test', 'info': 'test', 'is_auto': False}
+[2019-07-20 23:30:22] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:22] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-20 23:30:22] - INFO: ----------测试结束----------
+[2019-07-20 23:30:22] - INFO: ----------测试开始----------
+[2019-07-20 23:30:22] - test03_CreateDBandGetList.py, Line 183]  - INFO: test07_create_db
+[2019-07-20 23:30:22] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:22] - INFO: 请求方法：post
+[2019-07-20 23:30:22] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:30:22] - INFO: 请求数据：{'tenant_name': 'test', 'db': 'auto_tenant_db', 'info': 'test', 'is_auto': False}
+[2019-07-20 23:30:22] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:22] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-20 23:30:22] - INFO: ----------测试结束----------
+[2019-07-20 23:30:22] - INFO: ----------测试开始----------
+[2019-07-20 23:30:22] - test03_CreateDBandGetList.py, Line 210]  - INFO: test08_get_db_list
+[2019-07-20 23:30:22] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:22] - INFO: 请求方法：get
+[2019-07-20 23:30:22] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:30:22] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:22] - INFO: {
+  "status": true,
+  "results": [
+    {
+      "_id": "5d33338e11f14d0765c3ec99",
+      "tenant_name": "auto_tenant_name",
+      "db": "auto_tenant_db",
+      "info": "auto_tenant",
+      "active_status": true
+    },
+    {
+      "_id": "5d33338e11f14d0765c3ec9a",
+      "tenant_name": "auto_live_tenant_name",
+      "db": "auto_live_tenant_db",
+      "info": "auto_live_tenant",
+      "active_status": true
+    }
+  ]
+}
+[2019-07-20 23:30:22] - INFO: ----------测试结束----------
+[2019-07-20 23:30:22] - INFO: ----------测试开始----------
+[2019-07-20 23:30:22] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 23:30:22] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:22] - INFO: 请求方法：get
+[2019-07-20 23:30:22] - INFO: url：http://192.168.0.103:3002/tenant/name/auto_tenant_name
+[2019-07-20 23:30:22] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:22] - INFO: {
+  "_id": "5d33338e11f14d0765c3ec99",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 23:30:22] - INFO: ----------测试结束----------
+[2019-07-20 23:30:22] - INFO: ----------测试开始----------
+[2019-07-20 23:30:22] - test04_GetTenantDbData.py, Line 32]  - INFO: test02_get_db_data
+[2019-07-20 23:30:22] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:22] - INFO: 请求方法：get
+[2019-07-20 23:30:22] - INFO: url：http://192.168.0.103:3002/tenant/name/tenant_name_no
+[2019-07-20 23:30:22] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:22] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "No matching records found"
+  }
+}
+[2019-07-20 23:30:22] - INFO: ----------测试结束----------
+[2019-07-20 23:30:22] - INFO: ----------测试开始----------
+[2019-07-20 23:30:22] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 23:30:22] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:22] - INFO: 请求方法：get
+[2019-07-20 23:30:22] - INFO: url：http://192.168.0.103:3002/tenant/db/auto_tenant_db
+[2019-07-20 23:30:22] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:22] - INFO: {
+  "_id": "5d33338e11f14d0765c3ec99",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 23:30:22] - INFO: ----------测试结束----------
+[2019-07-20 23:30:22] - INFO: ----------测试开始----------
+[2019-07-20 23:30:22] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 23:30:22] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:22] - INFO: 请求方法：get
+[2019-07-20 23:30:22] - INFO: url：http://192.168.0.103:3002/tenant/db/tenant_db_no
+[2019-07-20 23:30:22] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:22] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "No matching records found"
+  }
+}
+[2019-07-20 23:30:22] - INFO: ----------测试结束----------
+[2019-07-20 23:30:22] - INFO: ----------测试开始----------
+[2019-07-20 23:30:22] - test04_GetTenantDbData.py, Line 32]  - INFO: test05_delete_db
+[2019-07-20 23:30:22] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:22] - INFO: 请求方法：delete
+[2019-07-20 23:30:22] - INFO: url：http://192.168.0.103:3002/clearDB/auto_live_tenant_name
+[2019-07-20 23:30:23] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:23] - INFO: {
+  "status": true
+}
+[2019-07-20 23:30:23] - INFO: ----------测试结束----------
+[2019-07-20 23:30:23] - INFO: ----------测试开始----------
+[2019-07-20 23:30:23] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 23:30:23] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:23] - INFO: 请求方法：delete
+[2019-07-20 23:30:23] - INFO: url：http://192.168.0.103:3002/clearDB/tenant_name_no
+[2019-07-20 23:30:23] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:23] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "Tenant_db doesn't exist"
+  }
+}
+[2019-07-20 23:30:23] - INFO: ----------测试结束----------
+[2019-07-20 23:30:23] - INFO: ----------测试开始----------
+[2019-07-20 23:30:23] - test06_CreateTenantAdmin.py, Line 32]  - INFO: test01_cre_tenant
+[2019-07-20 23:30:23] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:23] - INFO: 请求方法：post
+[2019-07-20 23:30:23] - INFO: url：http://192.168.0.103:3002/tenant_admin
+[2019-07-20 23:30:23] - INFO: 请求数据：{'username': 'auto_user', 'password': '123456', 'tenant_name': 'auto_user_tenant'}
+[2019-07-20 23:30:23] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:23] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "Tenant doesn't exist"
+  }
+}
+[2019-07-20 23:30:23] - INFO: 第三步：断言
+[2019-07-20 23:30:23] - INFO: ----------测试结束----------
+[2019-07-20 23:30:23] - INFO: ----------测试开始----------
+[2019-07-20 23:30:23] - test06_CreateTenantAdmin.py, Line 32]  - INFO: test01_cre_tenant
+[2019-07-20 23:30:23] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:30:23] - INFO: 请求方法：post
+[2019-07-20 23:30:23] - INFO: url：http://192.168.0.103:3002/tenant_admin/login
+[2019-07-20 23:30:23] - INFO: 请求数据：{'username': 'auto_user', 'password': '123456', 'tenant_name': 'auto_user_tenant'}
+[2019-07-20 23:30:23] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:30:23] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username/tenant_name error."
+  }
+}
+[2019-07-20 23:30:23] - INFO: 第三步：断言
+[2019-07-20 23:30:23] - INFO: ----------测试结束----------
+[2019-07-20 23:30:23] - WARNING: ---------------All Test End---------------
+[2019-07-20 23:30:23] - INFO: 测试报告不发送电子邮件！
+[2019-07-20 23:43:25] - INFO: ----------测试开始----------
+[2019-07-20 23:43:25] - test06_CreateTenantAdmin.py, Line 32]  - INFO: test01_cre_tenant
+[2019-07-20 23:43:25] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:43:25] - INFO: 请求方法：post
+[2019-07-20 23:43:25] - INFO: url：http://192.168.0.103:3002/tenant_admin
+[2019-07-20 23:43:25] - INFO: 请求数据：{'username': 'auto_user', 'password': '123456', 'tenant_name': 'auto_user_tenant'}
+[2019-07-20 23:43:25] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:43:25] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "Tenant doesn't exist"
+  }
+}
+[2019-07-20 23:43:25] - INFO: 第三步：断言
+[2019-07-20 23:43:25] - INFO: ----------测试结束----------
+[2019-07-20 23:49:34] - INFO: ----------测试开始----------
+[2019-07-20 23:49:34] - test06_CreateTenantAdmin.py, Line 32]  - INFO: test01_cre_tenant
+[2019-07-20 23:49:34] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:34] - INFO: 请求方法：post
+[2019-07-20 23:49:34] - INFO: url：http://192.168.0.103:3002/tenant_admin
+[2019-07-20 23:49:34] - INFO: 请求数据：{'username': 'auto_user', 'password': '123456', 'tenant_name': 'auto_tenant_name'}
+[2019-07-20 23:49:34] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:34] - INFO: {
+  "_id": "5d33380e11f14d0765c3ed0a",
+  "username": "auto_user",
+  "status": true
+}
+[2019-07-20 23:49:34] - INFO: 第三步：断言
+[2019-07-20 23:49:34] - INFO: ----------测试结束----------
+[2019-07-20 23:49:53] - INFO: --------测试开始---------
+[2019-07-20 23:49:53] - INFO: --------测试结束---------
+[2019-07-20 23:49:53] - INFO: --------测试开始---------
+[2019-07-20 23:49:53] - INFO: --------测试结束---------
+[2019-07-20 23:49:53] - INFO: ----------测试开始----------
+[2019-07-20 23:49:53] - test01_OrcLogin.py, Line 35]  - INFO: test_login01
+[2019-07-20 23:49:53] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:53] - INFO: 请求方法：post
+[2019-07-20 23:49:53] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 23:49:53] - INFO: 请求数据：{'username': 'orc_admin', 'password': 'orc_admin'}
+[2019-07-20 23:49:53] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:53] - INFO: {
+  "_id": "5be12191a30debdbb49f3508",
+  "username": "orc_admin",
+  "status": true,
+  "orchestrator_admin_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYzNjM3NzkzfQ.KinOdxD3wau9Zj9z4Sb1ZKpnxtY77TylGYlFVrnf33U"
+}
+[2019-07-20 23:49:53] - test01_OrcLogin.py, Line 53]  - INFO: 提取orc_token
+[2019-07-20 23:49:53] - test01_OrcLogin.py, Line 54]  - INFO: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcmNfYWRtaW4iLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwiaWF0IjoxNTYzNjM3NzkzfQ.KinOdxD3wau9Zj9z4Sb1ZKpnxtY77TylGYlFVrnf33U
+[2019-07-20 23:49:53] - INFO: 第三步：断言
+[2019-07-20 23:49:53] - INFO: ----------测试结束----------
+[2019-07-20 23:49:53] - INFO: ----------测试开始----------
+[2019-07-20 23:49:53] - test01_OrcLogin.py, Line 67]  - INFO: test_login02
+[2019-07-20 23:49:53] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:53] - INFO: 请求方法：post
+[2019-07-20 23:49:53] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 23:49:53] - INFO: 请求数据：{'username': 'orc_admin', 'password': '654321'}
+[2019-07-20 23:49:53] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:53] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username or password error"
+  }
+}
+[2019-07-20 23:49:53] - INFO: 第三步：断言
+[2019-07-20 23:49:53] - INFO: ----------测试结束----------
+[2019-07-20 23:49:53] - INFO: ----------测试开始----------
+[2019-07-20 23:49:53] - test01_OrcLogin.py, Line 93]  - INFO: test_login03
+[2019-07-20 23:49:53] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:53] - INFO: 请求方法：post
+[2019-07-20 23:49:53] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 23:49:53] - INFO: 请求数据：{'username': 'orc_admin1', 'password': '123456'}
+[2019-07-20 23:49:53] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:53] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "Username does not exists"
+  }
+}
+[2019-07-20 23:49:53] - INFO: 第三步：断言
+[2019-07-20 23:49:53] - INFO: ----------测试结束----------
+[2019-07-20 23:49:53] - INFO: ----------测试开始----------
+[2019-07-20 23:49:53] - test01_OrcLogin.py, Line 121]  - INFO: test_login04
+[2019-07-20 23:49:53] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:53] - INFO: 请求方法：post
+[2019-07-20 23:49:53] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 23:49:53] - INFO: 请求数据：{'password': '123456'}
+[2019-07-20 23:49:53] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:53] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Username is needed"
+  }
+}
+[2019-07-20 23:49:53] - INFO: 第三步：断言
+[2019-07-20 23:49:53] - INFO: ----------测试结束----------
+[2019-07-20 23:49:53] - INFO: ----------测试开始----------
+[2019-07-20 23:49:53] - test01_OrcLogin.py, Line 148]  - INFO: test_login05
+[2019-07-20 23:49:53] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:53] - INFO: 请求方法：post
+[2019-07-20 23:49:53] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/login
+[2019-07-20 23:49:53] - INFO: 请求数据：{'username': 'orc_admin'}
+[2019-07-20 23:49:53] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:53] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Password is needed"
+  }
+}
+[2019-07-20 23:49:53] - INFO: 第三步：断言
+[2019-07-20 23:49:53] - INFO: ----------测试结束----------
+[2019-07-20 23:49:53] - INFO: ----------测试开始----------
+[2019-07-20 23:49:53] - test02_UpdateOrcPw.py, Line 34]  - INFO: test_update01
+[2019-07-20 23:49:53] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:53] - INFO: 请求方法：put
+[2019-07-20 23:49:53] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 23:49:53] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': 'orc_admin', 'current_password': '123456'}
+[2019-07-20 23:49:53] - INFO: ----------测试结束----------
+[2019-07-20 23:49:53] - INFO: ----------测试开始----------
+[2019-07-20 23:49:53] - test02_UpdateOrcPw.py, Line 58]  - INFO: test_update02
+[2019-07-20 23:49:53] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:53] - INFO: 请求方法：put
+[2019-07-20 23:49:53] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 23:49:53] - INFO: 请求数据：{'username': 'orc_admin_no', 'new_password': 'orc_admin', 'current_password': '123456'}
+[2019-07-20 23:49:53] - INFO: ----------测试结束----------
+[2019-07-20 23:49:53] - INFO: ----------测试开始----------
+[2019-07-20 23:49:53] - test02_UpdateOrcPw.py, Line 82]  - INFO: test_update03
+[2019-07-20 23:49:53] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:53] - INFO: 请求方法：put
+[2019-07-20 23:49:53] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 23:49:53] - INFO: 请求数据：{'username': 'orc_admin', 'current_password': '123456'}
+[2019-07-20 23:49:53] - INFO: ----------测试结束----------
+[2019-07-20 23:49:54] - INFO: ----------测试开始----------
+[2019-07-20 23:49:54] - test02_UpdateOrcPw.py, Line 106]  - INFO: test_update04
+[2019-07-20 23:49:54] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:54] - INFO: 请求方法：put
+[2019-07-20 23:49:54] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 23:49:54] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': 'orc_admin'}
+[2019-07-20 23:49:54] - INFO: ----------测试结束----------
+[2019-07-20 23:49:54] - INFO: ----------测试开始----------
+[2019-07-20 23:49:54] - test02_UpdateOrcPw.py, Line 130]  - INFO: test_update05
+[2019-07-20 23:49:54] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:54] - INFO: 请求方法：put
+[2019-07-20 23:49:54] - INFO: url：http://192.168.0.103:3002/orchestrator_admin/changepassword
+[2019-07-20 23:49:54] - INFO: 请求数据：{'username': 'orc_admin', 'new_password': '123456', 'current_password': 'orc_admin'}
+[2019-07-20 23:49:54] - check_new_login, Line 170]  - INFO: check_new_login重新获取orc_admin_token成功
+[2019-07-20 23:49:54] - restore_orc_pw, Line 187]  - INFO: restore_orc_pw orc admin密码还原成功
+[2019-07-20 23:49:54] - INFO: 还原密码之后重新获取orc_token成功restore_get_pw
+[2019-07-20 23:49:54] - INFO: ----------测试结束----------
+[2019-07-20 23:49:54] - INFO: ----------测试开始----------
+[2019-07-20 23:49:54] - test03_CreateDBandGetList.py, Line 32]  - INFO: test01_get_db_list
+[2019-07-20 23:49:54] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:54] - INFO: 请求方法：get
+[2019-07-20 23:49:54] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:49:54] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:54] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "No records found"
+  }
+}
+[2019-07-20 23:49:54] - INFO: ----------测试结束----------
+[2019-07-20 23:49:54] - INFO: ----------测试开始----------
+[2019-07-20 23:49:54] - test03_CreateDBandGetList.py, Line 57]  - INFO: test02_create_db
+[2019-07-20 23:49:54] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:54] - INFO: 请求方法：post
+[2019-07-20 23:49:54] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:49:54] - INFO: 请求数据：{'tenant_name': 'auto_tenant_name', 'db': 'auto_tenant_db', 'info': 'auto_tenant', 'is_auto': False}
+[2019-07-20 23:49:54] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:54] - INFO: {
+  "status": true,
+  "tenant_db_id": "5d33382211f14d0765c3ed12"
+}
+[2019-07-20 23:49:54] - INFO: ----------测试结束----------
+[2019-07-20 23:49:54] - INFO: ----------测试开始----------
+[2019-07-20 23:49:54] - test03_CreateDBandGetList.py, Line 80]  - INFO: test03_create_db
+[2019-07-20 23:49:54] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:54] - INFO: 请求方法：post
+[2019-07-20 23:49:54] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:49:54] - INFO: 请求数据：{'tenant_name': 'auto_live_tenant_name', 'db': 'auto_live_tenant_db', 'info': 'auto_live_tenant', 'is_auto': True}
+[2019-07-20 23:49:54] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:54] - INFO: {
+  "status": true,
+  "tenant_db_id": "5d33382311f14d0765c3ed13"
+}
+[2019-07-20 23:49:54] - INFO: ----------测试结束----------
+[2019-07-20 23:49:54] - INFO: ----------测试开始----------
+[2019-07-20 23:49:54] - test03_CreateDBandGetList.py, Line 103]  - INFO: test04_create_db
+[2019-07-20 23:49:54] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:54] - INFO: 请求方法：post
+[2019-07-20 23:49:54] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:49:54] - INFO: 请求数据：{'db': 'lack_tenant_name', 'info': 'lack_tenant_name', 'is_auto': False}
+[2019-07-20 23:49:54] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:54] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide tenant name"
+  }
+}
+[2019-07-20 23:49:54] - INFO: ----------测试结束----------
+[2019-07-20 23:49:55] - INFO: ----------测试开始----------
+[2019-07-20 23:49:55] - test03_CreateDBandGetList.py, Line 130]  - INFO: test05_create_db
+[2019-07-20 23:49:55] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:55] - INFO: 请求方法：post
+[2019-07-20 23:49:55] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:49:55] - INFO: 请求数据：{'tenant_name': 'lack_db_name', 'info': 'lack_db_name', 'is_auto': False}
+[2019-07-20 23:49:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:55] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Provide db"
+  }
+}
+[2019-07-20 23:49:55] - INFO: ----------测试结束----------
+[2019-07-20 23:49:55] - INFO: ----------测试开始----------
+[2019-07-20 23:49:55] - test03_CreateDBandGetList.py, Line 156]  - INFO: test06_create_db
+[2019-07-20 23:49:55] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:55] - INFO: 请求方法：post
+[2019-07-20 23:49:55] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:49:55] - INFO: 请求数据：{'tenant_name': 'auto_tenant_name', 'db': 'test', 'info': 'test', 'is_auto': False}
+[2019-07-20 23:49:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:55] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-20 23:49:55] - INFO: ----------测试结束----------
+[2019-07-20 23:49:55] - INFO: ----------测试开始----------
+[2019-07-20 23:49:55] - test03_CreateDBandGetList.py, Line 183]  - INFO: test07_create_db
+[2019-07-20 23:49:55] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:55] - INFO: 请求方法：post
+[2019-07-20 23:49:55] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:49:55] - INFO: 请求数据：{'tenant_name': 'test', 'db': 'auto_tenant_db', 'info': 'test', 'is_auto': False}
+[2019-07-20 23:49:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:55] - INFO: {
+  "status": false,
+  "err": {
+    "code": 400,
+    "message": "Tenant name/DB already exists"
+  }
+}
+[2019-07-20 23:49:55] - INFO: ----------测试结束----------
+[2019-07-20 23:49:55] - INFO: ----------测试开始----------
+[2019-07-20 23:49:55] - test03_CreateDBandGetList.py, Line 210]  - INFO: test08_get_db_list
+[2019-07-20 23:49:55] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:55] - INFO: 请求方法：get
+[2019-07-20 23:49:55] - INFO: url：http://192.168.0.103:3002/tenant
+[2019-07-20 23:49:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:55] - INFO: {
+  "status": true,
+  "results": [
+    {
+      "_id": "5d33382211f14d0765c3ed12",
+      "tenant_name": "auto_tenant_name",
+      "db": "auto_tenant_db",
+      "info": "auto_tenant",
+      "active_status": true
+    },
+    {
+      "_id": "5d33382311f14d0765c3ed13",
+      "tenant_name": "auto_live_tenant_name",
+      "db": "auto_live_tenant_db",
+      "info": "auto_live_tenant",
+      "active_status": true
+    }
+  ]
+}
+[2019-07-20 23:49:55] - INFO: ----------测试结束----------
+[2019-07-20 23:49:55] - INFO: ----------测试开始----------
+[2019-07-20 23:49:55] - test04_GetTenantDbData.py, Line 32]  - INFO: test01_get_db_data
+[2019-07-20 23:49:55] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:55] - INFO: 请求方法：get
+[2019-07-20 23:49:55] - INFO: url：http://192.168.0.103:3002/tenant/name/auto_tenant_name
+[2019-07-20 23:49:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:55] - INFO: {
+  "_id": "5d33382211f14d0765c3ed12",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 23:49:55] - INFO: ----------测试结束----------
+[2019-07-20 23:49:55] - INFO: ----------测试开始----------
+[2019-07-20 23:49:55] - test04_GetTenantDbData.py, Line 32]  - INFO: test02_get_db_data
+[2019-07-20 23:49:55] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:55] - INFO: 请求方法：get
+[2019-07-20 23:49:55] - INFO: url：http://192.168.0.103:3002/tenant/name/tenant_name_no
+[2019-07-20 23:49:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:55] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "No matching records found"
+  }
+}
+[2019-07-20 23:49:55] - INFO: ----------测试结束----------
+[2019-07-20 23:49:55] - INFO: ----------测试开始----------
+[2019-07-20 23:49:55] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 23:49:55] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:55] - INFO: 请求方法：get
+[2019-07-20 23:49:55] - INFO: url：http://192.168.0.103:3002/tenant/db/auto_tenant_db
+[2019-07-20 23:49:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:55] - INFO: {
+  "_id": "5d33382211f14d0765c3ed12",
+  "tenant_name": "auto_tenant_name",
+  "db": "auto_tenant_db",
+  "info": "auto_tenant",
+  "active_status": true,
+  "status": true
+}
+[2019-07-20 23:49:55] - INFO: ----------测试结束----------
+[2019-07-20 23:49:55] - INFO: ----------测试开始----------
+[2019-07-20 23:49:55] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 23:49:55] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:55] - INFO: 请求方法：get
+[2019-07-20 23:49:55] - INFO: url：http://192.168.0.103:3002/tenant/db/tenant_db_no
+[2019-07-20 23:49:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:55] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "No matching records found"
+  }
+}
+[2019-07-20 23:49:55] - INFO: ----------测试结束----------
+[2019-07-20 23:49:55] - INFO: ----------测试开始----------
+[2019-07-20 23:49:55] - test04_GetTenantDbData.py, Line 32]  - INFO: test05_delete_db
+[2019-07-20 23:49:55] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:55] - INFO: 请求方法：delete
+[2019-07-20 23:49:55] - INFO: url：http://192.168.0.103:3002/clearDB/auto_live_tenant_name
+[2019-07-20 23:49:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:55] - INFO: {
+  "status": true
+}
+[2019-07-20 23:49:55] - INFO: ----------测试结束----------
+[2019-07-20 23:49:55] - INFO: ----------测试开始----------
+[2019-07-20 23:49:55] - test04_GetTenantDbData.py, Line 32]  - INFO: test03_get_db_data
+[2019-07-20 23:49:55] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:55] - INFO: 请求方法：delete
+[2019-07-20 23:49:55] - INFO: url：http://192.168.0.103:3002/clearDB/tenant_name_no
+[2019-07-20 23:49:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:55] - INFO: {
+  "status": false,
+  "err": {
+    "code": 404,
+    "message": "Tenant_db doesn't exist"
+  }
+}
+[2019-07-20 23:49:55] - INFO: ----------测试结束----------
+[2019-07-20 23:49:55] - INFO: ----------测试开始----------
+[2019-07-20 23:49:55] - test06_CreateTenantAdmin.py, Line 32]  - INFO: test01_cre_tenant
+[2019-07-20 23:49:55] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:55] - INFO: 请求方法：post
+[2019-07-20 23:49:55] - INFO: url：http://192.168.0.103:3002/tenant_admin
+[2019-07-20 23:49:55] - INFO: 请求数据：{'username': 'auto_user', 'password': '123456', 'tenant_name': 'auto_tenant_name'}
+[2019-07-20 23:49:55] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:55] - INFO: {
+  "_id": "5d33382411f14d0765c3ed16",
+  "username": "auto_user",
+  "status": true
+}
+[2019-07-20 23:49:55] - INFO: 第三步：断言
+[2019-07-20 23:49:55] - INFO: ----------测试结束----------
+[2019-07-20 23:49:55] - INFO: ----------测试开始----------
+[2019-07-20 23:49:55] - test06_CreateTenantAdmin.py, Line 32]  - INFO: test01_cre_tenant
+[2019-07-20 23:49:55] - INFO: 第一步: 获取请求数据
+[2019-07-20 23:49:55] - INFO: 请求方法：post
+[2019-07-20 23:49:55] - INFO: url：http://192.168.0.103:3002/tenant_admin/login
+[2019-07-20 23:49:55] - INFO: 请求数据：{'username': 'auto_user', 'password': '123456', 'tenant_name': 'auto_tenant_name'}
+[2019-07-20 23:49:56] - INFO: 第二步:发送请求，获取返回数据：
+[2019-07-20 23:49:56] - INFO: {
+  "tenant_admin_id": "5d33382411f14d0765c3ed16",
+  "username": "auto_user",
+  "status": true,
+  "tenant_admin_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZDMzMzgyNDExZjE0ZDA3NjVjM2VkMTYiLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwidGVuYW50IjoiYXV0b190ZW5hbnRfbmFtZSIsImlhdCI6MTU2MzYzNzc5NiwiZXhwIjoxNTk1MTk1Mzk2fQ.rvZtMeXXUSKOl11Wr2r88uEBsn4IYorr0uhBUdLKm4w"
+}
+[2019-07-20 23:49:56] - test01_OrcLogin.py, Line 42]  - INFO: 提取orc_token
+[2019-07-20 23:49:56] - test01_OrcLogin.py, Line 42]  - INFO: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZDMzMzgyNDExZjE0ZDA3NjVjM2VkMTYiLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwidGVuYW50IjoiYXV0b190ZW5hbnRfbmFtZSIsImlhdCI6MTU2MzYzNzc5NiwiZXhwIjoxNTk1MTk1Mzk2fQ.rvZtMeXXUSKOl11Wr2r88uEBsn4IYorr0uhBUdLKm4w
+[2019-07-20 23:49:56] - INFO: 第三步：断言
+[2019-07-20 23:49:56] - INFO: ----------测试结束----------
+[2019-07-20 23:49:56] - WARNING: ---------------All Test End---------------
+[2019-07-20 23:49:56] - INFO: 测试报告不发送电子邮件！

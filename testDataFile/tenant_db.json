@@ -1,19 +1,19 @@
 {
   "tenant_db": {
-    "tenant_name": "auto_user_tenant",
-    "db": "auto_user_tenant",
-    "info": "auto_user_tenant",
+    "tenant_name": "auto_tenant_name",
+    "db": "auto_tenant_db",
+    "info": "auto_tenant",
     "is_auto": false
   },
-  "tenant_db_autolive": {
-    "tenant_name": "test_autolive",
-    "db": "test_autolive",
-    "info": "test_autolive",
+  "tenant_db_auto_live": {
+    "tenant_name": "auto_live_tenant_name",
+    "db": "auto_live_tenant_db",
+    "info": "auto_live_tenant",
     "is_auto": true
   },
-  "lack_teant_name": {
-    "db": "lack_teant_name",
-    "info": "lack_teant_name",
+  "lack_tenant_name": {
+    "db": "lack_tenant_name",
+    "info": "lack_tenant_name",
     "is_auto": false
   },
   "lack_db_name": {
@@ -22,15 +22,21 @@
     "is_auto": false
   },
   "tenant_name_exists": {
-    "tenant_name": "auto_user_tenant",
+    "tenant_name": "auto_tenant_name",
     "db": "test",
     "info": "test",
     "is_auto": false
   },
   "db_name_exists": {
     "tenant_name": "test",
-    "db": "auto_user_tenant",
+    "db": "auto_tenant_db",
     "info": "test",
     "is_auto": false
-  }
+  },
+  "tenant_name": "auto_tenant_name",
+  "tenant_name_no": "tenant_name_no",
+  "tenant_db_name": "auto_tenant_db",
+  "tenant_db_name_no": "tenant_db_no",
+  "db_name": "auto_live_tenant_name",
+  "db_name_no": "tenant_name_no"
 }

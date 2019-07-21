@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 # coding=utf-8
 from common.operationExcelSheet import OperationExcel
-from config.readConfig import ReadConfig
 from common.operationJson import OperationJson
+from config.readConfig import ReadConfig
 
 
 class ReadTestData:
@@ -90,7 +90,8 @@ class ReadTestData:
 
 
 if __name__ == "__main__":
-    file_name = "../testDataFile/user.json"
+    file_name = "../testDataFile/tenant_db.json"
     a = ReadTestData(file_name)
-    b = a.get_param('cmb_test_case', 16)
-    print(b)
+    for i in range(20, 26):
+        b = a.get_param('app_test_case', i)
+        print(b)

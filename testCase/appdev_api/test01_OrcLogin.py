@@ -32,7 +32,7 @@ class LoginTest(unittest.TestCase):
 
     def test_login01(self):
         """orc admin正常登录"""
-        self.log.info(message="test_login01", name="test01_OrcLogin.py", line=30)
+        self.log.info(message="test_login01", name="test01_OrcLogin.py", line=35)
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[0])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[0])
@@ -50,21 +50,21 @@ class LoginTest(unittest.TestCase):
         self.log.info(message="%s" % res_json)
         if dict_json["status"] == True:
             orc_token = dict_json["orchestrator_admin_token"]  # 提取orc_token
-            self.log.info(message="提取orc_token", name="test01_OrcLogin.py", line=42)
-            self.log.info(message="%s" % orc_token, name="test01_OrcLogin.py", line=42)
+            self.log.info(message="提取orc_token", name="test01_OrcLogin.py", line=53)
+            self.log.info(message="%s" % orc_token, name="test01_OrcLogin.py", line=54)
             authorization = "Bearer " + orc_token
             self.json.write_data(authorization, "orc_token_header", "Authorization")  # 把orc_token写入json文件
 
         # 断言
         self.log.info(message="第三步：断言")
-        self.assertEqual(status_code, 200, msg=">>>test_login01接口请求失败")
-        self.assertTrue(dict_json["status"], msg=">>>test_login01断言失败，实际返回结果：%s" % dict_json)
+        self.assertEqual(status_code, 200, msg=">>>接口请求失败")
+        self.assertTrue(dict_json["status"], msg=">>>断言失败，实际返回结果：%s" % dict_json)
         self.assertEqual(dict_json["username"], "orc_admin",
-                         msg=">>>test_login01断言失败，实际返回值是：%s" % dict_json["username"])
+                         msg=">>>断言失败，实际返回值是：%s" % dict_json["username"])
 
     def test_login02(self):
         """登录失败，密码错误"""
-        self.log.info(message="test_login02", name="test01_OrcLogin.py", line=62)
+        self.log.info(message="test_login02", name="test01_OrcLogin.py", line=67)
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[1])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[1])
@@ -82,15 +82,15 @@ class LoginTest(unittest.TestCase):
         self.log.info(message="%s" % res_json)
         self.log.info(message="第三步：断言")
         # 断言
-        self.assertEqual(status_code, 200, msg=">>>test_login02接口请求失败")
-        self.assertFalse(dict_json["status"], msg=">>>test_login02断言失败，实际返回结果：%s" % dict_json)
-        self.assertEqual(dict_json["err"]["code"], 400, msg=">>>test_login02断言失败，实际返回结果：%s" % dict_json["err"]["code"])
+        self.assertEqual(status_code, 200, msg=">>>接口请求失败")
+        self.assertFalse(dict_json["status"], msg=">>>断言失败，实际返回结果：%s" % dict_json)
+        self.assertEqual(dict_json["err"]["code"], 400, msg=">>>断言失败，实际返回结果：%s" % dict_json["err"]["code"])
         self.assertEqual(dict_json["err"]["message"], "Username or password error",
-                         msg=">>>test_login02断言失败，实际返回结果：%s" % dict_json["err"]["message"])
+                         msg=">>>断言失败，实际返回结果：%s" % dict_json["err"]["message"])
 
     def test_login03(self):
         """登录失败，账户不存在"""
-        self.log.info(message="test_login03", name="test01_OrcLogin.py", line=83)
+        self.log.info(message="test_login03", name="test01_OrcLogin.py", line=93)
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[2])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[2])
@@ -110,15 +110,15 @@ class LoginTest(unittest.TestCase):
 
         # 断言
         self.assertEqual(status_code, 200, msg=">>>接口请求失败")
-        self.assertFalse(dict_json["status"], msg=">>>test_login03断言失败，实际返回结果：%s" % dict_json)
-        self.assertEqual(dict_json["err"]["code"], 404, msg=">>>test_login03断言失败，实际返回结果：%s" % dict_json["err"]["code"])
+        self.assertFalse(dict_json["status"], msg=">>>断言失败，实际返回结果：%s" % dict_json)
+        self.assertEqual(dict_json["err"]["code"], 404, msg=">>>断言失败，实际返回结果：%s" % dict_json["err"]["code"])
         self.assertEqual(dict_json["err"]["message"], "Username does not exists",
-                         msg=">>>test_login03断言失败，实际返回结果：%s" % dict_json["err"]["message"])
+                         msg=">>>断言失败，实际返回结果：%s" % dict_json["err"]["message"])
 
     # @unittest.skip("跳过测试")
     def test_login04(self):
         """登录失败，缺少username字段"""
-        self.log.info(message="test_login04", name="test01_OrcLogin.py", line=105)
+        self.log.info(message="test_login04", name="test01_OrcLogin.py", line=121)
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[3])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[3])
@@ -137,15 +137,15 @@ class LoginTest(unittest.TestCase):
         self.log.info(message="第三步：断言")
 
         # 断言
-        self.assertEqual(status_code, 200, msg=">>>test_login04接口请求失败")
-        self.assertFalse(dict_json["status"], msg=">>>test_login04，实际返回结果：%s" % dict_json)
-        self.assertEqual(dict_json["err"]["code"], 400, msg=">>>test_login04断言失败，实际返回结果：%s" % dict_json["err"]["code"])
+        self.assertEqual(status_code, 200, msg=">>>接口请求失败")
+        self.assertFalse(dict_json["status"], msg=">>>实际返回结果：%s" % dict_json)
+        self.assertEqual(dict_json["err"]["code"], 400, msg=">>>断言失败，实际返回结果：%s" % dict_json["err"]["code"])
         self.assertEqual(dict_json["err"]["message"], "Username is needed",
-                         msg=">>>test_login04断言失败，实际返回结果：%s" % dict_json["err"]["message"])
+                         msg=">>>断言失败，实际返回结果：%s" % dict_json["err"]["message"])
 
     def test_login05(self):
         """登录失败，缺少password字段"""
-        self.log.info(message="test_login05", name="test01_OrcLogin.py", line=126)
+        self.log.info(message="test_login05", name="test01_OrcLogin.py", line=148)
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[4])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[4])
@@ -164,11 +164,11 @@ class LoginTest(unittest.TestCase):
         self.log.info(message="第三步：断言")
 
         # 断言
-        self.assertEqual(status_code, 200, msg=">>>test_login05接口请求失败")
-        self.assertFalse(dict_json["status"], msg=">>>test_login05断言失败，实际返回结果：%s" % dict_json)
-        self.assertEqual(dict_json["err"]["code"], 400, msg=">>>test_login05断言失败，实际返回结果：%s" % dict_json["err"]["code"])
+        self.assertEqual(status_code, 200, msg=">>>接口请求失败")
+        self.assertFalse(dict_json["status"], msg=">>>断言失败，实际返回结果：%s" % dict_json)
+        self.assertEqual(dict_json["err"]["code"], 400, msg=">>>断言失败，实际返回结果：%s" % dict_json["err"]["code"])
         self.assertEqual(dict_json["err"]["message"], "Password is needed",
-                         msg=">>>test_login05断言失败，实际返回结果：%s" % dict_json["err"]["message"])
+                         msg=">>>断言失败，实际返回结果：%s" % dict_json["err"]["message"])
 
 
 if __name__ == "__main__":

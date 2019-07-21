@@ -53,8 +53,8 @@ class MyLog:
 
     # 设置需要输出到控制台的等级
     console = logging.StreamHandler()
-    console.setLevel(logging.WARNING)
-    # console.setLevel(logging.INFO)
+    # console.setLevel(logging.WARNING)
+    console.setLevel(logging.INFO)
 
     # 设置需要打印的日志等级
     logger.setLevel(logging.DEBUG)

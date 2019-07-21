@@ -2,20 +2,20 @@
   "tenant_admin": {
     "username": "auto_user",
     "password": "123456",
-    "tenant_name": "auto_user_tenant"
+    "tenant_name": "auto_tenant_name"
   },
   "tenant_admin1": {
     "username": "auto_user1",
     "password": "123456",
-    "tenant_name": "auto_user_tenant1"
+    "tenant_name": "auto_tenant_name1"
   },
   "lack_username": {
     "password": "123456",
-    "tenant_name": "auto_user_tenant"
+    "tenant_name": "auto_tenant_name"
   },
   "lack_password": {
     "username": "auto_user",
-    "tenant_name": "auto_user_tenant"
+    "tenant_name": "auto_tenant_name"
   },
   "lack_tenant_name": {
     "username": "auto_user",
@@ -24,6 +24,6 @@
   "tenant_name_no": {
     "username": "auto_user_no",
     "password": "123456",
-    "tenant_name": "auto_user_tenant_no"
+    "tenant_name": "auto_tenant_name_no"
   }
 }
