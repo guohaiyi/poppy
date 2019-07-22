@@ -8,6 +8,7 @@ from common.httpSet import HttpMethod
 from common.myLog import MyLog
 from common.readTestData import ReadTestData
 from config.readConfig import ReadConfig
+from common.operationJson import OperationJson
 
 proDir = os.path.split(os.path.realpath(__file__))[0]
 file_name = os.path.join(proDir, "../../testDataFile/tenant_db.json")
@@ -20,6 +21,7 @@ class CreateTenantDbTest(unittest.TestCase):
         self.http = HttpMethod()
         self.config = ReadConfig()
         self.log = MyLog()
+        self.json = OperationJson(file_name)
         self.sheet = 'app_test_case'
         self.row = [12, 13, 14, 15, 16, 17, 18, 19]
         self.log.info(message="----------测试开始----------", name="test03_CreateDBandGetList.py")
@@ -70,8 +72,14 @@ class CreateTenantDbTest(unittest.TestCase):
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
         self.log.info(message="第二步:发送请求，获取返回数据：")
         self.log.info(message="%s" % res_json)
+        if dict_json["status"]:
+            db_id = dict_json["tenant_db_id"]  # 提取tenant_db_id
+            self.log.info(message="提取tenant_db_id：%s" % db_id)
+            self.json.write_data(db_id, "db_id")  # 把tenant_db_id写入json文件
+            self.log.info(message="并把tenant_db_id写入json文件")
 
         # 断言
+        self.log.info(message="第三步：断言")
         self.assertEqual(status_code, 200, msg=">>>接口请求失败")
         self.assertTrue(dict_json["status"], msg='>>>创建DB失败，实际返回结果：%s' % dict_json)
 

@@ -12,7 +12,6 @@ from config.readConfig import ReadConfig
 
 proDir = os.path.split(os.path.realpath(__file__))[0]
 file_name = os.path.join(proDir, "../../testDataFile/tenant_account.json")
-print('file_name:%s' % file_name)
 
 
 class LoginTest(unittest.TestCase):
@@ -22,17 +21,17 @@ class LoginTest(unittest.TestCase):
         self.http = HttpMethod()
         self.config = ReadConfig()
         self.log = MyLog()
-        self.json = OperationJson()
+        self.json = OperationJson(file_name)
         self.sheet = 'app_test_case'
-        self.row = [30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
-        self.log.info(message="----------测试开始----------", name="test06_TenantAdmin.py")
+        self.row = [26, 27, 28, 29, 30, 31, 32, 33, 34, 35]
+        self.log.info(message="----------测试开始----------", name="test05_TenantAdmin.py")
 
     def tearDown(self):
-        self.log.info(message="----------测试结束----------", name="test06_TenantAdmin.py")
+        self.log.info(message="----------测试结束----------", name="test05_TenantAdmin.py")
 
     def test01_get_tenant_admin_list(self):
         """获取Tenant Admin列表：为空"""
-        self.log.info(message="test01_get_tenant_admin_list", name="test06_TenantAdmin.py", line=35)
+        self.log.info(message="test01_get_tenant_admin_list", name="test05_TenantAdmin.py", line=34)
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[0])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[0])
@@ -57,7 +56,7 @@ class LoginTest(unittest.TestCase):
 
     def test02_get_tenant_admin_info(self):
         """获取Tenant Admin信息：不存在"""
-        self.log.info(message="test02_get_tenant_admin_info", name="test06_TenantAdmin.py", line=60)
+        self.log.info(message="test02_get_tenant_admin_info", name="test05_TenantAdmin.py", line=59)
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[1])
         data = self.data.get_param(self.sheet, self.row[1])
@@ -83,7 +82,7 @@ class LoginTest(unittest.TestCase):
 
     def test03_cre_tenant_admin(self):
         """创建Tenant Admin"""
-        self.log.info(message="test03_cre_tenant_admin", name="test06_TenantAdmin.py", line=86)
+        self.log.info(message="test03_cre_tenant_admin", name="test05_TenantAdmin.py", line=85)
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[2])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[2])
@@ -109,7 +108,7 @@ class LoginTest(unittest.TestCase):
 
     def test04_cre_tenant_admin(self):
         """创建失败：缺失username"""
-        self.log.info(message="test04_cre_tenant_admin", name="test06_TenantAdmin.py", line=112)
+        self.log.info(message="test04_cre_tenant_admin", name="test05_TenantAdmin.py", line=111)
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[3])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[3])
@@ -136,7 +135,7 @@ class LoginTest(unittest.TestCase):
 
     def test05_cre_tenant_admin(self):
         """创建失败：缺失password"""
-        self.log.info(message="test05_cre_tenant_admin", name="test06_TenantAdmin.py", line=139)
+        self.log.info(message="test05_cre_tenant_admin", name="test05_TenantAdmin.py", line=138)
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[4])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[4])
@@ -162,8 +161,8 @@ class LoginTest(unittest.TestCase):
                          msg='>>>断言失败，实际返回结果：%s' % dict_json["err"]["message"])
 
     def test06_cre_tenant_admin(self):
-        """创建失败：缺失password"""
-        self.log.info(message="test06_cre_tenant_admin", name="test06_TenantAdmin.py", line=166)
+        """创建失败：缺失tenant_name"""
+        self.log.info(message="test06_cre_tenant_admin", name="test05_TenantAdmin.py", line=165)
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[5])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[5])
@@ -189,8 +188,8 @@ class LoginTest(unittest.TestCase):
                          msg='>>>断言失败，实际返回结果：%s' % dict_json["err"]["message"])
 
     def test07_cre_tenant_admin(self):
-        """创建失败：缺失password"""
-        self.log.info(message="test07_cre_tenant_admin", name="test06_TenantAdmin.py", line=193)
+        """创建失败：username已被占用"""
+        self.log.info(message="test07_cre_tenant_admin", name="test05_TenantAdmin.py", line=192)
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[6])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[6])
@@ -216,8 +215,8 @@ class LoginTest(unittest.TestCase):
                          msg='>>>断言失败，实际返回结果：%s' % dict_json["err"]["message"])
 
     def test08_cre_tenant_admin(self):
-        """创建失败：缺失password"""
-        self.log.info(message="test08_cre_tenant_admin", name="test06_TenantAdmin.py", line=220)
+        """创建失败：tenant_name不存在"""
+        self.log.info(message="test08_cre_tenant_admin", name="test05_TenantAdmin.py", line=219)
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[7])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[7])
@@ -244,7 +243,7 @@ class LoginTest(unittest.TestCase):
 
     def test09_get_tenant_admin_list(self):
         """获取所有Tenant Admin列表"""
-        self.log.info(message="test09_get_tenant_admin_list", name="test06_TenantAdmin.py", line=247)
+        self.log.info(message="test09_get_tenant_admin_list", name="test05_TenantAdmin.py", line=246)
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[8])
         url = self.config.get_base_url() + self.data.get_url(self.sheet, self.row[8])
@@ -259,6 +258,11 @@ class LoginTest(unittest.TestCase):
         self.log.info(message="第二步:发送请求，获取返回数据：")
         self.log.info(message="%s" % res_json)
 
+        # 提取tenant_admin_id
+        if dict_json["status"]:
+            tenant_admin_id = dict_json["results"][0]["_id"]
+            self.json.write_data(tenant_admin_id, "tenant_admin_id")  # 把tenant_admin_id写入json文档
+
         # 断言
         self.log.info(message="第三步：断言")
         self.assertEqual(status_code, 200, msg=">>>接口请求失败")
@@ -272,7 +276,7 @@ class LoginTest(unittest.TestCase):
 
     def test10_get_tenant_admin_info(self):
         """获取Tenant Admin信息"""
-        self.log.info(message="test10_get_tenant_admin_info", name="test06_TenantAdmin.py", line=274)
+        self.log.info(message="test10_get_tenant_admin_info", name="test05_TenantAdmin.py", line=279)
         # 获取测试数据
         method = self.data.get_method(self.sheet, self.row[9])
         data = self.data.get_param(self.sheet, self.row[9])
@@ -291,7 +295,6 @@ class LoginTest(unittest.TestCase):
         # 断言
         self.log.info(message="第三步：断言")
         self.assertEqual(status_code, 200, msg=">>>接口请求失败")
-        self.assertTrue(dict_json["status"], msg=">>>断言失败，实际返回结果：%s" % dict_json)
         exist_key = ["_id", "username", "tenant_name", "active_status", "created_time", "updated_time"]
         for key in exist_key:
             self.assertIn(key, dict_json, msg=">>>返回数据里面没有该字段：%s" % key)

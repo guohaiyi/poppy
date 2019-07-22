@@ -49,7 +49,6 @@ class OperationJson:
 
 
 if __name__ == "__main__":
-    a = OperationJson()
-    b = a.key_get_data("user")
-    # b = a.key_get_data("orc_login_header")
-    print(b["user_id"])
+    file_name = "../testDataFile/tenant_db.json"
+    a = OperationJson(file_name)
+    a.write_data("test111", "db_id")

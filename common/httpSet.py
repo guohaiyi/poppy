@@ -69,10 +69,11 @@ class HttpMethod:
 
 if __name__ == "__main__":
     h = HttpMethod()
-    url = "http://192.168.0.103/sysinfo/version"
+    url = "http://172.16.1.201:3002/user/"
+    data = {'limit': 1}
     headers = {
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1Y2QyYWFiMzY4ZDJhMDA2ODFlZGFmZjMiLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwidGVuYW50IjoiaGFpeWl0ZW5hbnQiLCJpYXQiOjE1NTc5MDE4MDAsImV4cCI6MTU4OTQ1OTQwMH0.LUr80U8MBfgz_UYAGq-NiydTBSQwt5AqMP4M_zBuf28"}
-    a, b = h.http_method(method="get", url=url)
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZDM1NjgyNmFlYWExZmQ1MDMyODg1OWYiLCJhdWQiOiJQYW5lbCIsImlzcyI6IlBhbmVsIiwidGVuYW50IjoiYXV0b190ZW5hbnRfbmFtZSIsImlhdCI6MTU2Mzc4NzgwMSwiZXhwIjoxNTk1MzQ1NDAxfQ.u3BADhS7_UEHHN5squroSqPLxthgXYvA9E0L5v2wjHU"}
+    a, b = h.http_method(method="get", url=url, data=data, headers=headers)
     print(a)
     print(b)

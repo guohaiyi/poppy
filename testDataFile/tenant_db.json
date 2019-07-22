@@ -38,5 +38,7 @@
   "tenant_db_name": "auto_tenant_db",
   "tenant_db_name_no": "tenant_db_no",
   "db_name": "auto_live_tenant_name",
-  "db_name_no": "tenant_name_no"
+  "db_name_no": "tenant_name_no",
+  "db_id": "5d358757aeaa1fd5032888be",
+  "db_id_no": "5d1dadd58de42c162fbf4198"
 }

@@ -48,10 +48,10 @@ class LoginTest(unittest.TestCase):
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
         self.log.info(message="第二步:发送请求，获取返回数据：")
         self.log.info(message="%s" % res_json)
-        if dict_json["status"] == True:
+        if dict_json["status"]:
             orc_token = dict_json["orchestrator_admin_token"]  # 提取orc_token
-            self.log.info(message="提取orc_token", name="test01_OrcLogin.py", line=53)
-            self.log.info(message="%s" % orc_token, name="test01_OrcLogin.py", line=54)
+            self.log.info(message="提取orc_token", name="test_login01", line=53)
+            self.log.info(message="%s" % orc_token, name="test_login01", line=54)
             authorization = "Bearer " + orc_token
             self.json.write_data(authorization, "orc_token_header", "Authorization")  # 把orc_token写入json文件
 

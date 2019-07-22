@@ -163,7 +163,7 @@ class TestUpdateOrcPw(unittest.TestCase):
         # 发送请求
         status_code, res_json = self.http.http_method(method=method, url=url, data=data, headers=headers)
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
-        if dict_json["status"] == True:
+        if dict_json["status"]:
             orc_token = dict_json["orchestrator_admin_token"]  # 提取orc_token
             authorization = "Bearer " + orc_token
             self.json.write_data(authorization, "orc_token_header", "Authorization")  # 把orc_token写入json文件
@@ -183,7 +183,7 @@ class TestUpdateOrcPw(unittest.TestCase):
         # 发送请求
         status_code, res_json = self.http.http_method(method=method, url=url, headers=headers, data=data)
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
-        if dict_json["status"] == True:
+        if dict_json["status"]:
             self.log.info("restore_orc_pw orc admin密码还原成功", "restore_orc_pw", 187)
             self.restore_get_pw()
         else:
@@ -200,7 +200,7 @@ class TestUpdateOrcPw(unittest.TestCase):
         # 发送请求
         status_code, res_json = self.http.http_method(method=method, url=url, data=data, headers=headers)
         dict_json = json.loads(res_json)  # 把json数据转换成字典对象
-        if dict_json["status"] == True:
+        if dict_json["status"]:
             orc_token = dict_json["orchestrator_admin_token"]  # 提取orc_token
             authorization = "Bearer " + orc_token
             self.json.write_data(authorization, "orc_token_header", "Authorization")  # 把orc_token写入json文件

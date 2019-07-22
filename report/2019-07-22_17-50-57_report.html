@@ -116,19 +116,19 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">Poppy接口测试报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> HaiYi</p>
-<p class='attribute'><strong>开始时间 : </strong> 2019-07-20 23:30:20</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:02.814974</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 28，通过 26，失败 2，通过率= 92.86%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-07-22 17:50:57</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:04.078000</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 60，通过 60，通过率= 100.00%</p>
 
-<p class='description'>测试环境：Develop，IP地址：http://192.168.0.103:3002</p>
+<p class='description'>测试环境：Develop，IP地址：http://172.16.1.201:3002</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 92.86% }</a>
-<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 2 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 26 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 28 }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 100.00% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 60 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 60 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -323,75 +323,228 @@ function html_escape(s) {
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr class='failClass warning'>
-    <td>appdev_api.test06_CreateTenantAdmin.LoginTest</td>
-    <td class="text-center">1</td>
+<tr class='passClass warning'>
+    <td>appdev_api.test05_TenantAdmin.LoginTest</td>
+    <td class="text-center">10</td>
+    <td class="text-center">10</td>
     <td class="text-center">0</td>
-    <td class="text-center">1</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c6',1)" class="detail" id='c6'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c6',10)" class="detail" id='c6'>详细</a></td>
 </tr>
 
-<tr id='ft6_1' class='none'>
-    <td class='failCase'><div class='testcase'>test01_cre_tenant: 创建Tenant andmin</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft6_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft6_1'>失败</button>
-    <div id='div_ft6_1' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft6_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft6_1'>失败</button>
-    <div id='div_ft6_1' class="collapse in" align="left">
-    <pre>
-    
-ft6_1: Traceback (most recent call last):
-  File "F:\python\poppy\testCase\appdev_api\test06_CreateTenantAdmin.py", line 55, in test01_cre_tenant
-    self.assertTrue(dict_json["status"], msg="&gt;&gt;&gt;test01_cre_tenant断言失败，实际返回结果：%s" % dict_json)
-AssertionError: False is not true : &gt;&gt;&gt;test01_cre_tenant断言失败，实际返回结果：{'status': False, 'err': {'code': 404, 'message': "Tenant doesn't exist"}}
-
-
-    </pre>
-    </div>
-    </td>
+<tr id='pt6_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test01_get_tenant_admin_list: 获取Tenant Admin列表：为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr class='failClass warning'>
+<tr id='pt6_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test02_get_tenant_admin_info: 获取Tenant Admin信息：不存在</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt6_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test03_cre_tenant_admin: 创建Tenant Admin</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt6_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test04_cre_tenant_admin: 创建失败：缺失username</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt6_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test05_cre_tenant_admin: 创建失败：缺失password</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt6_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test06_cre_tenant_admin: 创建失败：缺失tenant_name</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt6_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test07_cre_tenant_admin: 创建失败：username已被占用</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt6_8' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test08_cre_tenant_admin: 创建失败：tenant_name不存在</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt6_9' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test09_get_tenant_admin_list: 获取所有Tenant Admin列表</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt6_10' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test10_get_tenant_admin_info: 获取Tenant Admin信息</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>appdev_api.test06_DisEnaTenantDB.CreateTenantDbTest</td>
+    <td class="text-center">4</td>
+    <td class="text-center">4</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c7',4)" class="detail" id='c7'>详细</a></td>
+</tr>
+
+<tr id='pt7_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test01_DisTenDb: 禁用TenantDB</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt7_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test02_DisTenDbFail: 禁用TenantDB失败：不存在</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt7_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test03_EnaTenDb: 启用TenantDB</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt7_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test04_TenDbFail: 启用TenantDB成功：不存在</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>appdev_api.test07_BlockUnblockAdmin.CreateTenantDbTest</td>
+    <td class="text-center">4</td>
+    <td class="text-center">4</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c8',4)" class="detail" id='c8'>详细</a></td>
+</tr>
+
+<tr id='pt8_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test01_block_account: 阻塞Tenant admin账户</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt8_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test02_block_account: 禁用TenantDB失败：不存在</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt8_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test03_unblock_account: 疏通Tenant admin账户</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt8_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test04_unblock_account: 疏通Tenant admin账户失败：不存在</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr class='passClass warning'>
     <td>cmbdev_api.test01_TenantAdminLogin.LoginTest</td>
-    <td class="text-center">1</td>
+    <td class="text-center">6</td>
+    <td class="text-center">6</td>
     <td class="text-center">0</td>
-    <td class="text-center">1</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c7',1)" class="detail" id='c7'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c9',6)" class="detail" id='c9'>详细</a></td>
 </tr>
 
-<tr id='ft7_1' class='none'>
-    <td class='failCase'><div class='testcase'>test01_admin_login: Tenant admin正常登录</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft7_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft7_1'>失败</button>
-    <div id='div_ft7_1' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft7_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft7_1'>失败</button>
-    <div id='div_ft7_1' class="collapse in" align="left">
-    <pre>
-    
-ft7_1: Traceback (most recent call last):
-  File "F:\python\poppy\testCase\cmbdev_api\test01_TenantAdminLogin.py", line 61, in test01_admin_login
-    self.assertTrue(dict_json["status"], msg="&gt;&gt;&gt;断言失败，实际返回结果：%s" % dict_json)
-AssertionError: False is not true : &gt;&gt;&gt;断言失败，实际返回结果：{'status': False, 'err': {'code': 400, 'message': 'Username/tenant_name error.'}}
+<tr id='pt9_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test01_admin_login: Tenant admin正常登录</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
 
+<tr id='pt9_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test02_admin_login: 登录失败：密码错误</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
 
-    </pre>
-    </div>
-    </td>
+<tr id='pt9_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test03_admin_login: 登录失败：缺少username</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt9_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test04_admin_login: 登录失败：缺少password</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt9_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test05_admin_login: 登录失败：缺少tenant_name</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt9_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test06_admin_login: 登录失败：缺少tenant_name</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>cmbdev_api.test02_AboutEndUser.LoginTest</td>
+    <td class="text-center">10</td>
+    <td class="text-center">10</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c10',10)" class="detail" id='c10'>详细</a></td>
+</tr>
+
+<tr id='pt10_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test01_get_user_list: 用户不存在：列表为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt10_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test02_cre_user: 创建用户</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt10_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test03_cre_user: 创建用户失败：user_id被占用</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt10_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test04_cre_user: 创建用户失败：不传入user_id</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt10_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test05_get_user_list: 用户存在：返回所有用户列表</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt10_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test06_get_user_list: 用户存在：设定返回用户列表数量</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt10_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test07_get_user_info: 用户存在：返回用户的详细信息</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt10_8' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test08_get_user_info: 用户不存在：无法获取信息</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt10_9' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test09_delete_user: 删除用户</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt10_10' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test10_delete_user: 用户不存在：无法获取信息</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>28</td>
-    <td>26</td>
-    <td>2</td>
+    <td>60</td>
+    <td>60</td>
     <td>0</td>
-    <td>通过率：92.86%</td>
+    <td>0</td>
+    <td>通过率：100.00%</td>
 </tr>
 </table>
 

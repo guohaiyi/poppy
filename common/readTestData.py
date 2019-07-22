@@ -58,6 +58,8 @@ class ReadTestData:
     def get_request_data(self, sheet_name, row):
         cell = self.set_excel.get_excel('data')
         request_key = self.open_excel.from_ab_get_data(sheet_name, cell, row)
+        # request_list = request_str.split(',')
+        # print(request_list)
         request_data = self.open_json.key_get_data(request_key)
         return request_data
 
@@ -90,8 +92,7 @@ class ReadTestData:
 
 
 if __name__ == "__main__":
-    file_name = "../testDataFile/tenant_db.json"
+    file_name = "../testDataFile/end_user.json"
     a = ReadTestData(file_name)
-    for i in range(20, 26):
-        b = a.get_param('app_test_case', i)
-        print(b)
+    b = a.get_param('cmb_test_case', 16)
+    print(b)

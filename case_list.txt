@@ -3,5 +3,8 @@ appdev_api/test01_OrcLogin
 appdev_api/test02_UpdateOrcPw
 appdev_api/test03_CreateDBandGetList
 appdev_api/test04_GetTenantDbData
-appdev_api/test06_CreateTenantAdmin
+appdev_api/test05_TenantAdmin
+appdev_api/test06_DisEnaTenantDB
+appdev_api/test07_BlockUnblockAdmin
 cmbdev_api/test01_TenantAdminLogin
+cmbdev_api/test02_AboutEndUser
